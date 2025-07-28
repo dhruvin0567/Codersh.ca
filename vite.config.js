@@ -1,27 +1,11 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-// import VitePluginPurgeCss from 'vite-plugin-purgecss';
-// import VitePluginImagemin from 'vite-plugin-imagemin';
-import { VitePWA } from 'vite-plugin-pwa';
 import ViteSitemap from 'vite-plugin-sitemap';
 import SitemapPlugin from 'vite-plugin-sitemap';
 
 export default defineConfig({
   plugins: [
     react(),
-
-    // VitePluginPurgeCss(),
-    // VitePluginImagemin(),
-    VitePWA({
-      registerType: 'autoUpdate',
-      devOptions: {
-        enabled: true,
-      },
-      workbox: {
-        skipWaiting: true,
-        clientsClaim: true,
-      },
-    }),
     ViteSitemap({
       hostname: 'https://react-vite-codersh.vercel.app/',
     }),
