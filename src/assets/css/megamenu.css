@@ -1,0 +1,214 @@
+/* Universal Responsive Mega Menu */
+
+.mega-menu {
+    width: 100% !important;
+    max-width: 991px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container adjustments for full width */
+.mega-menu .row {
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+}
+
+.mega-menu .col-4 {
+    padding: 0 20px;
+}
+
+.mega-menu-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #92d600;
+    font-weight: 600;
+    border-bottom: 2px solid #92d600;
+    padding-bottom: 8px;
+}
+
+.site-menu-main .mega-menu-item {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.site-menu-main .mega-menu-item>a {
+    color: #000;
+    padding: 8px 0;
+    font-weight: 700;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.site-menu-main .mega-menu-item>a .menu-item-text {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.site-menu-main .mega-menu-item>a .menu-item-text::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: auto;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background-color: #92d600;
+    transition: all 0.3s ease;
+}
+
+.site-menu-main .mega-menu-item>a:hover .menu-item-text::after,
+.site-menu-main .mega-menu-item>a.active-link .menu-item-text::after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+
+.site-menu-main .mega-menu-item>a:hover {
+    color: #92d600;
+}
+
+/* Large Desktop - 4 columns */
+@media (min-width: 1200px) {
+    .mega-menu {
+        max-width: 1200px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .mega-menu .col-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+/* Desktop - 3 columns */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .mega-menu .col-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+/* Tablet - 2 columns */
+@media (min-width: 768px) and (max-width: 991px) {
+    .mega-menu {
+        position: relative;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 20px 0;
+    }
+
+    .mega-menu .row {
+        padding: 10px 20px;
+    }
+
+    .mega-menu .col-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+
+    .mega-menu .col-4:nth-child(3) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .mega-menu-title {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .site-menu-main .mega-menu-item {
+        font-size: 14px;
+    }
+}
+
+/* Mobile - 1 column stack */
+@media (max-width: 767px) {
+    .mega-menu {
+        position: relative;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
+        background: transparent;
+    }
+
+    .mega-menu .row {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .mega-menu .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .mega-menu .col-4:last-child {
+        border-bottom: none;
+    }
+
+    .mega-menu-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #92d600;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .mega-menu-title::after {
+        content: "+";
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .mega-menu-title.active::after {
+        transform: rotate(45deg);
+    }
+
+    .site-menu-main .mega-menu-item {
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        font-size: 14px;
+    }
+
+    .site-menu-main .mega-menu-item:last-child {
+        border-bottom: none;
+    }
+
+    .site-menu-main .mega-menu-item>a {
+        padding: 5px 0;
+    }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+    .mega-menu .col-4 {
+        padding: 10px 15px;
+    }
+
+    .mega-menu-title {
+        font-size: 15px;
+    }
+
+    .site-menu-main .mega-menu-item {
+        font-size: 13px;
+    }
+}

@@ -12024,8 +12024,8 @@ button#aximo-notified-btn {
 }
 
 .shopify-services-img img {
-	border-radius: 30px;
-	max-height: 600px;
+	border-radius: 20px;
+	max-height: 500px;
 }
 
 .shopify-services-data {
@@ -12042,9 +12042,6 @@ button#aximo-notified-btn {
 		align-items: center;
 		justify-content: center;
 	}
-
-
-
 }
 
 /* icontext */
@@ -12074,7 +12071,6 @@ button#aximo-notified-btn {
 .mega-menu-title {
 	font-size: 18px;
 	margin-bottom: 10px;
-	/* margin-left: 10px; */
 	color: #92d600;
 }
 
@@ -12580,4 +12576,28 @@ span.lazy-load-image-background.blur.lazy-load-image-loaded {
 	.servcies-weoffer-box {
 		min-height: 351px;
 	}
+}
+
+
+/* FAQ accordion css animation */
+
+.aximo-accordion-wrap .accordion-collapse {
+	transition: all 0.35s ease;
+	overflow: hidden;
+}
+
+.aximo-accordion-wrap .accordion-collapse.collapsing {
+	transition: height 0.35s ease;
+}
+
+.aximo-accordion-wrap .accordion-body {
+	transition: opacity 0.25s ease 0.1s;
+}
+
+.aximo-accordion-wrap .accordion-button {
+	transition: all 0.2s ease;
+}
+
+.aximo-accordion-wrap .accordion-button::after {
+	transition: transform 0.2s ease;
 }

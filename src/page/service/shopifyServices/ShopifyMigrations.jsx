@@ -6,7 +6,6 @@ import Shape4Img from "../../../assets/images/v5/shape4.webp";
 import FadeInLeft from "../../../components/animation/FadeInLeft";
 import FadeInRight from "../../../components/animation/FadeInRight";
 import FadeInUp from "../../../components/animation/FadeInUp";
-import { Link } from 'react-router-dom';
 import FadeInStagger from "../../../components/animation/FadeInStagger";
 import ServiceCard from "../../../components/home-two/services/ServiceCard";
 import FeatureImg1 from "../../../assets/images/images2/shopifyplus-300x300.jpg.webp";
@@ -19,14 +18,15 @@ import FeatureImg7 from "../../../assets/images/images2/feefo-300x300.jpg.webp";
 import FeatureImg8 from "../../../assets/images/images2/zendesk-300x300.jpg.webp";
 import FeatureImg9 from "../../../assets/images/images2/loyaltylion-300x300.jpg.webp";
 import Check from "../../../assets/images/icon/check.svg";
+import { Link } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 import SEO from "../../../components/common/SEO";
+
 const GlobalStyle = createGlobalStyle`
   #root {
 	 overflow-x: hidden; 
   }
 `;
-
 
 const servicesData = [
     {
@@ -73,29 +73,6 @@ const servicesData = [
     },
 ];
 
-// const accordionData = [
-//     {
-//         id: 1,
-//         question: 'What Does Shopify Offer?',
-//         answer: 'Shopify is the go-to platform for ecommerce, known for its scalability, rich features, and constant updates. With 6,000+ apps and continuous improvements, Shopify provides unmatched flexibility and power for long-term business growth.',
-//     },
-//     {
-//         id: 2,
-//         question: 'Omnichannel & International Selling',
-//         answer: 'Shopify’s omnichannel feature lets you sell on platforms like eBay, Amazon, Instagram, and more, while managing everything in one place. It also supports international expansion, helping businesses grow their reach globally.',
-//     },
-//     {
-//         id: 3,
-//         question: 'Shopify Powerful Admin',
-//         answer: 'Shopify’s user-friendly admin panel allows merchants to easily manage sales, customers, and orders. Its intuitive dashboard and powerful CMS make it easy to update content without technical knowledge or relying on a developer.',
-//     },
-//     {
-//         id: 4,
-//         question: 'Reliable and Secure',
-//         answer: 'Shopify ensures 99.999% uptime, handling 1 million page views per minute and over 10,000 transactions per minute. With PCI-DSS Level 1 compliance and a dedicated security team, your store is safe from cyber threats.',
-//     },
-// ];
-
 const servicesData2 = [
     {
         id: crypto.randomUUID(),
@@ -123,9 +100,7 @@ const servicesData2 = [
         title: "Reliable and Secure",
         description:
             "Shopify ensures 99.999% uptime, handling 1 million page views per minute and over 10,000 transactions per minute. With PCI-DSS Level 1 compliance and a dedicated security team, your store is safe from cyber threats.",
-
     },
-
 ];
 
 const featuresData = [
@@ -192,6 +167,7 @@ function ShopifyMigrations() {
     return (
         <div>
             <GlobalStyle />
+
             <SEO
                 title="Shopify Migration Services | Seamless Store Transition | Codersh Web Services"
                 description="Migrate your e-commerce store to Shopify with Codersh Web Services. We offer smooth, secure, and hassle-free migration for all your data, products, and customer information."
@@ -205,7 +181,7 @@ function ShopifyMigrations() {
                     <div className="row">
                         <div className="col-lg-5 order-lg-2">
                             <FadeInRight className="aximo-content-thumb shopify-services-img">
-                                <img src={ThumbImg1} alt="thumb" />
+                                <img src={ThumbImg1} alt="thumb" loading="lazy" />
                             </FadeInRight>
                         </div>
                         <div className="col-lg-7 shopify-services-data">
@@ -227,7 +203,6 @@ function ShopifyMigrations() {
                     </div>
                 </div>
             </div>
-
             <div className="section aximo-section-padding6">
                 <div className="container">
                     <div className="row d-flex">
@@ -236,7 +211,7 @@ function ShopifyMigrations() {
                                 <img src={ThumbImg2} alt="Thumb" />
                             </FadeInLeft>
                         </div>
-                        <div className="col-lg-7  colo-12  shopify-services-data">
+                        <div className="col-lg-7 col-12 shopify-services-data">
                             <FadeInRight>
                                 <div className="aximo-default-content">
                                     <h2 className="mb-2">Shopify Migration Services</h2>
@@ -245,7 +220,6 @@ function ShopifyMigrations() {
                                     </p>
                                     <p className="mb-4">
                                         Whether you're migrating from platforms like Magento, WooCommerce, BigCommerce, or others, We are your trusted partner for a smooth, hassle-free transition to Shopify. Get in touch with us today to learn how we can help streamline your migration.
-
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-0 shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">
@@ -255,11 +229,9 @@ function ShopifyMigrations() {
                                 </div>
                             </FadeInRight>
                         </div>
-
                     </div>
                 </div>
             </div>
-
             <div className="section aximo-section-padding6">
                 <div className="container">
                     <div className="aximo-section-title center">
@@ -308,7 +280,6 @@ function ShopifyMigrations() {
                     </div>
                 </div>
             </div>
-
             <div className="section">
                 <div className="container">
                     <div className="aximo-faq-wrap" style={{ padding: "0px 0px 100px 0px" }}>
@@ -322,44 +293,10 @@ function ShopifyMigrations() {
                                 </p>
                             </div>
                         </div>
-                        {/* accordions */}
-                        {/* <div className="aximo-faq-wrap" >
-                            <FadeInUp className="accordion aximo-accordion-wrap" id="aximo-accordion">
-                                <div className="row">
-                                    {accordionData.map((item) => (
-                                        <div className="col-lg-6" key={item.id}>
-                                            <div className="accordion-item ">
-                                                <h3 className="accordion-header">
-                                                    <button
-                                                        className="accordion-button"
-                                                        type="button"
-                                                        data-bs-toggle="collapse"
-                                                        data-bs-target={`#collapse${item.id}`}
-                                                    >
-                                                        {item.question}
-                                                    </button>
-                                                </h3>
-                                                <div
-                                                    id={`collapse${item.id}`}
-                                                    className={`accordion-collapse collapse `}
-                                                    data-bs-parent="#aximo-accordion"
-                                                >
-                                                    <div className="accordion-body">
-                                                        {item.answer}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </FadeInUp>
-                        </div> */}
                         <div className="aximo-service-increase-wrap">
                             {servicesData2.map((service) => (
                                 <ServiceCard key={service.id} service={service} />
                             ))}
-
-
                         </div>
                     </div>
                 </div>
@@ -404,7 +341,6 @@ function ShopifyMigrations() {
                             <div className="col-lg-6 px-3">
                                 <div className="aximo-accordion-normal-wrap m_top_responsive">
                                     <div className="aximo-accordion-normal-item">
-
                                         <div className="aximo-accordion-normal-data">
                                             <h3>Transform Your E-commerce with Elite Shopify Development </h3>
                                             <p>
