@@ -2,7 +2,6 @@ import BreadCrumb from "../../../components/common/Breadcrumb"
 import FadeInLeft from "../../../components/animation/FadeInLeft";
 import FadeInRight from "../../../components/animation/FadeInRight";
 import FadeInUp from "../../../components/animation/FadeInUp";
-import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../../components/animation/FadeInStaggerTwo";
 import { Link } from 'react-router-dom';
 import ThumbImg1 from "../../../assets/images/images2/service12_4.webp";
 import ThumbImg2 from "../../../assets/images/images2/patherrimgs/8.webp";
@@ -11,6 +10,7 @@ import ThumbImg4 from "../../../assets/images/images2/patherrimgs/26.webp";
 // import Star2Img from "../../../assets/images/v1/icon/star2.webp";
 import { createGlobalStyle } from 'styled-components';
 import SEO from "../../../components/common/SEO";
+import FadeInStagger from "../../../components/animation/FadeInStagger";
 const GlobalStyle = createGlobalStyle`
   #root {
 	 overflow-x: hidden; 
@@ -29,34 +29,18 @@ function Support_Maintanace() {
             />
             <BreadCrumb title="Support & Maintanance" />
 
-            <FadeInStaggerTwo className="d-none d-md-block">
-                <FadeInStaggerTwoChildren>
-                    <div className="section aximo-project-page text-center light-bg mx-2">
-                        <div className="container aximo-section-padding5 shopify-services-data">
-                            <h3 className="mb-2 dark-text">
-                                All-in-One Shopify Experts on Demand — Developers, Designers & Growth Strategists
-                            </h3>
-                            <p className="section-description dark-text">
-                                Get monthly access to a full suite of Shopify and Shopify Plus services with one membership. From design and development to store optimization and growth strategy, our team helps your store scale faster and smarter.
-                            </p>
-
-                        </div>
+            <FadeInStagger>
+                <div className="section aximo-project-page text-center dark-bg" style={{ borderTop: "1px solid #fffff5" }}>
+                    <div className="container aximo-section-padding5 shopify-services-data">
+                        <h3 className="mb-2 light-text" >
+                            All-in-One Shopify Experts on Demand — Developers, Designers & Growth Strategists
+                        </h3>
+                        <p className="section-description light-text">
+                            Get monthly access to a full suite of Shopify and Shopify Plus services with one membership. From design and development to store optimization and growth strategy, our team helps your store scale faster and smarter.
+                        </p>
                     </div>
-                </FadeInStaggerTwoChildren>
-                <FadeInStaggerTwoChildren>
-                    <div className="section aximo-project-page text-center dark-bg">
-                        <div className="container aximo-section-padding5 shopify-services-data">
-                            <h3 className="mb-2 light-text" >
-                                Partner with a Dedicated Shopify Team Focused on Growth, Innovation & Long-Term Success
-                            </h3>
-                            <p className="section-description light-text">
-                                Unlock the full potential of your Shopify or Shopify Plus store with a monthly support retainer. We offer expert-led development, design, technical support, and strategic consulting - all tailored to your unique business needs. Our flexible, scalable memberships give you continuous access to a dedicated team of Shopify professionals, ensuring reliable performance, seamless optimization, and consistent growth in today’s competitive eCommerce landscape.
-                            </p>
-
-                        </div>
-                    </div>
-                </FadeInStaggerTwoChildren>
-            </FadeInStaggerTwo>
+                </div>
+            </FadeInStagger>
 
             <div className="section aximo-section-padding2">
                 <div className="container">

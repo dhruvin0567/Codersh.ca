@@ -2,7 +2,6 @@ import BreadCrumb from "../../../components/common/Breadcrumb"
 import FadeInLeft from "../../../components/animation/FadeInLeft";
 import FadeInRight from "../../../components/animation/FadeInRight";
 import FadeInUp from "../../../components/animation/FadeInUp";
-import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../../components/animation/FadeInStaggerTwo";
 import { Link } from 'react-router-dom';
 import ThumbImg1 from "../../../assets/images/images2/h1.webp";
 import ThumbImg2 from "../../../assets/images/images2/service11_2.webp";
@@ -13,6 +12,7 @@ import ThumbImg6 from "../../../assets/images/images2/h4.webp";
 // import Star2Img from "../../../assets/images/v1/icon/star2.webp";
 import { createGlobalStyle } from 'styled-components';
 import SEO from "../../../components/common/SEO";
+import FadeInStagger from "../../../components/animation/FadeInStagger";
 const GlobalStyle = createGlobalStyle`
   #root {
      overflow-x: hidden; 
@@ -31,33 +31,19 @@ function EcommerceSeo() {
 
             <BreadCrumb title="SEO Agency" />
 
-            <FadeInStaggerTwo>
-                <FadeInStaggerTwoChildren>
-                    <div className="section aximo-project-page text-center light-bg">
-                        <div className="container aximo-section-padding5  shopify-services-data">
-                            <h3 className="mb-2 dark-text">
-                                Your Trusted Shopify SEO Experts for Long-Term Growth
-                            </h3>
-                            <p className="section-description dark-text">
-                                As a Shopify-accredited SEO agency, we deliver data-driven strategies to boost visibility, drive traffic, and improve conversions for Shopify and Shopify Plus brands. Our approach combines in-depth keyword research, site audits, content strategy, and technical optimization to enhance performance and rankings, ensuring sustainable growth.
-                            </p>
-                        </div>
-                    </div>
-                </FadeInStaggerTwoChildren>
-                <FadeInStaggerTwoChildren>
-                    <div className="section aximo-project-page text-center dark-bg">
-                        <div className="container aximo-section-padding5 shopify-services-data">
-                            <h3 className="mb-2 light-text" >
-                                Boost Your Shopify Store’s Visibility with Expert SEO Strategies
-                            </h3>
-                            <p className="section-description light-text">
-                                With 95% of online journeys starting with a search engine, a strong SEO strategy is key to driving traffic and increasing conversions. At Codersh, we specialize in Shopify SEO, using technical optimization, content strategies, and link building to enhance your store’s rankings and maximize organic growth.
-                            </p>
+            <FadeInStagger>
+                <div className="section aximo-project-page text-center dark-bg" style={{ borderTop: "1px solid #fffff5" }}>
+                    <div className="container aximo-section-padding5 shopify-services-data">
+                        <h3 className="mb-2 light-text" >
+                            Your Trusted Shopify SEO Experts for Long-Term Growth
+                        </h3>
+                        <p className="section-description light-text">
+                            With 95% of online journeys starting with a search engine, a strong SEO strategy is key to driving traffic and increasing conversions. Our approach combines in-depth keyword research, site audits, content strategy, and technical optimization to enhance performance and rankings, ensuring sustainable growth.
+                        </p>
 
-                        </div>
                     </div>
-                </FadeInStaggerTwoChildren>
-            </FadeInStaggerTwo>
+                </div>
+            </FadeInStagger>
 
             <div className="section aximo-section-padding2">
                 <div className="container">

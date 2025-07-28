@@ -190,7 +190,7 @@ function Subscriptions() {
 
             <div className="section aximo-section-padding6">
                 <div className="container">
-                    <div className="aximo-section-title center">
+                    <div className="aximo-section-title text-center">
                         <h2>
                             Benefits of Adding Subscriptions to Your Shopify Store
                         </h2>

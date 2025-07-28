@@ -2,7 +2,6 @@ import BreadCrumb from "../../../components/common/Breadcrumb"
 import FadeInLeft from "../../../components/animation/FadeInLeft";
 import FadeInRight from "../../../components/animation/FadeInRight";
 import FadeInUp from "../../../components/animation/FadeInUp";
-import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../../components/animation/FadeInStaggerTwo";
 import { Link } from 'react-router-dom';
 import ThumbImg1 from "../../../assets/images/images2/service5_1_2.webp";
 import ThumbImg2 from "../../../assets/images/images2/service5_2.webp";
@@ -11,6 +10,7 @@ import ThumbImg3 from "../../../assets/images/images2/Services4_3.webp";
 import ThumbImg4 from "../../../assets/images/images2/service8_3.webp";
 import { createGlobalStyle } from 'styled-components';
 import SEO from "../../../components/common/SEO";
+import FadeInStagger from "../../../components/animation/FadeInStagger";
 const GlobalStyle = createGlobalStyle`
   #root {
 	 overflow-x: hidden; 
@@ -30,36 +30,19 @@ function ConversionRate() {
             />
             <BreadCrumb title="Conversion Rate Optimization" />
 
-            <FadeInStaggerTwo className="d-none d-md-block">
-                <FadeInStaggerTwoChildren>
-                    <div className="section aximo-project-page text-center light-bg">
-                        <div className="container aximo-section-padding5  shopify-services-data">
-                            <h3 className="mb-2 dark-text">
-                                Your Trusted Shopify CRO Partner for Higher Conversions and Scalable Growth
-                            </h3>
-                            <p className="section-description dark-text">
-                                Codersh helps Shopify and Shopify Plus stores achieve sustainable growth with expert CRO services. We optimize user experience and increase sales potential, delivering powerful results for brands across industries, ensuring your store’s long-term success.
 
-                            </p>
-
-                        </div>
+            <FadeInStagger>
+                <div className="section aximo-project-page text-center dark-bg" style={{ borderTop: "1px solid #fffff5" }}>
+                    <div className="container aximo-section-padding5 shopify-services-data">
+                        <h3 className="mb-2 light-text">
+                            Your Trusted Shopify CRO Partner for Higher Conversions and Scalable Growth
+                        </h3>
+                        <p className="section-description light-text">
+                            Codersh helps Shopify and Shopify Plus stores achieve sustainable growth with expert CRO services. We optimize user experience and increase sales potential, delivering powerful results for brands across industries, ensuring your store’s long-term success.
+                        </p>
                     </div>
-                </FadeInStaggerTwoChildren>
-                <FadeInStaggerTwoChildren>
-                    <div className="section aximo-project-page text-center dark-bg">
-                        <div className="container aximo-section-padding5 shopify-services-data">
-                            <h3 className="mb-2 light-text">
-                                Your Trusted Shopify CRO Partner for Boosting Conversions and Growth
-                            </h3>
-                            <p className="section-description light-text">
-                                We helps Shopify and Shopify Plus stores achieve sustainable growth with expert CRO services. From web design and development to strategic consultancy, we optimize user behavior, increase conversions, and turn visitors into loyal customers—delivered through flexible membership plans for any business size or industry.
-
-                            </p>
-
-                        </div>
-                    </div>
-                </FadeInStaggerTwoChildren>
-            </FadeInStaggerTwo>
+                </div>
+            </FadeInStagger>
 
             <div className="section aximo-section-padding2">
                 <div className="container">

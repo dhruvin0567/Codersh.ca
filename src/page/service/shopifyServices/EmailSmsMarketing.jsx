@@ -8,9 +8,9 @@ import FadeInLeft from "../../../components/animation/FadeInLeft";
 import FadeInRight from "../../../components/animation/FadeInRight";
 import FadeInUp from "../../../components/animation/FadeInUp";
 import { Link } from 'react-router-dom';
-import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../../components/animation/FadeInStaggerTwo";
 import { createGlobalStyle } from 'styled-components';
 import SEO from "../../../components/common/SEO";
+import FadeInStagger from "../../../components/animation/FadeInStagger";
 const GlobalStyle = createGlobalStyle`
   #root {
 	 overflow-x: hidden; 
@@ -22,42 +22,28 @@ function EmailSmsMarketing() {
     return (
         <div>
             <GlobalStyle />
+
             <SEO
                 title="Email Marketing Agency for Shopify | Boost Engagement & Sales | Codersh Web Services"
                 description="Grow your e-commerce store with effective email marketing strategies. Codersh Web Services offers expert email campaigns, automation, and targeted outreach to increase engagement and sales."
                 keywords="email marketing for Shopify, Shopify email campaigns, Shopify email automation, email marketing agency, e-commerce email strategies, increase sales with email marketing, Codersh Web Services"
                 canonical="https://react-vite-codersh.vercel.app/email-marketing-agency"
             />
+
             <BreadCrumb title="Email & Sms Marketing Agency" />
 
-            <FadeInStaggerTwo>
-                <FadeInStaggerTwoChildren>
-                    <div className="section aximo-project-page text-center light-bg">
-                        <div className="container aximo-section-padding5 shopify-services-data">
-                            <h3 className="mb-2 dark-text" >
-                                Maximize ROI with Proven Email & SMS Campaign Strategies
-                            </h3>
-                            <p className="dark-text mb-2">We uses targeted email marketing, SMS campaigns, and loyalty technology to enhance customer retention and lifetime value. We create personalized strategies that build lasting relationships, drive repeat purchases, and reduce churn, helping your business achieve sustainable growth and higher customer engagement.</p>
-
-                        </div>
+            <FadeInStagger>
+                <div className="section aximo-project-page text-center dark-bg" style={{ borderTop: "1px solid #fffff5" }}>
+                    <div className="container aximo-section-padding5 shopify-services-data">
+                        <h3 className="mb-4 light-text">
+                            Maximize Customer Revenue with Digital Messaging, Loyalty & Subscription Solutions
+                        </h3>
+                        <p className="section-description light-text">
+                            We Retain integrates email marketing, SMS, loyalty programs, and subscriptions into a unified strategy to increase customer lifetime value. Tailored to your business, our solutions drive higher ROI on customer acquisition while fostering long-term loyalty and engagement.
+                        </p>
                     </div>
-                </FadeInStaggerTwoChildren>
-                <FadeInStaggerTwoChildren>
-                    <div className="section aximo-project-page text-center dark-bg">
-                        <div className="container aximo-section-padding5 shopify-services-data">
-                            <h3 className="mb-4 light-text">
-                                Maximize Customer Revenue with Digital Messaging, Loyalty & Subscription Solutions
-                            </h3>
-                            <p className="section-description light-text">
-                                We Retain integrates email marketing, SMS, loyalty programs, and subscriptions into a unified strategy to increase customer lifetime value. Tailored to your business, our solutions drive higher ROI on customer acquisition while fostering long-term loyalty and engagement.
-
-
-                            </p>
-                        </div>
-                    </div>
-                </FadeInStaggerTwoChildren>
-            </FadeInStaggerTwo>
-
+                </div>
+            </FadeInStagger>
             <div className="section aximo-section-padding2">
                 <div className="container">
                     <div className="row d-flex">

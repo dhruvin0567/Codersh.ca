@@ -164,14 +164,28 @@ function Internationalization() {
     return (
         <div>
             <GlobalStyle />
+
             <SEO
                 title="Selling Internationally on Shopify | Expand Your E-commerce Reach | Codersh Web Services"
                 description="Reach global markets with Shopify's international selling capabilities. Codersh Web Services helps you set up multi-currency, multi-language, and cross-border solutions for your Shopify store."
                 keywords="selling internationally on Shopify, Shopify international selling, Shopify multi-currency setup, Shopify multi-language store, cross-border Shopify, expand Shopify store internationally, Codersh Web Services"
                 canonical="https://react-vite-codersh.vercel.app/selling-internationally-on-shopify"
             />
-            <BreadCrumb title="Internationalization With Shopify & Shopify Plus" />
 
+            <BreadCrumb title="Internationalization With Shopify" />
+
+            <FadeInStagger>
+                <div className="section aximo-project-page text-center dark-bg" style={{ borderTop: "1px solid #fffff5" }}>
+                    <div className="container aximo-section-padding5 shopify-services-data">
+                        <h3 className="mb-2 light-text">
+                            Global eCommerce Growth with Shopify Plus
+                        </h3>
+                        <p className="section-description light-text">
+                            Shopify Plus empowers enterprise brands to scale globally with multi-currency, multilingual support, dynamic pricing, and up to nine expansion stores. Tailor content, pricing, and design for each market, and deliver localized shopping experiences that drive conversions. Ideal for high-growth businesses, Shopify Plus is built for seamless international expansion.
+                        </p>
+                    </div>
+                </div>
+            </FadeInStagger>
             <div className="section aximo-section-padding2">
                 <div className="container">
                     <div className="row d-flex">
@@ -187,9 +201,7 @@ function Internationalization() {
                                     <h2 className="mb-2">Shopify & Shopify Plus: The Key to Global Expansion</h2>
                                     <p className="mb-4">
                                         As global traffic grows, adapting to international markets on Shopify is key-35% of visitors are international, and 92% prefer local currency. With 33% abandoning carts when prices are in USD only, a global strategy is essential. Shopify and Shopify Plus simplify international selling with multi-currency support and localized storefronts, helping merchants boost conversions and reach new markets.
-
                                     </p>
-
                                     <FadeInUp className="aximo-btn-wrap2 mt-0 shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">
                                             Get Started Today
@@ -198,23 +210,96 @@ function Internationalization() {
                                 </div>
                             </FadeInRight>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div className="section">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6 px-3">
+                            <div className="aximo-accordion-normal-wrap m_top_responsive">
+                                <div className="aximo-accordion-normal-item">
+                                    <div className="aximo-accordion-normal-data">
+                                        <h3>Crafting Exceptional Shopify Ecommerce Stores.</h3>
+                                        <p>
+                                            We are a seasoned e-commerce agency dedicated to collaborating with ambitious brands to design, develop, and enhance exceptional Shopify & Shopify Plus websites. Our solutions drive e-commerce growth, helping brands choose the ideal strategy, design, and technology. Reach out to us today!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="aximo-accordion-normal-item">
+                                    <div className="aximo-accordion-normal-data">
+
+                                        <ul>
+                                            <li>
+                                                <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                Custom Shopify Plus Websites
+                                            </li>
+                                            <li>
+                                                <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                Tailored and Captivating Designs
+                                            </li>
+                                            <li>
+                                                <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                Advanced Features and Functionalities
+                                            </li>
+                                            <li>
+                                                <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                Seamless Platform Migrations
+                                            </li>
+                                            <li>
+                                                <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                Strategies to Boost Conversions and Sales
+                                            </li>
+                                            <li>
+                                                <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                Trusted Expert Partner for Long-Term Growth
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" col-lg-6 px-3 mt-md-5 mt-sm-5 mt-xs-5 mt-5 mt-lg-0 ">
+                            <div className="row">
+                                {featuresData.map((feature, index) => (
+                                    <FadeInStagger key={feature.id} index={index} className="col-sm-6 col-lg-4 col-md-4 col-6" >
+                                        <div className="aximo-iconbox-wrap2" style={{ padding: "0px" }}>
+                                            <img src={feature.img} alt="Illustrator1Img" />
+                                        </div>
+                                    </FadeInStagger>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="section aximo-section-padding2">
+                <div className="container">
+                    <div className="aximo-service-wrap pb-0" style={{ borderBottom: "none" }}>
+                        <div className="row">
+                            {servicesData.map((item, index) => (
+                                <FadeInStagger key={item.id} index={index} className="col-lg-6">
+                                    <div className="aximo-iconbox-wrap" style={isMobileOrTablet ? iconboxWrapStyleMobile : iconboxWrapStyle}>
+
+                                        <div className="aximo-iconbox-data">
+                                            <h3>{item.title}</h3>
+                                            <p>{item.description}</p>
+
+                                        </div>
+                                    </div>
+                                </FadeInStagger>
+                            ))}
+                        </div>
 
                     </div>
                 </div>
             </div>
 
-            <div className="section aximo-project-page text-center dark-bg">
-                <div className="container aximo-section-padding5 shopify-services-data">
-                    <h3 className="mb-2 light-text">
-                        Global eCommerce Growth with Shopify Plus
-                    </h3>
-                    <p className="section-description light-text">
-                        Shopify Plus empowers enterprise brands to scale globally with multi-currency, multilingual support, dynamic pricing, and up to nine expansion stores. Tailor content, pricing, and design for each market, and deliver localized shopping experiences that drive conversions. Ideal for high-growth businesses, Shopify Plus is built for seamless international expansion.
-                    </p>
-                </div>
-            </div>
-
-            <div className="section aximo-section-padding">
+            <div className="section aximo-section-padding6">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
@@ -253,92 +338,8 @@ function Internationalization() {
                 </div>
             </div>
 
-            <div className="section aximo-section-padding6 pb-0">
-                <div className="container">
-                    <div className="aximo-service-wrap pb-0" style={{ borderBottom: "none" }}>
-                        <div className="row">
-                            {servicesData.map((item, index) => (
-                                <FadeInStagger key={item.id} index={index} className="col-lg-6">
-                                    <div className="aximo-iconbox-wrap" style={isMobileOrTablet ? iconboxWrapStyleMobile : iconboxWrapStyle}>
 
-                                        <div className="aximo-iconbox-data">
-                                            <h3>{item.title}</h3>
-                                            <p>{item.description}</p>
 
-                                        </div>
-                                    </div>
-                                </FadeInStagger>
-                            ))}
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div className="section">
-                <div className="container">
-                    <div className="aximo-pricing-border">
-                        <div className="row">
-                            <div className="col-lg-6 px-3">
-                                <div className="aximo-accordion-normal-wrap m_top_responsive">
-                                    <div className="aximo-accordion-normal-item">
-                                        <div className="aximo-accordion-normal-data">
-                                            <h3>Crafting Exceptional Shopify Ecommerce Stores.</h3>
-                                            <p>
-                                                We are a seasoned e-commerce agency dedicated to collaborating with ambitious brands to design, develop, and enhance exceptional Shopify & Shopify Plus websites. Our solutions drive e-commerce growth, helping brands choose the ideal strategy, design, and technology. Reach out to us today!
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="aximo-accordion-normal-item">
-                                        <div className="aximo-accordion-normal-data">
-
-                                            <ul>
-                                                <li>
-                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
-                                                    Custom Shopify Plus Websites
-                                                </li>
-                                                <li>
-                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
-                                                    Tailored and Captivating Designs
-                                                </li>
-                                                <li>
-                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
-                                                    Advanced Features and Functionalities
-                                                </li>
-                                                <li>
-                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
-                                                    Seamless Platform Migrations
-                                                </li>
-                                                <li>
-                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
-                                                    Strategies to Boost Conversions and Sales
-                                                </li>
-                                                <li>
-                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
-                                                    Trusted Expert Partner for Long-Term Growth
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div className=" col-lg-6 px-3 mt-md-5 mt-sm-5 mt-xs-5 mt-5 mt-lg-0 ">
-                                <div className="row">
-                                    {featuresData.map((feature, index) => (
-                                        <FadeInStagger key={feature.id} index={index} className="col-sm-6 col-lg-4 col-md-4 col-6" >
-                                            <div className="aximo-iconbox-wrap2" style={{ padding: "0px" }}>
-                                                <img src={feature.img} alt="Illustrator1Img" />
-                                            </div>
-                                        </FadeInStagger>
-                                    ))}
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     )
 }
