@@ -12068,14 +12068,49 @@ button#aximo-notified-btn {
 
 
 .mega-menu {
-	width: 700px;
+	width: 100%;
 	height: auto;
+	position: absolute;
+	top: -20px;
+	left: -125%;
+	background-color: #fff;
+	border-radius: 6px;
+	box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, .3);
+	min-width: 780px;
+	transform: translatey(20px);
+	transition: .4s;
+	z-index: 9;
+
 }
+
+.mega-menu-services {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: -20px;
+	left: -160%;
+	background-color: #fff;
+	border-radius: 6px;
+	box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, .3);
+	min-width: 1080px;
+	transform: translatey(20px);
+	transition: .4s;
+	z-index: 9;
+
+}
+
+@media (min-width: 1400px) {
+	.mega-menu-services {
+		left: -125%;
+	}
+}
+
 
 .mega-menu-title {
 	font-size: 18px;
 	margin-bottom: 10px;
 	color: #92d600;
+	border-bottom: 2px solid #92d600;
 }
 
 .site-menu-main .mega-menu-item {
@@ -12541,7 +12576,7 @@ button#aximo-notified-btn {
 	transition: opacity .3s !important;
 	/* width: 100% !important; */
 	object-fit: cover !important;
-	height: auto !important;
+	/* height: auto !important; */
 }
 
 
