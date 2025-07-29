@@ -5,7 +5,7 @@ import '../../assets/css/WhatsAppButton.css'; // Ensure you have the appropriate
 const WhatsAppButton = () => {
     const [isMobile, setIsMobile] = useState(false);
 
-    const phoneNumber = '9998134094';
+    const phoneNumber = '+919998134094';
     const message = 'Hello, I want to inquire about your services.';
 
     useEffect(() => {
