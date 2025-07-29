@@ -30,7 +30,7 @@ const SolutionProjectSlider = React.memo(function SolutionProjectSlider({ slides
                                 className="aximo-project-thumb Solution-slider"
                                 style={{ cursor: "grab" }}
                             >
-                                <img src={slide.image} alt={slide.alt} loading={index < 4 ? "eager" : "lazy"} />
+                                <img src={slide.image} alt={slide.alt} />
                             </div>
                         </SwiperSlide>
                     ))}
