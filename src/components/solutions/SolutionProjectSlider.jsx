@@ -24,6 +24,12 @@ const SolutionProjectSlider = React.memo(function SolutionProjectSlider({ slides
         focusOnSelect: false,
         responsive: [
             {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 4,
+                },
+            },
+            {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
