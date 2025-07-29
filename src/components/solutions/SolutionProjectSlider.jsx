@@ -1,46 +1,69 @@
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const SolutionProjectSlider = React.memo(function SolutionProjectSlider({ slides }) {
+import { createGlobalStyle } from 'styled-components';
+const GlobalStyle = createGlobalStyle`
+  #root {
+	 overflow-x: hidden; 
+  }
+`;
+
+const SolutionProjectSlider = React.memo(function SolutionProjectSlider({ slides = [] }) {
+    const sliderSettings = {
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 1500,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        pauseOnHover: false,
+        focusOnSelect: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    };
+
     return (
-        <div className="section aximo-project-page aximo-section-padding5">
-            <div className="container-fluid">
-                <Swiper
-                    spaceBetween={30}
-                    slidesPerView={3}
-                    loop={true}
-                    autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
-                    }}
-                    speed={1000}
-                    modules={[Autoplay]}
-                    breakpoints={{
-                        320: { slidesPerView: 1 },
-                        480: { slidesPerView: 2 },
-                        768: { slidesPerView: 2 },
-                        1024: { slidesPerView: 4 },
-                    }}
-                >
-                    {slides.map((slide, index) => (
-                        <SwiperSlide key={slide.id || index}>
-                            <div
-                                className="aximo-project-thumb Solution-slider"
-                                style={{ cursor: "grab" }}
-                            >
-                                <img src={slide.image} alt={slide.alt} />
+        <>
+            <GlobalStyle />
+            <section className="section aximo-project-page aximo-section-padding5">
+                <div className="container-fluid">
+                    <Slider {...sliderSettings} className="custom-slider">
+                        {slides.map((slide, index) => (
+                            <div className="slide-item" key={slide.id || index}>
+                                <div className="aximo-project-thumb Solution-slider mb-0" style={{ cursor: "grab" }}>
+                                    <img src={slide.image} alt={slide.alt || "Project Image"} />
+                                </div>
                             </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
-        </div>
+                        ))}
+                    </Slider>
+                </div>
+            </section>
+        </>
     );
 });
 
-// Set the display name explicitly for React DevTools and linters
 SolutionProjectSlider.displayName = "SolutionProjectSlider";
 
 export default SolutionProjectSlider;

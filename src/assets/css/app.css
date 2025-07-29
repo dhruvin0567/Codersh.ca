@@ -12016,6 +12016,10 @@ button#aximo-notified-btn {
 	background: transparent !important;
 }
 
+.aximo-project-thumb.Solution-slider.mb-0 {
+	margin: 0 12px;
+}
+
 /* end */
 
 .shopify-services-img {
