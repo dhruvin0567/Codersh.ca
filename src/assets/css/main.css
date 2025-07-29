@@ -1145,8 +1145,8 @@ a.log-in-btn:hover:after {
 
 .aximo-go-top {
 	position: fixed;
-	bottom: 6%;
-	right: 5%;
+	bottom: 3%;
+	right: 6%;
 	z-index: 99;
 	cursor: pointer;
 	-webkit-font-smoothing: antialiased;
