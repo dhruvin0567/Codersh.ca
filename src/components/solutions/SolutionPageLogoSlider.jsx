@@ -1,11 +1,54 @@
 import { memo } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css"; // make sure to import required css
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-// ✅ memoized functional component for performance
 const SolutionPageLogoSlider = ({ logos = [], title = "" }) => {
     if (!logos || logos.length === 0) return null;
+
+    const sliderSettings = {
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 1500,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        pauseOnHover: false,
+        responsive: [
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 5,
+                },
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+        ],
+    };
 
     return (
         <section
@@ -19,41 +62,25 @@ const SolutionPageLogoSlider = ({ logos = [], title = "" }) => {
                     </h3>
                 )}
 
-                <Swiper
-                    spaceBetween={30}
-                    slidesPerView={5}
-                    loop
-                    autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
-                    }}
-                    speed={1000}
-                    modules={[Autoplay]}
-                    breakpoints={{
-                        320: { slidesPerView: 3 },
-                        480: { slidesPerView: 3 },
-                        768: { slidesPerView: 3 },
-                        1024: { slidesPerView: 5 },
-                    }}
-                >
+                <Slider {...sliderSettings} className="logo-slider slick-track-centered">
                     {logos.map((logo) => (
-                        <SwiperSlide key={logo.id || logo.image} className="logo-img-slider">
+                        <div
+                            key={logo.id || logo.image}
+                            className="logo-img-slider flex justify-center items-center"
+                        >
                             <img
                                 src={logo.image}
                                 alt={logo.alt || "Brand logo"}
-                                loading="lazy"
-                                decoding="async"
                                 className="max-h-16 mx-auto object-contain"
                                 width={120}
                                 height={80}
                             />
-                        </SwiperSlide>
+                        </div>
                     ))}
-                </Swiper>
+                </Slider>
             </div>
         </section>
     );
 };
 
-// ✅ Use memo to avoid re-render when props not changed
 export default memo(SolutionPageLogoSlider);
