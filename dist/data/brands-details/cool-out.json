@@ -1,0 +1,49 @@
+{
+  "id": "cool-out",
+  "heroImage": "/images/brands/brands-details/coolout-1.webp",
+  "brief": {
+    "title": "The Brief",
+    "description": "Cool Out offers THC-infused seltzers made with Delta 9 THC from GMO-free hemp. These all-natural, gluten-free beverages are sugar-free, calorie-free, and use water-soluble nanotechnology for faster absorption, providing effects within 15–30 minutes. The brand promotes a smooth, euphoric experience without the hangover of alcohol, offering a refreshing, healthier alternative. Available in tropical, berry, and citrus flavors, Cool Out delivers a relaxed, social drinking experience. Sold online, these THC-infused seltzers cater to those seeking a balanced and enjoyable way to unwind with a modern, cannabis-infused twist on traditional beverages."
+  },
+  "details": {
+    "industry": "Food & Beverage | Cannabis Industry",
+    "project": "(DTC) Ecommerce Platform | Web Design & Development | Product Branding & Marketing",
+    "technology": "Shopify E-Commerce Development | VueJs & Bootstrap Framework | Cloudflare Web Hosting & CDN | OptiMonk Retargeting & Cart Abandonment",
+    "visit": "https://drinkcoolout.com/"
+  },
+  "images": {
+    "laptop": "/images/brands/brands-details/coolout-2.webp",
+    "other": [
+      "/images/brands/brands-details/coolout-3.webp",
+      "/images/brands/brands-details/coolout-4.webp"
+    ]
+  },
+  "challenge": {
+    "title": "Challenge",
+    "description": "The Cool Out website faces several challenges. Age verification for THC products must be implemented smoothly to comply with legal regulations, which can create friction in the purchasing process. Additionally, shipping restrictions due to varying state laws may limit delivery options, potentially frustrating customers. The site must also ensure scalability to handle high traffic and maintain fast loading times, preventing high bounce rates. Educating customers about the benefits of THC-infused seltzers is key to building trust in an emerging market, requiring clear product descriptions and FAQs. Finally, ensuring secure payment processing for cannabis-related transactions is critical to avoid legal and financial complications."
+  },
+  "solution": {
+    "title": "Solution & Results",
+    "description": "To address these challenges, our company offers effective solutions. We provide a seamless age verification system that ensures compliance without disrupting the shopping experience. To handle shipping restrictions, we display regional delivery limitations and partner with specialized carriers for cannabis products. Our cloud-based infrastructure ensures scalability, maintaining fast performance during high traffic. We educate customers on THC-infused seltzers through clear product descriptions, informative blogs, and an FAQ section. Additionally, we ensure secure, compliant payment gateways tailored for cannabis transactions, allowing smooth and safe payment processing. These solutions help improve user experience, enhance customer trust, and ensure legal compliance while growing the business."
+  },
+  "relatedBrands": [
+    {
+    "id": 3,
+    "title": "liberation-cocktails",
+    "img": "/images/brands/brands-cards/11.webp",
+    "link": "/brand/liberation-cocktails"
+  },
+  {
+    "id": 2,
+    "title": "elevation-107",
+    "img": "/images/brands/brands-cards/3.webp",
+    "link": "/brand/elevation-107"
+  },
+  {
+    "id": 1,
+    "title": "kick-ash-basket",
+    "img": "/images/brands/brands-cards/4.webp",
+    "link": "/brand/kick-ash-basket"
+  }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "aubi-and-ramsa",
+  "heroImage": "/images/brands/brands-details/aubiNramsa-1.webp",
+  "brief": {
+    "title": "The Brief",
+    "description": "Aubi & Ramsa is a premium ice cream company specializing in luxurious ice cream bars and innovative flavors. Their products, including single bars, pints, and gift boxes, are available for purchase online with free shipping within Florida and flat-rate options for other regions. The brand offers an elevated dessert experience with a focus on quality and craftsmanship. Aubi & Ramsa caters to adults emphasizing indulgence and fun. The company also sells branded merchandise like t-shirts and tote bags. The website, powered by Shopify, ensures a seamless eCommerce shopping experience for customers."
+  },
+  "details": {
+    "industry": "Food & Beverage",
+    "project": "E-commerce Development | Premium Food Industry | Online Store",
+    "technology": "Shopify Development | E-Commerce & Payments Integration | Cloudflare CDN | OnsenUI Mobile Frameworks",
+    "visit": "https://aubiramsa.com/"
+  },
+  "images": {
+    "laptop": "/images/brands/brands-details/aubiNramsa-2.webp",
+    "other": [
+      "/images/brands/brands-details/aubiNramsa-3.webp",
+      "/images/brands/brands-details/aubiNramsa-4.webp"
+    ]
+  },
+  "challenge": {
+    "title": "Challenge",
+    "description": "Aubi & Ramsa faces several challenges with its website. Age verification for alcohol-infused products could create friction in the purchasing process. Shipping logistics for perishable items like ice cream and alcohol, including temperature-sensitive packaging and regional shipping restrictions, are complex. Ensuring a smooth user experience is crucial, as friction in checkout could lead to cart abandonment. The company must stay updated with regulatory compliance for alcohol sales across different regions. As the brand grows, the website needs to handle increased traffic and remain fast to avoid high bounce rates. Additionally, standing out in the competitive luxury ice cream market and educating customers about the unique alcohol-infused products requires ongoing effort."
+  },
+  "solution": {
+    "title": "Solution & Results",
+    "description": "To address these challenges, your company can implement several solutions. For age verification, use a secure, automated tool to confirm customers are 21+ without disrupting the checkout process. For shipping logistics, partner with couriers specializing in perishable items and ensure temperature-sensitive packaging. To improve user experience, streamline the checkout process and offer multiple payment options to reduce friction. Regularly updating regulatory compliance through legal consultation and integrating region-specific shipping restrictions is key. For better scalability, leverage cloud-based solutions that grow with demand. Lastly, differentiate your brand through targeted marketing campaigns and clear product education to stand out in the competitive luxury market. These strategies will enhance customer satisfaction, increase conversions, and support sustainable growth."
+  },
+  "relatedBrands": [
+   {
+    "id": 3,
+    "title": "liberation-cocktails",
+    "img": "/images/brands/brands-cards/11.webp",
+    "link": "/brand/liberation-cocktails"
+  },
+  {
+    "id": 2,
+    "title": "elevation-107",
+    "img": "/images/brands/brands-cards/3.webp",
+    "link": "/brand/elevation-107"
+  },
+  {
+    "id": 1,
+    "title": "kick-ash-basket",
+    "img": "/images/brands/brands-cards/4.webp",
+    "link": "/brand/kick-ash-basket"
+  }
+  ]
+}

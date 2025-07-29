@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+    <!-- Home -->
+
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+   
+   <!-- About Us -->
+
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/about-us</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Contact Us -->
+
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/contact-us</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Team -->
+
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/team</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Testimonial -->
+
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/testimonial</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Faq -->
+
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/faq</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Portfolio -->
+
+     <url>
+        <loc>https://react-vite-codersh.vercel.app/portfolio</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- services -->
+
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/customStore</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+        
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/shopify-migrations</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+        
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/headless-shopify</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+        
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/shopify-plus</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+        
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/support-&amp;-maintenance</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+        
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/conversion-rate</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+        
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/selling-internationally-on-shopify</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+        
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/subscriptions-on-shopify</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+        
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/email-marketing-agency</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+        
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/shopify-app-development</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+        
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/seo-agency</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+        
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/shopify-b2b-wholesale</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+        
+    <!-- Solutions -->
+
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/creditrepair</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+        
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/itdigitalagency</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+            
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/winestore</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+            
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/businessdirectory</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+            
+    <!-- Case Studies -->
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/case-studies</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/case-studies/madame-f</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+     <url>
+        <loc>https://react-vite-codersh.vercel.app/case-studies/liberation-cocktails</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+     <url>
+        <loc>https://react-vite-codersh.vercel.app/case-studies/van-hunks</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+     <url>
+        <loc>https://react-vite-codersh.vercel.app/case-studies/pa-mi-gente</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+     <url>
+        <loc>https://react-vite-codersh.vercel.app/case-studies/stellar-credit</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+     <url>
+        <loc>https://react-vite-codersh.vercel.app/case-studies/bergbat</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Brand -->
+
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/brand</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/brand</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+        
+    <!-- services -->
+
+    <url>
+        <loc>http://localhost:5173/services/woocommerce-development</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/services/shift-four-shop-development</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/services/prestashop-development</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/services/big-commerce-development</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/services/wordpress-development</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/services/php-development</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/services/laravel-development</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/services/react-js-development</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/services/angular-js-development</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/services/android-app-development</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/services/ios-app-development</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/services/hybrid-app-development</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/services/flutter-development</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/services/react-native-development</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/services/wireframe-design</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/services/website-redesign</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://react-vite-codersh.vercel.app/services/mobile-app-design</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    
+                                                                         
+    
+
+
+</urlset>

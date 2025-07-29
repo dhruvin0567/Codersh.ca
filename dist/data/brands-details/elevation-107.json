@@ -1,0 +1,49 @@
+{
+  "id": "elevation-107",
+  "heroImage": "/images/brands/brands-details/elevation-1.webp",
+  "brief": {
+    "title": "The Brief",
+    "description": "Elevation107 is an Australian retailer offering premium snowboarding and skiing equipment. They provide a wide range of gear, including snowboards, skis, boots, and accessories, tailored to both beginners and advanced enthusiasts. Focused on delivering top-quality products and expert advice, Elevation107 ensures customers have the best gear for an exceptional snow sports experience. With a dedication to customer satisfaction, the company strives to meet the needs of snow sports enthusiasts by offering personalized service and reliable equipment, making it the go-to destination for all snowboarding and skiing needs in Australia."
+  },
+  "details": {
+    "industry": "Sports Equipment | Retail & E-commerce | Outdoor Recreation",
+    "project": "Brand Design / Development | Web Design & Development | E-commerce Platform Development",
+    "technology": "Shopify Development | E-Commerce & Payments Integration | React Framework Based | Cloudflare CDN Technology",
+    "visit": "https://www.elevation107.com.au/"
+  },
+  "images": {
+    "laptop": "/images/brands/brands-details/elevation-2.webp",
+    "other": [
+      "/images/brands/brands-details/elevation-3.webp",
+      "/images/brands/brands-details/elevation-4.webp"
+    ]
+  },
+  "challenge": {
+    "title": "Challenge",
+    "description": "Building the Elevation107 website posed several challenges in creating a seamless e-commerce experience for a wide range of snowboarding and skiing gear. Key issues included integrating high-quality product visuals, ensuring smooth navigation for diverse users, and optimizing performance during peak traffic seasons. Fast loading times and responsive design were crucial, especially with a global customer base. The website needed to support high traffic, provide an intuitive platform for all user levels, and maintain mobile optimization for accessibility. By focusing on performance, image optimization, and responsive design, the team ensured a fast, user-friendly experience, even during peak seasons and high traffic."
+  },
+  "solution": {
+    "title": "Solution & Results",
+    "description": "Our team redesigned Elevation107's Shopify website with a sleek, modern layout that emphasized product visuals, improved navigation, and streamlined the checkout process. We optimized mobile responsiveness to ensure a seamless shopping experience across all devices. As a result, the bounce rate was reduced, user engagement increased, and overall conversions improved significantly. The redesign successfully highlighted the extensive product range and premium positioning of the brand, ultimately enhancing customer satisfaction and sales performance."
+  },
+  "relatedBrands": [
+   {
+    "id": 3,
+    "title": "liberation-cocktails",
+    "img": "/images/brands/brands-cards/11.webp",
+    "link": "/brand/liberation-cocktails"
+  },
+  {
+    "id": 2,
+    "title": "elevation-107",
+    "img": "/images/brands/brands-cards/3.webp",
+    "link": "/brand/elevation-107"
+  },
+  {
+    "id": 1,
+    "title": "kick-ash-basket",
+    "img": "/images/brands/brands-cards/4.webp",
+    "link": "/brand/kick-ash-basket"
+  }
+  ]
+}

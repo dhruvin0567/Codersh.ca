@@ -1,0 +1,49 @@
+{
+  "id": "obvi-protien",
+  "heroImage": "/images/brands/brands-details/obvi-1.webp",
+  "brief": {
+    "title": "The Brief",
+    "description": "Obvi is a health and wellness brand offering collagen-based nutritional supplements aimed at promoting skin, hair, and joint health. Their product line includes weight loss aids, daily health supplements, and caffeine-free options, all crafted with high-quality, natural ingredients. Obvi emphasizes customer education and community engagement, providing effective solutions for various health needs. The brand focuses on wellness and offers direct-to-consumer sales through their website, along with a rewards program to engage and retain customers. Obvi’s products are designed to support overall well-being while delivering visible, lasting results."
+  },
+  "details": {
+    "industry": "Health & Wellness | Nutritional Supplements",
+    "project": "(DTC) Ecommerce Platform | Web Design & Development | Product Branding & Marketing | Online Store",
+    "technology": "AWS Hosting | Shopify ECommerce Development | MailChimp Marketing & Mail-Automation | Cloudflare Web Hosting & CDN | VueJs & Bootstrap Framework | Shogun PageBuilder | HulkApps Ecommerce Solutions | Replo Ecommerce Frontend",
+    "visit": "https://myobvi.com/"
+  },
+  "images": {
+    "laptop": "/images/brands/brands-details/obvi-2.webp",
+    "other": [
+      "/images/brands/brands-details/obvi-3.webp",
+      "/images/brands/brands-details/obvi-4.webp"
+    ]
+  },
+  "challenge": {
+    "title": "Challenge",
+    "description": "The Obvi website faces several challenges. A primary concern is ensuring a seamless user experience, especially with a broad range of products and variants. Poor navigation or unclear layouts could increase bounce rates and cart abandonment. Clear product information and education are essential to help customers understand the benefits of their supplements. Efficient inventory management and order fulfillment are also critical, particularly with growing demand. Compliance with health regulations and marketing guidelines is another challenge, requiring accurate product claims. Additionally, as competition in the wellness industry intensifies, brand differentiation becomes more difficult, demanding continuous efforts to stand out and maintain customer loyalty."
+  },
+  "solution": {
+    "title": "Solution & Results",
+    "description": "To address these challenges, our company can optimize site navigation and enhance layout for a more intuitive user experience, reducing bounce rates. We can improve product education by adding clear, detailed descriptions along with engaging content like videos or blog posts. For inventory management and order fulfillment, we can implement advanced software and collaborate with reliable logistics partners to streamline operations. To ensure regulatory compliance, we will work with legal experts to verify that all product claims are accurate and in line with industry standards. Lastly, to strengthen brand differentiation, we can focus on unique branding, personalized marketing campaigns, and customer loyalty programs to stand out in the competitive wellness market."
+  },
+  "relatedBrands": [
+    {
+    "id": 3,
+    "title": "liberation-cocktails",
+    "img": "/images/brands/brands-cards/11.webp",
+    "link": "/brand/liberation-cocktails"
+  },
+  {
+    "id": 2,
+    "title": "elevation-107",
+    "img": "/images/brands/brands-cards/3.webp",
+    "link": "/brand/elevation-107"
+  },
+  {
+    "id": 1,
+    "title": "kick-ash-basket",
+    "img": "/images/brands/brands-cards/4.webp",
+    "link": "/brand/kick-ash-basket"
+  }
+  ]
+}

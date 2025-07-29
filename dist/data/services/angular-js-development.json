@@ -1,0 +1,135 @@
+{
+  "id": "angular-js",
+  "breadcrumbTitle": "AngularJS Development",
+  "topRated": {
+    "reviewedOn": {
+      "image": "/images/services/clutch.png",
+      "alt": "Clutch Logo",
+      "width": 82
+    },
+    "rating": {
+      "starsImage": "/images/services/star.webp",
+      "width": 90,
+      "reviewCount": "16 Reviews"
+    },
+    "text": "Top Rated 5.0 out of 5.0 for Codersh by 120+ clients on more than 1200+ projects.",
+    "workLink": "/case-studies"
+  },
+  "servicesSection": {
+    "title": "AngularJS Development Services We Offer",
+    "description": "We are dedicated to aiding our clients in opening the doors to the virtual world by offering a diverse range of AngularJS solutions that enable the next-generation user experience for your target audience."
+  },
+  "services": [
+    {
+      "title": "AngularJs Web Application Development",
+      "iconImg": "/images/services/cms-setup.webp",
+      "description": "Craft scalable and dynamic web applications with our expertise in AngularJS development for a superior user experience."
+    },
+    {
+      "title": "Custom AngularJS Component Development",
+      "iconImg": "/images/services/psd-to-wordpress.webp",
+      "description": "Build tailor-made, reusable components that align with your brand's identity, ensuring a visually appealing and consistent web presence."
+    },
+    {
+      "title": "AngularJS Single Page Applications (SPAs)",
+      "iconImg": "/images/services/web-custom-development.webp",
+      "description": "Elevate your digital presence with high-performing SPAs that provide seamless navigation and an engaging user interface."
+    },
+    {
+      "title": "AngularJS UI/UX Design and Development",
+      "iconImg": "/images/services/web-development.webp",
+      "description": "Transform your concepts into visually stunning interfaces with our AngularJS design and development services, ensuring a user-friendly experience."
+    },
+    {
+      "title": "AngularJS Integration Services",
+      "iconImg": "/images/services/plugin.webp",
+      "description": "Seamlessly integrate AngularJS into your existing applications to enhance functionality and deliver a modern and responsive user interface."
+    },
+    {
+      "title": "AngularJS Frontend Development",
+      "iconImg": "/images/services/maintenance.webp",
+      "description": "Leverage the power of AngularJS for building efficient and scalable frontend solutions tailored to your specific business requirements."
+    },
+    {
+      "title": "AngularJs Migration Services",
+      "iconImg": "/images/services/woo-commerce.webp",
+      "description": "Upgrade your current web applications to AngularJS, ensuring a smooth transition with minimal disruptions and data integrity."
+    },
+    {
+      "title": "AngularJs Maintenance and Support",
+      "iconImg": "/images/services/blog.webp",
+      "description": "Ensure the continuous success of your AngularJS applications with our dedicated maintenance and support services."
+    },
+    {
+      "title": "AngularJs Consulting Services",
+      "iconImg": "/images/services/api.webp",
+      "description": "Tap into our AngularJS expertise for strategic insights and recommendations tailored to your business objectives."
+    }
+  ],
+  "hireDeveloper": {
+    "image": "/images/services/Angular-JS-1.webp",
+    "heading": "Hire Dedicated AngularJs Developer",
+    "description": "Take control of your AngularJS development project with Codersh Web Services. Our dedicated infrastructure and expert AngularJS developers ensure a customized engagement model that aligns with your vision, providing flexibility and transparency for your digital success.",
+    "features": [
+      "Monthly Payment",
+      "No Setup Expenses",
+      "Guarantee of No Hidden Fees",
+      "Track Hours and Pay with Precision"
+    ],
+    "cta": {
+      "text": "Hire Us Now",
+      "link": "/contact-us"
+    }
+  },
+  "whyChoose": {
+    "image": "/images/services/Angular-JS-2.webp",
+    "heading": "Why Choose AngularJs for Your Project",
+    "description": "Choose Codersh Web Services and AngularJS for a powerful, efficient, and interactive web solution. Discover the advantages of AngularJS development for a modular architecture that ensures maintainability, scalability, and a seamless user experience.",
+    "features": [
+      "Two-Way Data Binding",
+      "Modular Architecture for Scalability",
+      "Dependency Injection for Flexibility",
+      "Extensive Community Support",
+      "Ideal for Single Page Applications (SPAs)",
+      "Robust Testing Capabilities"
+    ],
+    "cta": {
+      "text": "Get Free Quotes Now!",
+      "link": "/contact-us"
+    }
+  },
+  "process": {
+    "heading": "Process We Follow",
+    "description": "We design, build and support websites and apps for clients worldwide. We make your business stand out. Interested? Let's chat.",
+    "steps": [
+      {
+        "title": "1. Gathering requirements",
+        "iconImg": "/images/services/reauirement-gathering.webp"
+      },
+      {
+        "title": "2. UI/UX Design",
+        "iconImg": "/images/services/uiux.webp"
+      },
+      {
+        "title": "3. Static Prototype",
+        "iconImg": "/images/services/prototype.webp"
+      },
+      {
+        "title": "4. Dynamic Development",
+        "iconImg": "/images/services/dynamic-development.webp"
+      },
+      {
+        "title": "5. Quality Assurance",
+        "iconImg": "/images/services/testing.webp"
+      },
+      {
+        "title": "6. Live Deployment",
+        "iconImg": "/images/services/live-development.webp"
+      },
+      {
+        "title": "7. Support and Upkeep",
+        "iconImg": "/images/services/question.webp"
+      }
+    ]
+  }
+}

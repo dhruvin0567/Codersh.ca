@@ -12576,7 +12576,7 @@ button#aximo-notified-btn {
 	transition: opacity .3s !important;
 	/* width: 100% !important; */
 	object-fit: cover !important;
-	/* height: auto !important; */
+	height: auto !important;
 }
 
 

@@ -1,0 +1,134 @@
+{
+  "id": "wireframe-design",
+  "breadcrumbTitle": "Wireframe Design",
+  "topRated": {
+    "reviewedOn": {
+      "image": "/images/services/clutch.png",
+      "alt": "Clutch Logo",
+      "width": 82
+    },
+    "rating": {
+      "starsImage": "/images/services/star.webp",
+      "width": 90,
+      "reviewCount": "16 Reviews"
+    },
+    "text": "Top Rated 5.0 out of 5.0 for Codersh by 120+ clients on more than 1200+ projects.",
+    "workLink": "/case-studies"
+  },
+  "servicesSection": {
+    "title": "Wireframe Design Services We Offer",
+    "description": "We are dedicated to aiding our clients in opening the doors to the virtual world by offering a diverse range of Wireframe Design solutions that enable the next-generation user experience for your target audience."
+  },
+  "services": [
+    {
+      "title": "Detailed Wireframe Design",
+      "iconImg": "/images/services/cms-setup.webp",
+      "description": "Craft comprehensive wireframes that outline the structure and layout of your digital project with meticulous detail."
+    },
+    {
+      "title": "Interactive Prototype Development",
+      "iconImg": "/images/services/psd-to-wordpress.webp",
+      "description": "Transform wireframes into interactive prototypes, allowing for a tangible preview of your digital solution."
+    },
+    {
+      "title": "User Flow Mapping",
+      "iconImg": "/images/services/web-custom-development.webp",
+      "description": "Streamline user journeys by mapping out intuitive and seamless paths through your website or application."
+    },
+    {
+      "title": "Collaborative Wireframe Workshops",
+      "iconImg": "/images/services/web-development.webp",
+      "description": "Engage in collaborative workshops to ensure alignment between your vision and our wireframe design strategy."
+    },
+    {
+      "title": "Responsive Design Considerations",
+      "iconImg": "/images/services/plugin.webp",
+      "description": "Tailor wireframes to ensure a consistent and user-friendly experience across various devices and screen sizes."
+    },
+    {
+      "title": "Iterative Wireframe Refinement",
+      "iconImg": "/images/services/maintenance.webp",
+      "description": "Refine and iterate wireframes based on user feedback and evolving project requirements."
+    },
+    {
+      "title": "Wireframes for Websites and Applications",
+      "iconImg": "/images/services/woo-commerce.webp",
+      "description": "Craft wireframes for websites, mobile apps, and other digital solutions, ensuring a cohesive user experience."
+    },
+    {
+      "title": "User-Centric Approach",
+      "iconImg": "/images/services/blog.webp",
+      "description": "Prioritize user needs and expectations throughout the wireframing process to enhance user satisfaction."
+    },
+    {
+      "title": "Cross-Functional Collaboration",
+      "iconImg": "/images/services/api.webp",
+      "description": "Foster collaboration between design, development, and stakeholders to ensure a holistic and effective wireframing process."
+    }
+  ],
+  "hireDeveloper": {
+    "image": "/images/services/Wireframe-Design-1.webp",
+    "heading": "Hire Wireframe Designer",
+    "description": "Take control of your digital project's foundation with Codersh Web Services. Our dedicated infrastructure and expert wireframe designers ensure a customized engagement model that aligns with your vision, providing clarity and precision for your project's success.",
+    "features": [
+      "Monthly Payment",
+      "No Setup Expenses",
+      "Guarantee of No Hidden Fees",
+      "Collaborative Design Workshops"
+    ],
+    "cta": {
+      "text": "Hire Us Now",
+      "link": "/contact-us"
+    }
+  },
+  "whyChoose": {
+    "image": "/images/services/Wireframe-Design-2.webp",
+    "heading": "Why Choose WireframeDesign for Your Project",
+    "description": "Choose Codersh Web Services and wireframe design for a structured and strategic approach to your digital project. Discover the advantages of wireframe design for clear communication, enhanced collaboration, and a user-centric digital experience.",
+    "features": [
+      "Clear Communication of Design Structure",
+      "Enhanced Collaboration and Alignment",
+      "User-Centric Approach for Better Satisfaction",
+      "Iterative Refinement for Continuous Improvement",
+      "Blueprint for Efficient Development"
+    ],
+    "cta": {
+      "text": "Get Free Quotes Now!",
+      "link": "/contact-us"
+    }
+  },
+  "process": {
+    "heading": "Process We Follow",
+    "description": "We design, build and support websites and apps for clients worldwide. We make your business stand out. Interested? Let's chat.",
+    "steps": [
+      {
+        "title": "1. Gathering requirements",
+        "iconImg": "/images/services/reauirement-gathering.webp"
+      },
+      {
+        "title": "2. UI/UX Design",
+        "iconImg": "/images/services/uiux.webp"
+      },
+      {
+        "title": "3. Static Prototype",
+        "iconImg": "/images/services/prototype.webp"
+      },
+      {
+        "title": "4. Dynamic Development",
+        "iconImg": "/images/services/dynamic-development.webp"
+      },
+      {
+        "title": "5. Quality Assurance",
+        "iconImg": "/images/services/testing.webp"
+      },
+      {
+        "title": "6. Live Deployment",
+        "iconImg": "/images/services/live-development.webp"
+      },
+      {
+        "title": "7. Support and Upkeep",
+        "iconImg": "/images/services/question.webp"
+      }
+    ]
+  }
+}

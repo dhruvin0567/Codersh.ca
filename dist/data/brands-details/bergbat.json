@@ -1,0 +1,49 @@
+{
+  "id": "bergbat",
+  "heroImage": "/images/brands/brands-details/bergbat-1.webp",
+  "brief": {
+    "title": "The Brief",
+    "description": "Berg Bat is committed to one principle – Quality. We craft each bat using premium Maple, Ash, and Birch billets, hand-turned, sanded, steel-pressed, and custom-finished to your exact specifications. Every bat is 100% handmade and personally inspected by Trevor before shipping. With unparalleled design flexibility and customizable finishes, Berg Bat is your top choice for a new wood bat."
+  },
+  "details": {
+    "industry": "Sports Equipment | Custom Craftsmanship",
+    "project": "Brand Design / Development | Web Design & Development | Manufacturing | Custom Product Design",
+    "technology": "WooCommerce Development | WordPress for CMS | MySQL Database | PHP Programming Language | MailChimp for Marketing & E-mail Service",
+    "visit": "https://bergbat.com/"
+  },
+  "images": {
+    "laptop": "/images/brands/brands-details/bergbat-2.webp",
+    "other": [
+      "/images/brands/brands-details/bergbat-3.webp",
+      "/images/brands/brands-details/bergbat-4.webp"
+    ]
+  },
+  "challenge": {
+    "title": "Challenge",
+    "description": "BergBat.com, a premium handcrafted bat brand, struggled with an outdated website, slow load times, poor user experience, and a high bounce rate. The site failed to effectively showcase their high-quality, custom-made bats, making it difficult for visitors to explore options or understand the brand’s value. These issues hindered customer engagement and conversions. A website redesign was essential to improve navigation, speed, and presentation, ensuring that the craftsmanship and customization of Berg Bat’s products were clearly highlighted. This would help convert visitors into customers and build stronger brand connections."
+  },
+  "solution": {
+    "title": "Solution & Results",
+    "description": "Our team redesigned BergBat.com's Shopify website with a sleek, modern layout that emphasized product visuals, improved navigation, and streamlined the checkout process. We optimized mobile responsiveness to ensure a seamless shopping experience across all devices. As a result, the bounce rate was reduced by 26%, sales increased by 80%, and brand perception improved, leading to higher customer trust and engagement. The redesign successfully showcased their high-quality custom bats, driving stronger connections with customers and significantly boosting conversions."
+  },
+  "relatedBrands": [
+    {
+    "id": 3,
+    "title": "liberation-cocktails",
+    "img": "/images/brands/brands-cards/11.webp",
+    "link": "/brand/liberation-cocktails"
+  },
+  {
+    "id": 2,
+    "title": "elevation-107",
+    "img": "/images/brands/brands-cards/3.webp",
+    "link": "/brand/elevation-107"
+  },
+  {
+    "id": 1,
+    "title": "kick-ash-basket",
+    "img": "/images/brands/brands-cards/4.webp",
+    "link": "/brand/kick-ash-basket"
+  }
+  ]
+}

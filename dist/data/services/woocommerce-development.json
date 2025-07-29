@@ -1,0 +1,126 @@
+{
+  "id": "woocommerce-development",
+  "breadcrumbTitle": "WooCommerce Development",
+  "topRated": {
+    "reviewedOn": {
+      "image": "/images/services/clutch.png",
+      "alt": "Clutch Logo",
+      "width": 82
+    },
+    "rating": {
+      "starsImage": "/images/services/star.webp",
+      "width": 90,
+      "reviewCount": "16 Reviews"
+    },
+    "text": "Top Rated 5.0 out of 5.0 for Codersh by 120+ clients on more than 1200+ projects.",
+    "workLink": "/case-studies"
+  },
+  "servicesSection": {
+    "title": "WooCommerce Development Services We Offer",
+    "description": "We are dedicated to aiding our clients in opening the doors to the virtual world by offering a diverse range of WooCommerce solutions that enable the next-generation user experience for your target audience."
+  },
+  "services": [
+    {
+      "title": "WooCommerce Store Setup and Configuration",
+      "iconImg": "/images/services/cms-setup.webp"
+    },
+    {
+      "title": "Conversion of Designs to Pixel-Perfect WooCommerce Websites",
+      "iconImg": "/images/services/psd-to-wordpress.webp"
+    },
+    {
+      "title": "Custom WooCommerce Website Development",
+      "iconImg": "/images/services/web-custom-development.webp"
+    },
+    {
+      "title": "WooCommerce Theme Development & Customization",
+      "iconImg": "/images/services/web-development.webp"
+    },
+    {
+      "title": "WooCommerce Plugin Development Service",
+      "iconImg": "/images/services/plugin.webp"
+    },
+    {
+      "title": "WooCommerce Migration and Maintenance Services",
+      "iconImg": "/images/services/maintenance.webp"
+    },
+    {
+      "title": "WooCommerce Development Service",
+      "iconImg": "/images/services/woo-commerce.webp"
+    },
+    {
+      "title": "WooCommerce Blog Development Service",
+      "iconImg": "/images/services/blog.webp"
+    },
+    {
+      "title": "WooCommerce API Integration Service",
+      "iconImg": "/images/services/api.webp"
+    }
+  ],
+  "hireDeveloper": {
+    "image": "/images/services/Woocommerce-image.webp",
+    "heading": "Hire Dedicated WooCommerce Developer",
+    "description": "Elevate your online store with our WooCommerce Custom Development options. Our dedicated infrastructure and expert WooCommerce developers work exclusively on your project, offering complete control and transparency.",
+    "features": [
+      "Monthly Payment",
+      "No Setup Expenses",
+      "Transparent Billing with Tracked Hours",
+      "Assurance of No Hidden Fees"
+    ],
+    "cta": {
+      "text": "Hire Us Now",
+      "link": "/contact-us"
+    }
+  },
+  "whyChoose": {
+    "image": "/images/services/Woocommerce-image-Project.webp",
+    "heading": "Why Choose WooCommerce for Your Online Store",
+    "description": "Your business deserves a dynamic online presence. Choose our custom WooCommerce Development Services to revolutionize your e-commerce venture, ensuring a robust and scalable platform.",
+    "features": [
+      "Free to Use and Setup",
+      "Intuitive Operation",
+      "Extensive Plugin Library",
+      "Flexibility and Adaptability",
+      "Diverse Range of Themes",
+      "Active Community Support"
+    ],
+    "cta": {
+      "text": "Get Free Quotes Now!",
+      "link": "/contact-us"
+    }
+  },
+  "process": {
+    "heading": "Process We Follow",
+    "description": "We design, build and support websites and apps for clients worldwide. We make your business stand out. Interested? Let's chat.",
+    "steps": [
+      {
+        "title": "1. Gathering requirements",
+        "iconImg": "/images/services/reauirement-gathering.webp"
+      },
+      {
+        "title": "2. UI/UX Design",
+        "iconImg": "/images/services/uiux.webp"
+      },
+      {
+        "title": "3. Static Prototype",
+        "iconImg": "/images/services/prototype.webp"
+      },
+      {
+        "title": "4. Dynamic Development",
+        "iconImg": "/images/services/dynamic-development.webp"
+      },
+      {
+        "title": "5. Quality Assurance",
+        "iconImg": "/images/services/testing.webp"
+      },
+      {
+        "title": "6. Live Deployment",
+        "iconImg": "/images/services/live-development.webp"
+      },
+      {
+        "title": "7. Support and Upkeep",
+        "iconImg": "/images/services/question.webp"
+      }
+    ]
+  }
+}

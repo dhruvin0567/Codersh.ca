@@ -1,0 +1,49 @@
+{
+  "id": "liberation-cocktails",
+  "heroImage": "/images/brands/brands-details/liberation-1.webp",
+  "brief": {
+    "title": "The Brief",
+    "description": "Liberation Cocktails offers high-quality, ready-to-drink, pre-mixed cocktails, available in individual cans, bottles, and party kegs. With a focus on mixologist-grade drinks, the company uses only natural ingredients and avoids artificial additives. Customers can choose from a variety of cocktails like the Espresso Martini and customize their trial packs. The brand also offers unique services such as the Cocktail Cruiser, which delivers on-tap cocktails to events. With free UK mainland delivery on orders over £35, Liberation Cocktails aims to enhance social gatherings with convenient, premium-quality cocktails."
+  },
+  "details": {
+    "industry": "Beverages | Ready-to-Drink Cocktails",
+    "project": "E-commerce Development | Alcoholic Drink Industry | Online Store",
+    "technology": "Shopify Development | E-Commerce & Payments Integration | Cloudflare CDN | React Framework | MailChimp Marketing & Mail-Automation",
+    "visit": "https://liberationcocktails.com/"
+  },
+  "images": {
+    "laptop": "/images/brands/brands-details/liberation-2.webp",
+    "other": [
+      "/images/brands/brands-details/liberation-3.webp",
+      "/images/brands/brands-details/liberation-4.webp"
+    ]
+  },
+  "challenge": {
+    "title": "Challenge",
+    "description": "The Liberation Cocktails website faces several specific challenges. Ensuring a seamless user experience is crucial, especially with a diverse product range, including different cocktail varieties and bundles. Complicated navigation or an overwhelming selection could lead to higher bounce rates. Shipping and logistics are also key concerns, as delivering perishable items like pre-mixed cocktails requires temperature-sensitive packaging and timely delivery to maintain product quality. Additionally, as an alcoholic beverage retailer, the website must ensure regulatory compliance, including age verification and adhering to regional shipping restrictions for alcohol. Lastly, in a competitive market, brand differentiation is vital. The brand must continuously stand out through effective marketing and customer engagement strategies to maintain visibility and attract customers."
+  },
+  "solution": {
+    "title": "Solution & Results",
+    "description": "To address these challenges, the company can implement key solutions. To enhance the user experience, they can optimize site navigation and simplify product discovery with intuitive filters and organized categories. For shipping and logistics, partnering with specialized couriers for temperature-sensitive deliveries will ensure cocktails arrive fresh. To maintain regulatory compliance, integrating an age verification system and updating shipping policies to meet regional laws is essential. Lastly, to stand out in a competitive market, the company can invest in targeted marketing campaigns, personalized experiences, and loyalty programs, helping to build brand recognition and foster long-term customer loyalty."
+  },
+  "relatedBrands": [
+     {
+    "id": 3,
+    "title": "liberation-cocktails",
+    "img": "/images/brands/brands-cards/11.webp",
+    "link": "/brand/liberation-cocktails"
+  },
+  {
+    "id": 2,
+    "title": "elevation-107",
+    "img": "/images/brands/brands-cards/3.webp",
+    "link": "/brand/elevation-107"
+  },
+  {
+    "id": 1,
+    "title": "kick-ash-basket",
+    "img": "/images/brands/brands-cards/4.webp",
+    "link": "/brand/kick-ash-basket"
+  }
+  ]
+}

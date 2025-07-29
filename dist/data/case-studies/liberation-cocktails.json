@@ -1,0 +1,41 @@
+{
+  "slug": "liberation-cocktails",
+  "title": "Liberation Cocktails - Elevating the Pre-Mixed Cocktail Experience with a Custom Shopify Solution",
+  "mainImage": "/images/case-studies/casestudy-cards/liberation-casestudy.webp",
+  "overview": "Liberation Cocktails is a premium pre-mixed cocktail brand known for delivering exceptional taste and convenience. To elevate their online presence, Liberation Cocktails partnered with Codersh Web Services to develop a robust, custom Shopify website that effectively showcases their diverse product range while creating an engaging, conversion-focused shopping experience.",
+  "definedGoals": [
+    "Create a visually appealing and user-friendly e-commerce website that reflects the brand’s identity.",
+    "Showcase Liberation Cocktails’ product range and unique selling points effectively.",
+    "Incorporate social proof and engaging visuals to build trust and inspire purchases.",
+    "Ensure smooth functionality across all aspects of the shopping experience.",
+    "Resolve existing technical issues, including CSS adjustments and cart functionality.",
+    "Optimize the website to drive conversions and sales."
+  ],
+  "workflow": [
+    {
+      "label": "#1: Challenge",
+      "text": "Liberation Cocktails required a dynamic e-commerce platform to present their products and convey their brand message effectively. Specific challenges included implementing a background video, developing a social proof carousel, resolving CSS inconsistencies, creating a product image carousel, and improving cart functionality."
+    },
+    {
+      "label": "#2: Solution Design",
+      "text": "The project began with incorporating client-provided Canva designs to maintain brand consistency while developing a custom Shopify solution from scratch. The designs focused on a modern, clean aesthetic to highlight the brand’s premium positioning."
+    },
+    {
+      "label": "#3: Implementation",
+      "text": "Key features included a full-width background video for impactful first impressions, a 'Make Your Moment' social proof carousel displaying customer photos and testimonials, and a product image carousel on product pages. Custom CSS was carefully implemented to ensure precise spacing and layout."
+    },
+    {
+      "label": "#4: Optimization & Testing",
+      "text": "The team resolved existing CSS and cart dropdown issues and optimized the cart page for a seamless user experience. Comprehensive testing across devices and browsers ensured consistent functionality and performance."
+    }
+  ],
+  "outcome": "The new website delivered a visually striking, on-brand e-commerce experience. Interactive elements such as the background video and social proof carousel increased user engagement, while the improved product presentation and optimized cart journey enhanced the potential for conversions and sales.",
+  "images": [
+    "/images/case-studies/casestudy-details/liberation-casestudy-2.webp",
+    "/images/case-studies/casestudy-details/liberation-casestudy-3.webp"
+  ],
+  "meta": {
+    "industry": "Cocktails Shop (Pre-Mixed Cocktails)",
+    "technology": "Shopify"
+  }
+}

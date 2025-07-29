@@ -1,0 +1,135 @@
+{
+  "id": "android-app-development",
+  "breadcrumbTitle": "Android App Development",
+  "topRated": {
+    "reviewedOn": {
+      "image": "/images/services/clutch.png",
+      "alt": "Clutch Logo",
+      "width": 82
+    },
+    "rating": {
+      "starsImage": "/images/services/star.webp",
+      "width": 90,
+      "reviewCount": "16 Reviews"
+    },
+    "text": "Top Rated 5.0 out of 5.0 for Codersh by 120+ clients on more than 1200+ projects.",
+    "workLink": "/case-studies"
+  },
+  "servicesSection": {
+    "title": "Android App Development Services We Offer",
+    "description": "We are dedicated to aiding our clients in opening the doors to the virtual world by offering a diverse range of Android App Development solutions that enable the next-generation user experience for your target audience."
+  },
+  "services": [
+    {
+      "title": "Android App Design and Development",
+      "iconImg": "/images/services/cms-setup.webp",
+      "description": "Craft visually appealing and functional Android applications that enhance user engagement and satisfaction."
+    },
+    {
+      "title": "Custom Android App Development",
+      "iconImg": "/images/services/psd-to-wordpress.webp",
+      "description": "Develop tailor-made Android apps that align with your brand's identity and provide a unique mobile experience."
+    },
+    {
+      "title": "Android UI/UX Design",
+      "iconImg": "/images/services/web-custom-development.webp",
+      "description": "Create intuitive and user-friendly interfaces that ensure a smooth and delightful user experience."
+    },
+    {
+      "title": "Cross-Platform App Development",
+      "iconImg": "/images/services/web-development.webp",
+      "description": "Extend your app's reach with cross-platform development, ensuring compatibility across various devices and operating systems."
+    },
+    {
+      "title": "Android E-commerce App Development",
+      "iconImg": "/images/services/plugin.webp",
+      "description": "Elevate your online presence with customized e-commerce solutions designed specifically for the Android platform."
+    },
+    {
+      "title": "Android App Integration Services",
+      "iconImg": "/images/services/maintenance.webp",
+      "description": "Seamlessly integrate third-party services and APIs to enhance the functionality and features of your Android app."
+    },
+    {
+      "title": "Android App Maintenance and Support",
+      "iconImg": "/images/services/woo-commerce.webp",
+      "description": "Ensure the continuous success of your Android app with dedicated maintenance and support services."
+    },
+    {
+      "title": "Android App Testing Services",
+      "iconImg": "/images/services/blog.webp",
+      "description": "Guarantee the reliability and performance of your app with thorough testing services, including functionality, usability, and security testing."
+    },
+    {
+      "title": "Android App Consultation Services",
+      "iconImg": "/images/services/api.webp",
+      "description": "Tap into our expertise for strategic insights and recommendations tailored to your business objectives in the Android app ecosystem."
+    }
+  ],
+  "hireDeveloper": {
+    "image": "/images/services/Android-1.webp",
+    "heading": "Hire Dedicated Android  Developer",
+    "description": "Take charge of your Android app development project with Codersh Web Services. Our dedicated infrastructure and expert Android app developers ensure a customized engagement model that aligns with your vision, providing flexibility and transparency for your mobile success.",
+    "features": [
+      "Monthly Payment",
+      "No Setup Expenses",
+      "Guarantee of No Hidden Fees",
+      "Track Hours and Pay with Precision"
+    ],
+    "cta": {
+      "text": "Hire Us Now",
+      "link": "/contact-us"
+    }
+  },
+  "whyChoose": {
+    "image": "/images/services/Android-2.webp",
+    "heading": "Why Choose Android App Development for Your Project",
+    "description": "Choose Codersh Web Services and Android app development for a powerful, user-centric, and scalable mobile solution. Discover the advantages of Android app development for a vast user base and a seamless mobile experience.",
+    "features": [
+      "Premium User Experience",
+      "High Security Standards",
+      "Seamless Integration with Apple Ecosystem",
+      "Apple App Store Visibility",
+      "Regular and Timely Updates",
+      "Swift Programming Language Expertise"
+    ],
+    "cta": {
+      "text": "Get Free Quotes Now!",
+      "link": "/contact-us"
+    }
+  },
+  "process": {
+    "heading": "Process We Follow",
+    "description": "We design, build and support websites and apps for clients worldwide. We make your business stand out. Interested? Let's chat.",
+    "steps": [
+      {
+        "title": "1. Gathering requirements",
+        "iconImg": "/images/services/reauirement-gathering.webp"
+      },
+      {
+        "title": "2. UI/UX Design",
+        "iconImg": "/images/services/uiux.webp"
+      },
+      {
+        "title": "3. Static Prototype",
+        "iconImg": "/images/services/prototype.webp"
+      },
+      {
+        "title": "4. Dynamic Development",
+        "iconImg": "/images/services/dynamic-development.webp"
+      },
+      {
+        "title": "5. Quality Assurance",
+        "iconImg": "/images/services/testing.webp"
+      },
+      {
+        "title": "6. Live Deployment",
+        "iconImg": "/images/services/live-development.webp"
+      },
+      {
+        "title": "7. Support and Upkeep",
+        "iconImg": "/images/services/question.webp"
+      }
+    ]
+  }
+}

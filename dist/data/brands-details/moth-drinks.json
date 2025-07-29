@@ -1,0 +1,49 @@
+{
+  "id": "moth-drinks",
+  "heroImage": "/images/brands/brands-details/moth-1.webp",
+  "brief": {
+    "title": "The Brief",
+    "description": "Moth Drinks offers premium, ready-to-drink cocktails in a can, crafted with high-quality spirits. Their range includes popular options like Passionfruit Martini, Mojito, and Margarita, all made to bar-strength perfection. As a certified B-Corp, Moth Drinks prioritizes sustainability, ensuring their practices align with environmental responsibility and inclusivity. The website provides an easy-to-navigate online store, making these top-tier cocktails accessible for various occasions. Moth Drinks are also available through select retailers such as Waitrose, Tesco, and Sainsbury's, aiming to deliver convenience and quality to cocktail enthusiasts."
+  },
+  "details": {
+    "industry": "Ready-to-Drink Beverages | Craft Cocktails",
+    "project": "E-commerce Development | Branding & Digital Marketing | Online Store",
+    "technology": "Shopify ECommerce Development | Payments Integration | Cloudflare & Google CDN | React framework | ReferralCandy Marketing & Loyalty Rewards | AWIN Affiliate Marketing",
+    "visit": "https://mothdrinks.com/"
+  },
+  "images": {
+    "laptop": "/images/brands/brands-details/moth-2.webp",
+    "other": [
+      "/images/brands/brands-details/moth-3.webp",
+      "/images/brands/brands-details/moth-4.webp"
+    ]
+  },
+  "challenge": {
+    "title": "Challenge",
+    "description": "The Moth Drinks website faces several challenges that could impact user experience. One issue is site navigation, as multiple categories and subcategories may confuse users. Simplifying the structure could improve ease of use. Mobile optimization is another area for improvement, ensuring smoother navigation on smaller devices for quicker purchases. The product information could also be more detailed, including ingredient lists, sourcing, and the cocktail creation process to engage customers. Additionally, the visual design could benefit from a more consistent aesthetic, balancing visuals with text. Finally, shipping and logistics need clearer communication, especially regarding delivery times and availability during peak periods, ensuring a smoother customer experience."
+  },
+  "solution": {
+    "title": "Solution & Results",
+    "description": "To address the challenges faced by the Moth Drinks website, we’ve implemented several solutions. We’ve simplified navigation by streamlining categories and enhancing the search function, making it easier for users to find products. Our team has also optimized the mobile experience, ensuring smoother performance and a user-friendly interface for customers making quick purchases. We’ve provided more detailed product information, including ingredient lists, sourcing, and the cocktail creation process, to engage users and offer full transparency. Additionally, we’ve refined the visual design for a more consistent, balanced layout of text and images to improve the user experience. Lastly, we’ve ensured clear communication about shipping times, costs, and availability, especially during peak seasons, to manage customer expectations and reduce frustration."
+  },
+  "relatedBrands": [
+    {
+    "id": 3,
+    "title": "liberation-cocktails",
+    "img": "/images/brands/brands-cards/11.webp",
+    "link": "/brand/liberation-cocktails"
+  },
+  {
+    "id": 2,
+    "title": "elevation-107",
+    "img": "/images/brands/brands-cards/3.webp",
+    "link": "/brand/elevation-107"
+  },
+  {
+    "id": 1,
+    "title": "kick-ash-basket",
+    "img": "/images/brands/brands-cards/4.webp",
+    "link": "/brand/kick-ash-basket"
+  }
+  ]
+}

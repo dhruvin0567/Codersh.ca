@@ -1,0 +1,49 @@
+{
+  "id": "rd-homes",
+  "heroImage": "/images/brands/brands-details/rdhomes-1.webp",
+  "brief": {
+    "title": "The Brief",
+    "description": "RD Homes is a premier remodeling and interior design company based in Santa Barbara, specializing in high-quality home renovations and custom cabinetry. Founded by Romain Doussineau, the company offers personalized design solutions for kitchens, bathrooms, flooring, countertops, and more, using top-tier materials, including imported European products. With over 10 years of experience and more than 5,500 completed projects, RD Homes is committed to exceptional craftsmanship and customer satisfaction. The company ensures that each home reflects the unique style and needs of its clients, providing tailored renovations that enhance the beauty and functionality of any space."
+  },
+  "details": {
+    "industry": "Home Remodeling & Renovation | Interior Design",
+    "project": "Web Design & Development | E-commerce Platform Development | Branding & Digital Marketing | Portfolio Showcase",
+    "technology": "Shopify Development | E-Commerce & Payments Integration | Cloudflare CDN & Security | HubSpot Marketing Automation & CRM | Google Analytics & GA4",
+    "visit": "https://rd.homes/"
+  },
+  "images": {
+    "laptop": "/images/brands/brands-details/rdhomes-2.webp",
+    "other": [
+      "/images/brands/brands-details/rdhomes-3.webp",
+      "/images/brands/brands-details/rdhomes-4.webp"
+    ]
+  },
+  "challenge": {
+    "title": "Challenge",
+    "description": "The RD Homes website encountered several challenges in effectively showcasing its extensive range of products and services. Presenting detailed information about custom cabinetry, materials, and design options while maintaining user-friendly navigation was crucial, especially for customers unfamiliar with home renovations. The site also needed to convey the company’s premium craftsmanship while integrating a comprehensive online portfolio of past projects. Ensuring fast load times and responsiveness across both desktop and mobile devices, while offering an intuitive browsing experience, was another key challenge."
+  },
+  "solution": {
+    "title": "Solution & Results",
+    "description": "To overcome these challenges, RD Homes created a visually rich, user-friendly website with clear categories for products, services, and past projects. High-quality images showcased the company’s craftsmanship, while interactive features like service filters and design galleries boosted user engagement. The responsive design ensured smooth access across all devices, enhancing the user experience. A blog section was added to share renovation tips and industry insights, improving SEO and establishing RD Homes as a thought leader. This redesign built customer trust, strengthened connections, and significantly boosted conversions by effectively showcasing their high-quality custom services."
+  },
+  "relatedBrands": [
+   {
+    "id": 3,
+    "title": "liberation-cocktails",
+    "img": "/images/brands/brands-cards/11.webp",
+    "link": "/brand/liberation-cocktails"
+  },
+  {
+    "id": 2,
+    "title": "elevation-107",
+    "img": "/images/brands/brands-cards/3.webp",
+    "link": "/brand/elevation-107"
+  },
+  {
+    "id": 1,
+    "title": "kick-ash-basket",
+    "img": "/images/brands/brands-cards/4.webp",
+    "link": "/brand/kick-ash-basket"
+  }
+  ]
+}

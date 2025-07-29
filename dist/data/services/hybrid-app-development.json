@@ -1,0 +1,135 @@
+{
+  "id": "hybrid-app-development",
+  "breadcrumbTitle": "Hybrid App Development",
+  "topRated": {
+    "reviewedOn": {
+      "image": "/images/services/clutch.png",
+      "alt": "Clutch Logo",
+      "width": 82
+    },
+    "rating": {
+      "starsImage": "/images/services/star.webp",
+      "width": 90,
+      "reviewCount": "16 Reviews"
+    },
+    "text": "Top Rated 5.0 out of 5.0 for Codersh by 120+ clients on more than 1200+ projects.",
+    "workLink": "/case-studies"
+  },
+  "servicesSection": {
+    "title": "HybridApp Development Services We Offer",
+    "description": "We are dedicated to aiding our clients in opening the doors to the virtual world by offering a diverse range of HybridApp Development solutions that enable the next-generation user experience for your target audience."
+  },
+  "services": [
+    {
+      "title": "Hybrid App Design and Development",
+      "iconImg": "/images/services/cms-setup.webp",
+      "description": "Craft visually appealing and functional hybrid applications that offer a consistent and engaging user experience."
+    },
+    {
+      "title": "Custom Hybrid App Development",
+      "iconImg": "/images/services/psd-to-wordpress.webp",
+      "description": "Develop hybrid apps tailored to your brand's identity, ensuring a unique and uniform presence across platforms."
+    },
+    {
+      "title": "Hybrid UI/UX Design",
+      "iconImg": "/images/services/web-custom-development.webp",
+      "description": "Create intuitive and user-friendly interfaces that provide a seamless and delightful user experience on both iOS and Android."
+    },
+    {
+      "title": "Cross-Platform App Development",
+      "iconImg": "/images/services/web-development.webp",
+      "description": "Extend your app's reach with cross-platform development, ensuring compatibility across various devices and operating systems."
+    },
+    {
+      "title": "Hybrid E-commerce App Development",
+      "iconImg": "/images/services/plugin.webp",
+      "description": "Elevate your online presence with customized e-commerce solutions designed specifically for hybrid platforms."
+    },
+    {
+      "title": "Hybrid App Integration Services",
+      "iconImg": "/images/services/maintenance.webp",
+      "description": "Seamlessly integrate third-party services and APIs to enhance the functionality and features of your hybrid app."
+    },
+    {
+      "title": "Hybrid App Maintenance and Support",
+      "iconImg": "/images/services/woo-commerce.webp",
+      "description": "Ensure the continuous success of your hybrid app with dedicated maintenance and support services."
+    },
+    {
+      "title": "Hybrid App Testing Services",
+      "iconImg": "/images/services/blog.webp",
+      "description": "Guarantee the reliability and performance of your app with thorough testing services, including functionality, usability, and security testing."
+    },
+    {
+      "title": "Hybrid App Consultation Services",
+      "iconImg": "/images/services/api.webp",
+      "description": "Tap into our expertise for strategic insights and recommendations tailored to your business objectives in the hybrid app development space."
+    }
+  ],
+  "hireDeveloper": {
+    "image": "/images/services/Hybrid-App-Development.webp",
+    "heading": "Hire Dedicated Hybrid App Developer",
+    "description": "Take control of your hybrid app development project with Codersh Web Services. Our dedicated infrastructure and expert hybrid app developers ensure a customized engagement model that aligns with your vision, providing flexibility and transparency for your mobile success.",
+    "features": [
+      "Monthly Payment",
+      "No Setup Expenses",
+      "Guarantee of No Hidden Fees",
+      "Track Hours and Pay with Precision"
+    ],
+    "cta": {
+      "text": "Hire Us Now",
+      "link": "/contact-us"
+    }
+  },
+  "whyChoose": {
+    "image": "/images/services/Hybrid-App-Development-Project.webp",
+    "heading": "Why Choose Hybrid App Development for Your Project",
+    "description": "Choose Codersh Web Services and hybrid app development for a versatile, cost-effective, and cross-platform mobile solution. Discover the advantages of hybrid app development for a faster time-to-market and a unified user experience.",
+    "features": [
+      "Cross-Platform Compatibility",
+      "Cost-Effective Development",
+      "Faster Time-to-Market",
+      "Unified User Experience",
+      "Single Codebase Maintenance",
+      "Hybrid App Development Frameworks Expertise"
+    ],
+    "cta": {
+      "text": "Get Free Quotes Now!",
+      "link": "/contact-us"
+    }
+  },
+  "process": {
+    "heading": "Process We Follow",
+    "description": "We design, build and support websites and apps for clients worldwide. We make your business stand out. Interested? Let's chat.",
+    "steps": [
+      {
+        "title": "1. Gathering requirements",
+        "iconImg": "/images/services/reauirement-gathering.webp"
+      },
+      {
+        "title": "2. UI/UX Design",
+        "iconImg": "/images/services/uiux.webp"
+      },
+      {
+        "title": "3. Static Prototype",
+        "iconImg": "/images/services/prototype.webp"
+      },
+      {
+        "title": "4. Dynamic Development",
+        "iconImg": "/images/services/dynamic-development.webp"
+      },
+      {
+        "title": "5. Quality Assurance",
+        "iconImg": "/images/services/testing.webp"
+      },
+      {
+        "title": "6. Live Deployment",
+        "iconImg": "/images/services/live-development.webp"
+      },
+      {
+        "title": "7. Support and Upkeep",
+        "iconImg": "/images/services/question.webp"
+      }
+    ]
+  }
+}
