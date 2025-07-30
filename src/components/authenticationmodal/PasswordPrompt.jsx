@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { usePassword } from "../../context/authContext/PasswordContext";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import PopUpLogo from "../../assets/images/logo/codersh-horizontal-logo-black.webp";
 
 const PasswordPrompt = () => {
@@ -33,15 +33,15 @@ const PasswordPrompt = () => {
                 WebkitBackdropFilter: "blur(10px)",  // For Safari support
             }}
         >
-            <div className="card shadow-lg m-3 m-md-0 " style={{ width: "100%", maxWidth: "450px", borderRadius: "1.5rem" }}>
+            <div className="card shadow-lg m-2 m-md-0 " style={{ width: "100%", maxWidth: "500px", borderRadius: "1.5rem" }}>
                 <div className="card-header d-flex justify-content-between align-items-center">
                     <h5 className="mb-0">Enter Password</h5>
                     <button type="button" className="btn-close" aria-label="Close" onClick={handleClose}></button>
                 </div>
                 <form onSubmit={handleSubmit}>
-                    <div className="cart-logo d-flex align-items-center justify-content-center pe-3" style={{ paddingTop: "40px" }}><img src={PopUpLogo} alt="Logo IMg" style={{ maxWidth: "300px", width: "100%" }} /></div>
-                    <div className="card-body" style={{ padding: "1.5rem 2rem" }}>
-                        <div className="my-3 mx-0 mx-md-3 position-relative">
+                    <div className="cart-logo d-flex align-items-center justify-content-center pe-3 pt-4 pt-md-5"><img src={PopUpLogo} alt="Logo IMg" style={{ maxWidth: "300px", width: "100%" }} /></div>
+                    <div className="card-body px-4 py-4">
+                        <div className="m-0 m-md-3 position-relative">
                             <input
                                 type={showPassword ? "text" : "password"}
                                 // className={`form-control pe-5 ${error ? "is-invalid" : ""}`}
@@ -82,6 +82,15 @@ const PasswordPrompt = () => {
                                 Submit
                             </button>
                         </div>
+
+                        <p className="fs-6 text-center text-dark">
+                            Don’t have access?{" "}
+                            <Link to="/contact-us" className="text-decoration-underline text-dark fw-bold">
+                                Request it here
+                            </Link>
+                        </p>
+
+
                     </div>
                 </form>
             </div>
