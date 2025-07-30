@@ -30,10 +30,10 @@ const Brand = () => {
         <>
             <BreadCrumb title="Brand" />
             <section className="brands-section py-5 my-sm-5">
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row">
                         {brandImages.map((brand, index) => (
-                            <div className="col-lg-3 col-sm-4 col-6 mb-3 p-3" key={brand.id}>
+                            <div className="col-6 col-md-4 col-xl-3 mb-3 p-3" key={brand.id}>
                                 <FadeInStagger>
                                     <Link to={`/brand/${brand.id}`} className="brand-card" aria-label={`Brand ${index + 1}`}>
                                         <img

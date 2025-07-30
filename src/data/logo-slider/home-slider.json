@@ -1,0 +1,28 @@
+[
+    {
+        "id": "google",
+        "image": "/images/logo-slider/500.png",
+        "alt": "Google"
+    },
+        {
+        "id": "facebook",
+        "image": "/images/logo-slider/christianbookbag.png",
+        "alt": "Facebook"
+    },
+    {
+        "id": "facebook",
+        "image": "/images/logo-slider/anadian.png",
+        "alt": "Facebook"
+    },
+        {
+        "id": "facebook",
+        "image": "/images/logo-slider/reinventu.png",
+        "alt": "Facebook"
+    },
+        {
+        "id": "google",
+        "image": "/images/logo-slider/chenchef.png",
+        "alt": "Google"
+    }
+
+]

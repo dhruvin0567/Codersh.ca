@@ -12640,3 +12640,14 @@ span.lazy-load-image-background.blur.lazy-load-image-loaded {
 .aximo-accordion-wrap .accordion-button::after {
 	transition: transform 0.2s ease;
 }
+
+/* homepage-logo-slider */
+.homepage-logo-slider {
+	height: 80px;
+}
+
+@media (max-width: 1280px) {
+	.homepage-logo-slider {
+		height: 60px;
+	}
+}

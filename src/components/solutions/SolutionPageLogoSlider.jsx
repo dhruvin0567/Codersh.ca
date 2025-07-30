@@ -52,7 +52,7 @@ const SolutionPageLogoSlider = ({ logos = [], title = "" }) => {
 
     return (
         <section
-            className="aximo-project-page logo-slider dark-bg border-t"
+            className="aximo-project-page logo-slider dark-bg border-top"
             aria-label={title || "Brand Logos"}
         >
             <div className="container py-5">
