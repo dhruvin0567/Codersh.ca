@@ -74,6 +74,7 @@ const SolutionPageLogoSlider = ({ logos = [], title = "" }) => {
                                 className="max-h-16 mx-auto object-contain"
                                 width={120}
                                 height={80}
+                                loading="lazy"
                             />
                         </div>
                     ))}

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import PlayBtnImg from "../../../assets/images/v1/play-btn.svg";
-import VideoBg from "../../../assets/images/v1/video-bg.webp";
+import VideoBg from "/images/homepage/hero/video-bg.webp";
 import FadeInUp from "../../animation/FadeInUp";
-import VideoPlay from "../../../assets/images/Videos/Asterley Bros, London.webm";
+import VideoPlay from "/images/homepage/video/Asterley Bros, London.webm";
 
 function Video() {
 	const [isOpen, setOpen] = useState(false);
@@ -72,6 +72,7 @@ function Video() {
 					display: "block",
 					borderRadius: "10px" // Added to preview image for consistency
 				}}
+				loading="lazy"
 			/>
 
 			{/* Custom Modal for Local Video */}
@@ -90,7 +91,7 @@ function Video() {
 							style={videoStyles}
 						>
 							<source src={VideoPlay} type="video/webm" />
-							Your browser does not support the video tag.
+							Your browser does not support the video.
 						</video>
 					</div>
 				</div>

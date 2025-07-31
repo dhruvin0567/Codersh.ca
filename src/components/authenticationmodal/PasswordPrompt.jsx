@@ -89,8 +89,6 @@ const PasswordPrompt = () => {
                                 Request it here
                             </Link>
                         </p>
-
-
                     </div>
                 </form>
             </div>

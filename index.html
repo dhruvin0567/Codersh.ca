@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-79YQREV5W1"
@@ -15,8 +15,11 @@
       gtag("config", "G-79YQREV5W1");
     </script>
 
+    <!-- Basic Meta -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fffff5" />
+
     <title>Codersh Web Services | Shopify Development Company</title>
 
     <!-- SEO Meta -->
@@ -29,7 +32,7 @@
       content="Shopify development, Shopify migration, custom Shopify store, e-commerce solutions, Shopify design, Codersh Web Services"
     />
 
-    <!-- Open Graph Meta -->
+    <!-- Open Graph (Social Sharing) -->
     <meta
       property="og:title"
       content="Codersh Web Services | Shopify Development Services"
@@ -44,35 +47,20 @@
     <!-- Favicon -->
     <link rel="icon" href="/favicon-latest.ico" type="image/x-icon" />
 
-    <!-- breadcrumb image preload -->
-    <link
-      rel="preload"
-      as="image"
-      href="/src/assets/images/images2/tinified/angularjs_1.webp"
-      type="image/webp"
-    />
-    <!-- popup/lock image preload -->
-    <link
-      rel="preload"
-      as="image"
-      href="/src/assets/images/logo/codersh-horizontal-logo-black.webp"
-      type="image/webp"
-    />
-
-    <!-- Preload critical resources -->
+    <!-- Preload Fonts -->
     <link
       rel="preload"
       href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
       as="style"
       crossorigin
     />
-
-    <!-- Non-critical CSS -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
       crossorigin
     />
+
+    <!-- App Styles (Lazy loaded) -->
     <link
       rel="stylesheet"
       href="/src/assets/assets/css/style.css"
@@ -80,7 +68,7 @@
       onload="this.media='all'"
     />
 
-    <!-- Font Awesome with better loading -->
+    <!-- Font Awesome (Async loading) -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -90,22 +78,13 @@
       media="print"
       onload="this.media='all'"
     />
-
-    <!-- Inline critical font CSS for immediate loading -->
-    <style>
-      @font-face {
-        font-family: "Syne";
-        src: url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
-        font-display: swap;
-        /* Ensure the text is displayed with fallback fonts until Syne loads */
-      }
-    </style>
   </head>
 
   <body class="light">
+    <!-- React App Mount Point -->
     <div id="root"></div>
 
-    <!-- Main React bundle (loaded as module) -->
+    <!-- React Main Entry -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

@@ -59,7 +59,7 @@ const SolutionProjectSlider = React.memo(function SolutionProjectSlider({ slides
                         {slides.map((slide, index) => (
                             <div className="slide-item" key={slide.id || index}>
                                 <div className="aximo-project-thumb Solution-slider mb-0" style={{ cursor: "grab" }}>
-                                    <img src={slide.image} alt={slide.alt || "Project Image"} />
+                                    <img src={slide.image} alt={slide.alt || "Project Image"} loading="lazy" />
                                 </div>
                             </div>
                         ))}
