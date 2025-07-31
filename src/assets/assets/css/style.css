@@ -1,22 +1,5 @@
-.aximo-breadcrumb {
-    /* background-image: url(/assets/Images/angularjs.webp); */
-}
-
 .banner-desciption {
     color: var(--accent-color);
-}
-
-body {
-    /* overflow-x: hidden !important; */
-}
-
-
-
-.section {
-    /* padding: 50px 20px; */
-    /* background-color: lightgray; */
-    /* min-height: 400px; */
-
 }
 
 .first-part-img {
@@ -27,7 +10,6 @@ body {
 .second-img-part {
     z-index: 5;
 }
-
 
 #stickyImage {
     position: -webkit-sticky;
@@ -314,6 +296,8 @@ span.custom-play-button {
     transition: .3s ease-in-out all;
 }
 
+/* ======= portfolio css ======= */
+
 button.filter-btn {
     height: 50px;
     max-width: 150px;
@@ -366,59 +350,34 @@ button.filter-btn:hover {
 }
 
 .portfolio-image-wrapper {
-    display: block;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
     width: 100%;
-    padding: 10px;
-    box-shadow: 0px 0px 20px 1px rgb(194, 194, 194);
-    margin: 0 auto;
-    border-radius: 8px;
-    /* border: 2px solid #000; */
+    border-radius: 15px;
+    border: 2px solid #5e5e5e;
     background-color: #000;
     cursor: pointer;
-    overflow: hidden;
 }
 
-.portfolio-image {
+/* Image inside the wrapper */
+.image-scrolling {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: auto;
+    transition: transform 5s linear;
+    animation-delay: 0.3s;
+    object-fit: cover;
 }
 
-.imagescrolling-wrapper {
-    height: 500px !important;
-    overflow: hidden;
-    position: relative;
-    padding: 0;
+/* Scroll on hover */
+.portfolio-image-wrapper:hover .image-scrolling {
+    transform: translateY(-50%);
+    /* Adjust this based on how tall your image is */
 }
 
-@media (min-width: 2000px) {
-    .imagescrolling-wrapper {
-        height: 700px !important;
-
-    }
-}
-
-
-.imagescrolling-wrapper:hover img {
-    transform: translateY(calc(-100% + 500px - 2.8em));
-    -webkit-transition: all 11s;
-    -moz-transition: all 11s;
-    -ms-transition: all 11s;
-    -o-transition: all 11s;
-    transition: all 5s;
-}
-
-.imagescrolling-wrapper img {
-    transform: translateY(0);
-    position: absolute;
-    z-index: 0;
-    margin: 0;
-    padding: 0;
-    -webkit-transition: all 11s;
-    -moz-transition: top 11s;
-    -ms-transition: top 11s;
-    -o-transition: top 11s;
-    transition: all 5S;
-}
 
 .breadcrumbs {
     list-style: none;
@@ -433,11 +392,6 @@ button.filter-btn:hover {
 .breadcrumbs li {
     margin-right: 5px;
 }
-
-/* .breadcrumbs li::after {
-    content: " » ";
-    margin-left: 5px;
-} */
 
 .breadcrumbs li:last-child::after {
     content: "";
@@ -486,6 +440,7 @@ h6.blog-title {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
 }
 
@@ -950,10 +905,6 @@ span.swiper-custom-next {
         padding: 60px 0;
     }
 
-    .portfolio-image-wrapper {
-        height: 400px;
-    }
-
     .filter-container:has(.tab-btn) {
         flex-direction: initial;
     }
@@ -1056,6 +1007,7 @@ h3.project-name {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+    line-clamp: 1;
 }
 
 .client-review-cmnt p {
@@ -1065,6 +1017,7 @@ h3.project-name {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
 }
 
 .ani-h2 {
@@ -1244,10 +1197,6 @@ td:has(.company-logo) {
 
     .hero-section h4 {
         font-size: 18px !important;
-    }
-
-    .portfolio-image-wrapper {
-        height: 340px;
     }
 
     .reviewsSection h4 {

@@ -30,7 +30,7 @@ const Brand = () => {
         <>
             <BreadCrumb title="Brand" />
             <section className="brands-section py-5 my-sm-5">
-                <div className="container">
+                <div className="container-fluid">
                     <div className="row">
                         {brandImages.map((brand, index) => (
                             <div className="col-6 col-md-4 col-xl-3 mb-3 p-3" key={brand.id}>

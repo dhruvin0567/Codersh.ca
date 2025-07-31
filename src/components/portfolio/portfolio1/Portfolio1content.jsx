@@ -16,7 +16,7 @@ const cards = [
     { category: "Shopify", country: "UK", industry: "Wine", image: "BONE-IDYLL", name: "Bone Idyll" },
     { category: "Shopify", country: "UK", industry: "Fashion", image: "Women-s-Clothing-Store-Clothing-Boutique-CUBIC-Outside-the-Box", name: "CUBIC" },
     { category: "Shopify", country: "UK", industry: "Food and Beverages", image: "thewelshproducestall-the-welsh-produce-stall", name: "The Welsh Produce Stall" },
-    { category: "Shopify", country: "UK", industry: "Food and Beverages", image: "fuel", name: "Fuel" },
+    { category: "Shopify", country: "UK", industry: "Food and Beverages", image: "fuel", name: "Fuel 10k" },
     { category: "Shopify", country: "USA", industry: "Online Retail", image: "potown-homepage", name: "PowTown Store" },
     { category: "Shopify", country: "USA", industry: "Health Care", image: "Violet-Blanc-Beauty", name: "Violet Blanc" },
     { category: "Shopify", country: "USA", industry: "Food and Beverages", image: "TylersCoffee", name: "Tylers Coffee" },
@@ -89,11 +89,11 @@ const Portfolio1content = () => {
             ...prev,
             [filterType]: value,
             // When a dropdown is changed, clear the corresponding facet filters
-            activeFacets: {
-                ...prev.activeFacets,
-                ...(filterType === 'country' && { countries: [] }),
-                ...(filterType === 'industry' && { industries: [] })
-            }
+            // activeFacets: {
+            //     ...prev.activeFacets,
+            //     ...(filterType === 'country' && { countries: [] }),
+            //     ...(filterType === 'industry' && { industries: [] })
+            // }
         }));
     }, []);
 
@@ -190,11 +190,11 @@ const Portfolio1content = () => {
                                                         className={`filter-chip ${filters.activeFacets[filterType]?.includes(value) ? 'active' : ''
                                                             }`}
                                                         onClick={() => toggleFacetFilter(filterType, value)}
-                                                        disabled={
-                                                            // Disable if corresponding dropdown is active
-                                                            (filterType === 'countries' && filters.country !== "all") ||
-                                                            (filterType === 'industries' && filters.industry !== "all")
-                                                        }
+                                                    // disabled={
+                                                    //     // Disable if corresponding dropdown is active
+                                                    //     (filterType === 'countries' && filters.country !== "all") ||
+                                                    //     (filterType === 'industries' && filters.industry !== "all")
+                                                    // }
                                                     >
                                                         {value}
                                                     </button>
@@ -226,10 +226,10 @@ const Portfolio1content = () => {
                                                             className={`filter-chip ${filters.activeFacets[filterType]?.includes(value) ? 'active' : ''
                                                                 }`}
                                                             onClick={() => toggleFacetFilter(filterType, value)}
-                                                            disabled={
-                                                                (filterType === 'countries' && filters.country !== "all") ||
-                                                                (filterType === 'industries' && filters.industry !== "all")
-                                                            }
+                                                        // disabled={
+                                                        //     (filterType === 'countries' && filters.country !== "all") ||
+                                                        //     (filterType === 'industries' && filters.industry !== "all")
+                                                        // }
                                                         >
                                                             {value}
                                                         </button>
@@ -332,16 +332,16 @@ const Portfolio1content = () => {
                             {filteredCards.map((card) => (
                                 <FadeInStagger
                                     key={card.id}
-                                    className="col-lg-3 col-sm-6 project-card"
+                                    className="col-12 col-md-6 col-lg-4 col-xl-3 project-card"
                                     data-category={card.category}
                                     data-country={card.country}
                                     data-industry={card.industry}
                                 >
-                                    <div className="imagescrolling-wrapper portfolio-image-wrapper">
+                                    <div className="portfolio-image-wrapper">
                                         <img
                                             src={card.image}
                                             alt={card.name}
-                                            className="image-scrolling portfolio-image"
+                                            className="image-scrolling"
                                             loading='lazy'
                                         />
                                     </div>
