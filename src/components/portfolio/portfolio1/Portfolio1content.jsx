@@ -342,6 +342,7 @@ const Portfolio1content = () => {
                                             src={card.image}
                                             alt={card.name}
                                             className="image-scrolling portfolio-image"
+                                            loading='lazy'
                                         />
                                     </div>
                                     <h4 className="py-4 text-center">{card.name}</h4>
