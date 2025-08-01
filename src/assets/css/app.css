@@ -3792,9 +3792,7 @@ h1.post__title {
 }
 
 .aximo-hero-thumb {
-	/* right: -5%; */
 	max-width: 425px;
-	/* height: 490px; */
 	overflow: hidden;
 	border-radius: 20px;
 	position: absolute;
@@ -3806,8 +3804,6 @@ h1.post__title {
 	transform: translate3d(0, 0px, 0) scale(1);
 	max-width: 490px;
 	width: 100%;
-
-	/* height: 490px; */
 }
 
 .aximo-hero-thumb img:hover {
@@ -3938,11 +3934,9 @@ h1.post__title {
 }
 
 .aximo-hero-user-thumb-item {
-	width: 66px;
-	height: 66px;
+	width: 65px;
+	height: 65px;
 	position: relative;
-	border-radius: 100%;
-	border: 5px solid var(--dark-bg);
 	overflow: hidden;
 }
 
@@ -6764,8 +6758,7 @@ img.aximo-video-circle {
 	height: 70px;
 	flex-shrink: 0;
 	overflow: hidden;
-	border-radius: 100%;
-	border: 3px solid var(--heading-color);
+
 }
 
 .aximo-testimonial-author-thumb img {
@@ -12069,17 +12062,18 @@ button#aximo-notified-btn {
 
 .mega-menu {
 	width: 100%;
-	height: auto;
+	height: fit-content;
 	position: absolute;
 	top: -20px;
 	left: -125%;
 	background-color: #fff;
 	border-radius: 6px;
 	box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, .3);
-	min-width: 780px;
+	min-width: 804px;
 	transform: translatey(20px);
 	transition: .4s;
 	z-index: 9;
+
 
 }
 
@@ -12110,7 +12104,12 @@ button#aximo-notified-btn {
 	font-size: 18px;
 	margin-bottom: 10px;
 	color: #92d600;
-	border-bottom: 2px solid #92d600;
+	/* border-bottom: 2px solid #92d600; */
+	text-decoration: underline;
+	text-decoration-color: #92d600;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 12px;
+	/* padding-bottom: 8px; */
 }
 
 .site-menu-main .mega-menu-item {
@@ -12646,8 +12645,15 @@ span.lazy-load-image-background.blur.lazy-load-image-loaded {
 	height: 80px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 991px) {
 	.homepage-logo-slider {
 		height: 60px;
 	}
+}
+
+.slick-initialized .slick-slide {
+	/* algined logo to center position */
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
 }

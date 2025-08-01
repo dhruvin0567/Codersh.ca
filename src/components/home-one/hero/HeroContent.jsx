@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import ShapeImg from "../../../assets/images/v1/shape1.webp";
 import StarImg from "../../../assets/images/v1/star2.webp";
-import User1Img from "../../../assets/images/v1/user1.webp";
-import User2Img from "../../../assets/images/v1/user2.webp";
-import User3Img from "../../../assets/images/v1/user3.webp";
+import User1Img from "/images/clients/client-1.png";
+import User2Img from "/images/clients/client-2.png";
+import User3Img from "/images/clients/client-3.png";
 import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../animation/FadeInStaggerTwo";
 function HeroContent() {
 	return (

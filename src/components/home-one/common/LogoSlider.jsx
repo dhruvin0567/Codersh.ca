@@ -21,11 +21,11 @@ const LogoSlider = ({ logos = [], title = "", sliderOptions = {} }) => {
         speed: 1500,
         autoplay: true,
         autoplaySpeed: 2500,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         pauseOnHover: false,
         responsive: [
-            { breakpoint: 1280, settings: { slidesToShow: 5 } },
+            { breakpoint: 1280, settings: { slidesToShow: 4 } },
             { breakpoint: 1024, settings: { slidesToShow: 3 } },
             { breakpoint: 768, settings: { slidesToShow: 3 } },
             { breakpoint: 576, settings: { slidesToShow: 2 } },
@@ -60,12 +60,12 @@ const LogoSlider = ({ logos = [], title = "", sliderOptions = {} }) => {
                     {logos.map((logo, index) => (
                         <div
                             key={logo.id || logo.image || index}
-                            className="logo-img-slider flex justify-center items-center"
+                            className="logo-img-slider w-100"
                         >
                             <img
                                 src={logo.image}
                                 alt={logo.alt || "Brand logo"}
-                                className="max-h-16 mx-auto object-contain homepage-logo-slider"
+                                className="homepage-logo-slider"
                                 style={{ objectFit: "contain" }}
                                 loading="lazy"
                             />

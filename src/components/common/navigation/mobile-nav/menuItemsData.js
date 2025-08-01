@@ -22,104 +22,105 @@ export const menuItemsData = [
 			},
 		],
 	},
-	{
-		title: "Services",
-		url: "#",
-		submenu: [
-			{
-				title: "Ecommerce Development",
-				url: "#",
-				submenu: [
-					{
-						title: "WooCommerce Development",
-						url: "/services/woocommerce-development",
-					},
-					{
-						title: "Shift4Shop Development",
-						url: "/services/shift-four-shop-development",
-					},
-					{
-						title: "PrestaShop Development",
-						url: "/services/prestashop-development",
-					},
-					{
-						title: "BigCommerce Development",
-						url: "/services/big-commerce-development",
-					},
-				],
-			},
-			{
-				title: "Web Development",
-				url: "#",
-				submenu: [
-					{
-						title: "WordPress Development",
-						url: "/services/wordpress-development",
-					},
-					{
-						title: "PHP Development",
-						url: "/services/php-development",
-					},
-					{
-						title: "Laravel Development",
-						url: "/services/laravel-development",
-					},
-					{
-						title: "ReactJs Development",
-						url: "/services/react-js-development",
-					},
-					{
-						title: "Angular Js Development",
-						url: "/services/angular-js-development",
-					},
-				],
-			},
-			{
-				title: "Mobile App Development",
-				url: "#",
-				submenu: [
-					{
-						title: "Android App Development",
-						url: "/services/android-app-development",
-					},
-					{
-						title: "IOS App Development",
-						url: "/services/ios-app-development",
-					},
-					{
-						title: "Hybrid App Development",
-						url: "/services/hybrid-app-development",
-					},
-					{
-						title: "Flutter Development",
-						url: "/services/flutter-development",
-					},
-					{
-						title: "React Native Development",
-						url: "/services/react-native-development",
-					},
-				],
-			},
-			{
-				title: "UIUX Design",
-				url: "#",
-				submenu: [
-					{
-						title: "Wireframe Design",
-						url: "/services/wireframe-design",
-					},
-					{
-						title: "Website Redesign Service",
-						url: "/services/website-redesign",
-					},
-					{
-						title: "Mobile App Design",
-						url: "/services/mobile-app-design",
-					},
-				],
-			},
-		],
-	},
+	// services nav menu
+	// {
+	// 	title: "Services",
+	// 	url: "#",
+	// 	submenu: [
+	// 		{
+	// 			title: "Ecommerce Development",
+	// 			url: "#",
+	// 			submenu: [
+	// 				{
+	// 					title: "WooCommerce Development",
+	// 					url: "/services/woocommerce-development",
+	// 				},
+	// 				{
+	// 					title: "Shift4Shop Development",
+	// 					url: "/services/shift-four-shop-development",
+	// 				},
+	// 				{
+	// 					title: "PrestaShop Development",
+	// 					url: "/services/prestashop-development",
+	// 				},
+	// 				{
+	// 					title: "BigCommerce Development",
+	// 					url: "/services/big-commerce-development",
+	// 				},
+	// 			],
+	// 		},
+	// 		{
+	// 			title: "Web Development",
+	// 			url: "#",
+	// 			submenu: [
+	// 				{
+	// 					title: "WordPress Development",
+	// 					url: "/services/wordpress-development",
+	// 				},
+	// 				{
+	// 					title: "PHP Development",
+	// 					url: "/services/php-development",
+	// 				},
+	// 				{
+	// 					title: "Laravel Development",
+	// 					url: "/services/laravel-development",
+	// 				},
+	// 				{
+	// 					title: "ReactJs Development",
+	// 					url: "/services/react-js-development",
+	// 				},
+	// 				{
+	// 					title: "Angular Js Development",
+	// 					url: "/services/angular-js-development",
+	// 				},
+	// 			],
+	// 		},
+	// 		{
+	// 			title: "Mobile App Development",
+	// 			url: "#",
+	// 			submenu: [
+	// 				{
+	// 					title: "Android App Development",
+	// 					url: "/services/android-app-development",
+	// 				},
+	// 				{
+	// 					title: "IOS App Development",
+	// 					url: "/services/ios-app-development",
+	// 				},
+	// 				{
+	// 					title: "Hybrid App Development",
+	// 					url: "/services/hybrid-app-development",
+	// 				},
+	// 				{
+	// 					title: "Flutter Development",
+	// 					url: "/services/flutter-development",
+	// 				},
+	// 				{
+	// 					title: "React Native Development",
+	// 					url: "/services/react-native-development",
+	// 				},
+	// 			],
+	// 		},
+	// 		{
+	// 			title: "UIUX Design",
+	// 			url: "#",
+	// 			submenu: [
+	// 				{
+	// 					title: "Wireframe Design",
+	// 					url: "/services/wireframe-design",
+	// 				},
+	// 				{
+	// 					title: "Website Redesign Service",
+	// 					url: "/services/website-redesign",
+	// 				},
+	// 				{
+	// 					title: "Mobile App Design",
+	// 					url: "/services/mobile-app-design",
+	// 				},
+	// 			],
+	// 		},
+	// 	],
+	// },
 
 	{
 		title: "Shopify",
@@ -237,10 +238,10 @@ export const menuItemsData = [
 			},
 		],
 	},
-	{
-		title: "Our Blog",
-		url: "ourblog",
-	},
+	// {
+	// 	title: "Our Blog",
+	// 	url: "ourblog",
+	// },
 	{
 		title: "Contact Us",
 		url: "contact-us",

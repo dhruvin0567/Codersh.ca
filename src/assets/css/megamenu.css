@@ -31,7 +31,11 @@
     margin-bottom: 15px;
     color: #92d600;
     font-weight: 600;
-    border-bottom: 2px solid #92d600;
+    /* border-bottom: 2px solid #92d600; */
+    text-decoration: underline;
+    text-decoration-color: #92d600;
+    text-decoration-thickness: 2px;
+    padding-bottom: 8px;
     padding-bottom: 8px;
 }
 

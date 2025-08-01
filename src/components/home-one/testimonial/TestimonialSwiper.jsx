@@ -5,10 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 import '../../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
 import TestimonialCard from "./TestimonialCard";
 import Star2Img from "../../../assets/images/v1/star2.webp";
-import Thumb1Img from "../../../assets/images/v1/t_thumb1.webp";
-import Thumb2Img from "../../../assets/images/v1/t_thumb2.webp";
-import Thumb4Img from "../../../assets/images/v1/t_thumb4.webp";
-import Thumb3Img from "../../../assets/images/v1/t_thumb3.webp";
+import Thumb1Img from "/images/clients/client-4.png";
+import Thumb2Img from "/images/clients/client-5.png";
+import Thumb4Img from "/images/clients/client-6.png";
+import Thumb3Img from "/images/clients/client-7.png";
 import FadeInStagger from "../../animation/FadeInStagger";
 
 

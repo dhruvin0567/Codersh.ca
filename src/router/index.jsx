@@ -85,7 +85,7 @@ import Brand from "../page/brand/BrandCustom.jsx";
 import SingleBrandCustom from "../page/brand/SingleBrandCustom.jsx";
 import CaseStudiesStatic from "../page/projects/CaseStudiesStatic.jsx";
 import SingleCaseStudyStatic from "../page/projects/SingleCaseStudyStatic.jsx";
-import SingleServicesStactic from "../page/service/service_pg/SingleServicesStactic.jsx";
+// import SingleServicesStactic from "../page/service/service_pg/SingleServicesStactic.jsx";
 
 
 export const router = createBrowserRouter([
@@ -201,10 +201,10 @@ export const router = createBrowserRouter([
 						path: "/team",
 						element: <Team />,
 					},
-					{
-						path: "/services/:slug",
-						element: <SingleServicesStactic />,
-					},
+					// {
+					// 	path: "/services/:slug",
+					// 	element: <SingleServicesStactic />,
+					// },
 					{
 						path: "/customStore",
 						element: <CustomStore />,

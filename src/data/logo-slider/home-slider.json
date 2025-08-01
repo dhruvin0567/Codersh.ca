@@ -1,27 +1,27 @@
 [
     {
         "id": "google",
-        "image": "/images/logo-slider/500.png",
+        "image": "/images/logo-slider/500-test.png",
         "alt": "Google"
     },
         {
         "id": "facebook",
-        "image": "/images/logo-slider/christianbookbag.png",
+        "image": "/images/logo-slider/christianbookbag-test.png",
         "alt": "Facebook"
     },
     {
         "id": "facebook",
-        "image": "/images/logo-slider/anadian.png",
+        "image": "/images/logo-slider/reinventu-demo.png",
         "alt": "Facebook"
     },
-        {
+    {
         "id": "facebook",
-        "image": "/images/logo-slider/reinventu.png",
+        "image": "/images/logo-slider/anadian-test.png",
         "alt": "Facebook"
     },
         {
         "id": "google",
-        "image": "/images/logo-slider/chenchef.png",
+        "image": "/images/logo-slider/chenchef-demo.png",
         "alt": "Google"
     }
 

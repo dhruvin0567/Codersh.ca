@@ -4,8 +4,8 @@ function Mega_Menu() {
     const location = useLocation();
 
     return (
-        <div className="mega-menu container-fluid px-5 py-4">
-            <div className="row gy-4">
+        <div className="mega-menu p-4">
+            <div className="row">
                 <div className="col-12 col-md-6 col-lg-4">
                     <p className="mega-menu-title">New Shopify Stores</p>
                     <ul className="list-unstyled">
