@@ -1,17 +1,13 @@
+import { useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";  // Import useNavigate hook from React Router
-// import { InstagramEmbed } from 'react-social-media-embed';
 import { useForm } from "react-hook-form";
-// import ContactThumb from "../../assets/images/contact/contact-thumb-1.webp";
 import Star2Img from "../../assets/images/v1/star2.webp";
 import FadeInRight from "../animation/FadeInRight";
 import Field from "../common/Field";
 import ContactVideo from "../../assets/images/Videos/reel.mp4";
-// import VideoPoster from "../../assets/images/Videos/Screenshot 2025-04-14 120605.png";
-// import emailjs from '@emailjs/browser';
-import { useRef, useState, useEffect } from "react";
+import emailjs from '@emailjs/browser';
 
 function ContactForm() {
-
 
 	const videoRef = useRef(null);
 	const [isPlaying, setIsPlaying] = useState(false);
@@ -45,9 +41,6 @@ function ContactForm() {
 		};
 	}, []);
 
-
-
-
 	const {
 		register,
 		handleSubmit,
@@ -57,37 +50,79 @@ function ContactForm() {
 
 	const navigate = useNavigate();  // Initialize navigate function
 
-	// Submit form
+	// Submit form --wordpress
+	// const submitForm = async (formData) => {
+	// 	console.log("Form Data: ", formData);
+
+	// 	try {
+	// 		const response = await fetch("https://projects.codersh.com/aximo/wp-json/wp/v2/form-submit", {
+	// 			method: "POST",
+	// 			headers: {
+	// 				"Content-Type": "application/json",
+	// 			},
+	// 			body: JSON.stringify(formData),
+	// 		});
+
+	// 		const result = await response.json();
+
+	// 		if (response.ok) {
+	// 			console.log("Form submitted successfully:", result);
+	// 			// alert("Thank you! Your form has been submitted.");
+	// 			reset(); // Reset the form fields after successful submission
+
+	// 			// Navigate to the Thank You page
+	// 			navigate("/thank-you");  // Use React Router to navigate to the Thank You page
+
+
+	// 		} else {
+	// 			console.error("Form submission failed:", result);
+	// 			alert("Form submission failed. Please try again.");
+	// 		}
+	// 	} catch (error) {
+	// 		console.error("Error submitting form:", error);
+	// 		alert("An error occurred. Please try again.");
+	// 	}
+	// };
+
+	// ✅ Submit form with EmailJS
 	const submitForm = async (formData) => {
-		console.log("Submitted Form Data =", formData);
+		console.log("Form Data: ", formData);
 
 		try {
-			const response = await fetch("https://projects.codersh.com/aximo/wp-json/wp/v2/form-submit", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify(formData),
-			});
+			const result = await emailjs.send(
+				"service_ry5xraq",       // Replace with your actual EmailJS service ID
+				"template_2ixe2hu",      // Replace with your actual EmailJS template ID
+				formData,
+				"xXD66OwtNN0ehOvWz"        // Replace with your actual EmailJS public key
+			);
 
-			const result = await response.json();
+			console.log("Email sent successfully:", result.text);
+			alert("email sent successfully....")
 
-			if (response.ok) {
-				console.log("Form submitted successfully:", result);
-				// alert("Thank you! Your form has been submitted.");
-				reset(); // Reset the form fields after successful submission
+			// ✅ 2. Send notification to admin
+			const adminTemplateParams = {
+				name: formData.name,
+				email: formData.email,
+				number: formData.number,
+				message: formData.message,
 
-				// Navigate to the Thank You page
-				navigate("/thank-you");  // Use React Router to navigate to the Thank You page
+			};
 
+			const adminResponse = await emailjs.send(
+				"service_ry5xraq",
+				"template_num0fab",  // Template for admin notification
+				adminTemplateParams,
+				"xXD66OwtNN0ehOvWz"
+			);
+			console.log("Admin Params:", adminTemplateParams);
+			console.log("Admin notification sent:", adminResponse.text);
 
-			} else {
-				console.error("Form submission failed:", result);
-				alert("Form submission failed. Please try again.");
-			}
+			reset(); // Reset form fields
+			navigate("/thank-you"); // Navigate to Thank You page
+
 		} catch (error) {
-			console.error("Error submitting form:", error);
-			alert("An error occurred. Please try again.");
+			console.error("EmailJS error:", error);
+			alert("Something went wrong. Please try again later.");
 		}
 	};
 
