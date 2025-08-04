@@ -1,8 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate hook from React Router
 import { useForm } from "react-hook-form";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
 import Star2Img from "../../assets/images/v1/star2.webp";
 import FadeInRight from "../animation/FadeInRight";
 import Field from "../common/Field";
@@ -52,6 +51,24 @@ function ContactForm() {
 
   const navigate = useNavigate(); // Initialize navigate function
 
+  const verifyEmail = async (email) => {
+    try {
+      const response = await fetch(
+        `https://emailvalidation.abstractapi.com/v1/?api_key=${
+          import.meta.env.VITE_ABSTRACT_API_KEY
+        }&email=${email}`
+      );
+
+      if (!response.ok) throw new Error("API request failed");
+
+      const data = await response.json();
+      return data;
+    } catch (err) {
+      console.error("Email validation error:", err);
+      return null;
+    }
+  };
+
   // Submit form --wordpress
   // const submitForm = async (formData) => {
   // 	console.log("Form Data: ", formData);
@@ -85,23 +102,36 @@ function ContactForm() {
   // 	}
   // };
 
-  // ✅ Submit form with EmailJS
+  // Submit form with EmailJS
+
   const submitForm = async (formData) => {
     console.log("Form Data: ", formData);
     setIsSubmitting(true);
 
     try {
+      // Check email validity
+      const emailCheck = await verifyEmail(formData.email);
+
+      if (!emailCheck || emailCheck.deliverability !== "DELIVERABLE") {
+        toast.error(
+          "The provided email is not deliverable. Please use a valid email address."
+        );
+        setIsSubmitting(false);
+        return;
+      }
+
       const result = await emailjs.send(
-        "service_ry5xraq", // Replace with your actual EmailJS service ID
-        "template_2ixe2hu", // Replace with your actual EmailJS template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID, //  EmailJS service ID
+        import.meta.env.VITE_EMAILJS_TEMPLATE_USER, // user-facing template ID
         formData,
-        "xXD66OwtNN0ehOvWz" // Replace with your actual EmailJS public key
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY //  public API key
       );
 
       console.log("Email sent successfully:", result.text);
       toast.success("Email sent successfully!");
+      await new Promise((res) => setTimeout(res, 500));
 
-      // ✅ 2. Send notification to admin
+      // Send notification to admin
       const adminTemplateParams = {
         name: formData.name,
         email: formData.email,
@@ -110,10 +140,10 @@ function ContactForm() {
       };
 
       const adminResponse = await emailjs.send(
-        "service_ry5xraq",
-        "template_num0fab", // Template for admin notification
+        import.meta.env.VITE_EMAILJS_SERVICE_ID, //  EmailJS service ID
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ADMIN, // user-facing template ID
         adminTemplateParams,
-        "xXD66OwtNN0ehOvWz"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY //  public API key,
       );
       console.log("Admin Params:", adminTemplateParams);
       console.log("Admin notification sent:", adminResponse.text);
@@ -123,6 +153,7 @@ function ContactForm() {
     } catch (error) {
       console.error("EmailJS error:", error);
       toast.error("Something went wrong. Please try again later.");
+      await new Promise((res) => setTimeout(res, 300));
     } finally {
       setIsSubmitting(false);
     }
@@ -140,7 +171,6 @@ function ContactForm() {
 
   return (
     <div className="section aximo-section-padding">
-      <ToastContainer position="top-right" autoClose={3000} />
       <div className="container">
         <div className="row">
           <div className="col-lg-8">
