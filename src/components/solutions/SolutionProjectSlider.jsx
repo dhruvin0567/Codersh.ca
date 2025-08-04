@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -13,32 +13,6 @@ const GlobalStyle = createGlobalStyle`
 const SolutionProjectSlider = React.memo(function SolutionProjectSlider({
   slides = [],
 }) {
-  const [loadState, setLoadState] = useState({});
-
-  useEffect(() => {
-    slides.forEach((_, index) => {
-      setTimeout(() => {
-        setLoadState((prev) => ({
-          ...prev,
-          [index]: {
-            ...(prev[index] || {}),
-            delayPassed: true,
-          },
-        }));
-      }, 1500);
-    });
-  }, [slides]);
-
-  const handleImageLoad = (index) => {
-    setLoadState((prev) => ({
-      ...prev,
-      [index]: {
-        ...(prev[index] || {}),
-        loaded: true,
-      },
-    }));
-  };
-
   const sliderSettings = {
     dots: false,
     arrows: false,
@@ -84,38 +58,20 @@ const SolutionProjectSlider = React.memo(function SolutionProjectSlider({
       <section className="section aximo-project-page aximo-section-padding5">
         <div className="container-fluid">
           <Slider {...sliderSettings} className="custom-slider">
-            {slides.map((slide, index) => {
-              const state = loadState[index] || {};
-              const showImage = state.loaded && state.delayPassed;
-              return (
-                <div className="slide-item" key={slide.id || index}>
-                  <div
-                    className="aximo-project-thumb Solution-slider mb-0"
-                    style={{
-                      cursor: "grab",
-                      position: "relative",
-                      minHeight: "250px",
-                    }}
-                  >
-                    {!showImage && (
-                      <div className="image-loader">
-                        <div className="aximo-preloader">
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                        </div>
-                      </div>
-                    )}
-                    <img
-                      src={slide.image}
-                      alt={slide.alt || "Project Image"}
-                      loading="lazy"
-                      onLoad={() => handleImageLoad(index)}
-                    />
-                  </div>
+            {slides.map((slide, index) => (
+              <div className="slide-item" key={slide.id || index}>
+                <div
+                  className="aximo-project-thumb Solution-slider mb-0"
+                  style={{ cursor: "grab" }}
+                >
+                  <img
+                    src={slide.image}
+                    alt={slide.alt || "Project Image"}
+                    loading="lazy"
+                  />
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </Slider>
         </div>
       </section>
