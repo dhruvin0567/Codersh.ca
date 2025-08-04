@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 
 function TeamCard({ team: { name, designation, img }, index }) {
 	return (
