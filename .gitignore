@@ -46,3 +46,4 @@ pnpm-debug.log*
 
 # optional: testing
 /jest-test-results.json
+.vercel

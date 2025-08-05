@@ -14,15 +14,27 @@ export const PasswordProvider = ({ children }) => {
     }
   }, []);
 
-  const verifyPassword = (inputPassword) => {
-    const correctPassword = import.meta.env
-      .VITE_WORK_SECTION_AUTHENTICATION_KEY; //authentication password/key
-    if (inputPassword === correctPassword) {
-      sessionStorage.setItem("hasAccess", "true");
-      setHasAccess(true);
-      return true;
+  const verifyPassword = async (inputPassword) => {
+    try {
+      const response = await fetch("/api/verify-password", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password: inputPassword }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        sessionStorage.setItem("hasAccess", "true");
+        setHasAccess(true);
+        return true;
+      } else {
+        return false;
+      }
+    } catch (error) {
+      console.error("Password verification failed", error);
+      return false;
     }
-    return false;
   };
 
   const value = { hasAccess, verifyPassword };
