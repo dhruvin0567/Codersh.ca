@@ -1,29 +1,45 @@
 import { useEffect, useState } from "react";
 
 export default function ScrollToTop() {
-	const [showTopBtn, setShowTopBtn] = useState(false);
+  const [showTopBtn, setShowTopBtn] = useState(false);
 
-	useEffect(() => {
-		window.addEventListener("scroll", () => {
-			if (window.scrollY > 700) {
-				setShowTopBtn(true);
-			} else {
-				setShowTopBtn(false);
-			}
-		});
-	}, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
 
-	const goToTop = () => {
-		window.scrollTo({
-			top: 0,
-			behavior: "smooth",
-		});
-	};
-	return (
-		showTopBtn && (
-			<div className="aximo-go-top" onClick={goToTop}>
-				<i className="fas fa-arrow-up"></i>
-			</div>
-		)
-	);
+      const scrollPosition = scrollTop + windowHeight;
+      const scrollPercentage = scrollPosition / documentHeight;
+
+      // Show button when user has scrolled past 80% of the page
+      if (scrollPercentage >= 0.8) {
+        setShowTopBtn(true);
+      } else {
+        setShowTopBtn(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  return (
+    showTopBtn && (
+      <div className="aximo-go-top" onClick={goToTop}>
+        <i className="fas fa-arrow-up"></i>
+      </div>
+    )
+  );
 }
