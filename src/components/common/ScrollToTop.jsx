@@ -13,7 +13,7 @@ export default function ScrollToTop() {
       const scrollPercentage = scrollPosition / documentHeight;
 
       // Show button when user has scrolled past 80% of the page
-      if (scrollPercentage >= 0.7 && scrollPercentage <= 0.95) {
+      if (scrollPercentage >= 0.5 && scrollPercentage <= 0.97) {
         setShowTopBtn(true);
       } else {
         setShowTopBtn(false);

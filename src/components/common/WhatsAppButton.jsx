@@ -22,11 +22,11 @@ const WhatsAppButton = () => {
     const resetHideTimeout = () => {
       // Hide the button after 4 seconds of inactivity
       if (timeoutId) clearTimeout(timeoutId); // Clear any existing timeout
-      timeoutId = setTimeout(hideButton, 4000); // Reset the timer to 4 seconds
+      timeoutId = setTimeout(hideButton, 3000); // Reset the timer to 4 seconds
       setIsVisible(true); // Make sure the button is visible when user interacts
     };
 
-    let timeoutId = setTimeout(hideButton, 4000); // Initial timeout to hide the button after 4 seconds
+    let timeoutId = setTimeout(hideButton, 3000); // Initial timeout to hide the button after 4 seconds
 
     // Add event listeners for user interactions
     window.addEventListener("scroll", resetHideTimeout);
