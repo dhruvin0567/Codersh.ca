@@ -1,4 +1,9 @@
 /*Header Css StaRT*/
+
+html {
+  scroll-behavior: smooth;
+}
+
 .site-navbar {
   display: flex;
   position: relative;
@@ -417,10 +422,10 @@
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .site-menu-main .nav-link-item {
+  /* .site-menu-main .nav-link-item {
     padding-left: 7px !important;
     padding-right: 7px !important;
-  }
+  } */
 
   .site-navbar .menu-block-wrapper {
     flex-grow: 1;
@@ -437,9 +442,9 @@
     margin-right: 0px;
   }
 
-  .aximo-default-btn.aximo-header-btn {
+  /* .aximo-default-btn.aximo-header-btn {
     width: 155px;
-  }
+  } */
 }
 
 .dark-mode-texts .nav-link-item {
@@ -1140,7 +1145,7 @@ a.log-in-btn:hover:after {
   /* right: 6%; */
   left: 50%; /* Move to center horizontally */
   transform: translateX(-50%); /* Perfect centering */
-  z-index: 99;
+  z-index: 97;
   cursor: pointer;
   -webkit-font-smoothing: antialiased;
   margin: 24px 24px 52px;

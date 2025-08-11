@@ -133,11 +133,11 @@ function SingleCaseStudy() {
     <div className="section post-details-page aximo-section-padding2">
       <div className="container">
         <div className="row">
-          <div className="col-lg-8">
+          <div className="col-xl-8">
             {/* <CaseStudyDetails /> */}
             <SingleCSdetailsStatic slug={slug} />
           </div>
-          <div className="col-lg-4">
+          <div className="col-xl-4">
             <div className="right-sidebar">
               <div className="px-2 mb-3">
                 <h3>Let's Connect!</h3>

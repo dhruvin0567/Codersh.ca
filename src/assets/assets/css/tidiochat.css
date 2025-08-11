@@ -1,0 +1,10 @@
+/* TidioChat.css
+.tidio-chat-widget {
+  position: absolute !important;
+  transition: opacity 0.5s ease !important; 
+  opacity: 1 !important;
+}
+
+.tidio-chat-widget.hidden {
+  opacity: 0 !important;
+} */

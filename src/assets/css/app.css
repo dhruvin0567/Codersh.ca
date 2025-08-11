@@ -14,6 +14,11 @@
      1.4 themes css
 
 **/
+
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --heading-color: #000;
   --heading-color2: #1b1b1b;
@@ -3026,6 +3031,12 @@ textarea {
   height: 100px !important;
 }
 
+@media (min-width: 1200px) and (max-width: 1281px) {
+  .input-textarea {
+    height: 65px !important;
+  }
+}
+
 @media (max-width: 767px) {
   textarea {
     height: 100px;
@@ -3663,6 +3674,11 @@ h1.post__title {
     font-size: 36px;
   }
 }
+@media (max-width: 576px) {
+  h1.post__title {
+    font-size: 34px;
+  }
+}
 
 .breadcrumbs ul li {
   font-size: 21px;
@@ -3798,7 +3814,7 @@ h1.post__title {
 }
 
 .aximo-hero-thumb img:hover {
-  transform: translate3d(0, 0px, 0) scale(1.1);
+  transform: translate3d(0, 0px, 0) scale(1.05);
 }
 
 @media (max-width: 1449px) {
@@ -7199,6 +7215,34 @@ img.aximo-video-circle {
   display: inline-block;
 }
 
+/* removed socila icons for mobile screen size */
+@media (max-width: 576px) {
+  .aximo-social-icon ul li {
+    margin: 0px;
+    display: none;
+  }
+}
+
+/* @media (max-width: 480px) {
+  .aximo-social-icon ul li {
+    margin: 0 2px;
+    display: inline-block;
+  }
+
+  .aximo-team-wrap:hover .team-social {
+    opacity: 1;
+    visibility: visible;
+    bottom: 35px;
+  }
+}
+
+@media (max-width: 375px) {
+  .aximo-social-icon ul li {
+    margin: 0px;
+    display: inline-block;
+  }
+} */
+
 .aximo-social-icon ul li:first-child {
   margin-left: 0;
 }
@@ -9314,6 +9358,7 @@ a.forgot-password {
 .aximo-account-checkbox label:before {
   content: "";
   -webkit-appearance: none;
+  appearance: none;
   background-color: transparent;
   border: 1.5px solid #7f8995;
   padding: 7px;
@@ -11106,6 +11151,13 @@ a.aximo-connect-login img {
   margin-bottom: 20px;
 }
 
+@media (max-width: 576px) {
+  .post-meta {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
 .post-category a {
   padding: 9px 23px;
   border-radius: 50px;
@@ -11351,6 +11403,9 @@ button#wp-block-search__button {
 
 .post-details-page .post-thumbnail {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .entry-content img {
@@ -11998,12 +12053,6 @@ button#aximo-notified-btn {
 .right-sidebar {
   position: sticky;
   top: 5.5em;
-}
-
-@media (max-width: 1200px) {
-  .right-sidebar {
-    top: 7em;
-  }
 }
 
 .form-input {

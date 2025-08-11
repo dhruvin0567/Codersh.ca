@@ -14,14 +14,19 @@
   align-items: center;
   justify-content: center;
   font-size: 28px;
-  z-index: 1000;
+  z-index: 97;
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 1;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
 .whatsapp-floating-btn:hover {
   transform: scale(1.1);
+}
+
+.whatsapp-floating-btn.hidden {
+  opacity: 0; /* Hidden when not visible */
 }
 
 /* @media (max-width: 991px) {

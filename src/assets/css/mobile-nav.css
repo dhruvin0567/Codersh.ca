@@ -1,142 +1,159 @@
 .mobile-nav-wrap {
-	display: none;
+  display: none;
 }
 .mobile-navbar {
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: #fff;
-	width: 320px;
-	z-index: 9999;
-	border: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 320px;
+  z-index: 9999;
+  border: 1px solid #ddd;
 }
 .mobile-nav-wrap .mobile-menu-trigger {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 32px;
-	width: 32px;
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	right: 0;
-	transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }
 .mobile-nav-wrap .mobile-menu-trigger span {
-	display: block;
-	height: 2px;
-	background-color: #000;
-	width: 24px;
-	position: relative;
+  display: block;
+  height: 2px;
+  background-color: #000;
+  width: 24px;
+  position: relative;
 }
 
 .mobile-nav-wrap .mobile-menu-trigger span:before,
 .mobile-nav-wrap .mobile-menu-trigger span:after {
-	content: "";
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #000;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
 }
 
 .mobile-nav-wrap .mobile-menu-trigger span:before {
-	top: -8px;
+  top: -8px;
 }
 .mobile-nav-wrap .mobile-menu-trigger span:after {
-	top: 8px;
+  top: 8px;
 }
 .mobile-nav--overlay {
-	position: fixed;
-	background-color: rgba(0, 0, 0, 0.5);
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 9998;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
 }
 
 .mobile-menu-head {
-	display: flex;
-	height: 50px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	justify-content: space-between;
-	align-items: center;
-	position: relative;
+  display: flex;
+  height: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 .mobile-menu-head--close {
-	height: 100%;
-	width: 50px;
-	border-left: 1px solid rgba(0, 0, 0, 0.1);
-	cursor: pointer;
-	line-height: 50px;
-	text-align: center;
-	color: #000000;
-	font-size: 28px;
-	font-weight: 600;
+  height: 100%;
+  width: 50px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  line-height: 50px;
+  text-align: center;
+  color: #000000;
+  font-size: 28px;
+  font-weight: 600;
 }
 .mobile-menu-head--title {
-	margin: auto;
-	font-size: 18px;
-	text-transform: uppercase;
-	font-weight: 700;
+  margin: auto;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .mobile-navbar > ul {
-	overflow-y: auto;
-	height: 100vh;
+  overflow-y: auto;
+  height: 100vh;
 }
 .mobile-navbar ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .mobile-navbar > ul > li:last-child a {
-	border-bottom: none;
+  border-bottom: none;
 }
 
 .mobile-navbar ul li button {
-	background-color: transparent;
-	border: none;
-	width: 100%;
-	text-align: left;
-	cursor: pointer;
-	padding: 0;
-	position: relative;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
 }
 .mobile-navbar ul li a,
 .mobile-navbar ul li button {
-	font-family: sans-serif;
-	color: #000;
-	display: block;
-	font-size: 16px;
-	font-weight: 600;
-	line-height: 50px;
-	height: 50px;
-	text-decoration: none;
-	padding: 0 20px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+  color: #000;
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 50px;
+  height: 50px;
+  text-decoration: none;
+  padding: 0 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* new css */
+  position: relative;
+  z-index: 1;
 }
 .mobile-navbar ul li button i {
-	position: absolute;
-	top: 20px;
-	right: 25px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
 }
 
 .sub-menu.level-1 a,
 .sub-menu.level-1 button {
-	padding: 0 20px 0 40px;
+  padding: 0 20px 0 40px;
 }
 .sub-menu.level-2 a,
 .sub-menu.level-2 button {
-	padding: 0 20px 0 60px;
+  padding: 0 20px 0 60px;
 }
 .sub-menu.level-3 a,
 .sub-menu.level-3 button {
-	padding: 0 20px 0 80px;
+  padding: 0 20px 0 80px;
 }
 
 @media (max-width: 992px) {
-	.mobile-nav-wrap {
-		display: block;
-	}
+  .mobile-nav-wrap {
+    display: block;
+  }
+}
+
+/* new latest css  */
+.mobile-navbar ul li:last-child a {
+  z-index: 1000; /* Ensure it is above dropdowns */
+}
+
+.sub-menu {
+  z-index: 9999; /* Ensures it is not covering bottom items */
+}
+
+.mobile-navbar > ul {
+  max-height: calc(100vh - 50px); /* Make sure the navbar doesn't overflow */
+  overflow-y: auto; /* Allow scrolling if necessary */
 }
