@@ -1,0 +1,41 @@
+/* ======= Dynamic Blog Page Css ======= */
+.dynamic-blog-content h1 {
+  font-size: 3.5rem !important;
+  line-height: 3.5rem !important;
+  margin-bottom: 1rem !important;
+}
+.dynamic-blog-content h2 {
+  font-size: 2.625rem !important;
+  line-height: 2.625rem !important;
+  margin-bottom: 1rem !important;
+}
+.dynamic-blog-content h3 {
+  font-size: 1.75rem !important;
+  line-height: 1.75rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.dynamic-blog-content b,
+.dynamic-blog-content strong {
+  font-weight: 600 !important;
+}
+.dynamic-blog-content ul {
+  margin-bottom: 30px !important;
+}
+
+.dynamic-blog-content ul li b,
+.dynamic-blog-content ul li strong,
+.dynamic-blog-content ol li,
+.dynamic-blog-content ul li {
+  font-size: 21px !important;
+}
+
+.dynamic-blog-content ul li span,
+.dynamic-blog-content span {
+  font-weight: 400 !important;
+}
+
+.dynamic-blog-content code {
+  font-family: "Inter", sans-serif;
+  font-size: 21px !important;
+}
