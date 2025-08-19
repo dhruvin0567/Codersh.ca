@@ -53,6 +53,33 @@ function GridBlog() {
     }
   };
 
+  const generatePageNumbers = () => {
+    const delta = 1;
+    const pages = [];
+
+    const range = [];
+    for (
+      let i = Math.max(2, currentPage - delta);
+      i <= Math.min(totalPages - 1, currentPage + delta);
+      i++
+    ) {
+      range.push(i);
+    }
+
+    if (currentPage - delta > 2) {
+      range.unshift("...");
+    }
+
+    if (currentPage + delta < totalPages - 1) {
+      range.push("...");
+    }
+
+    range.unshift(1);
+    if (totalPages > 1) range.push(totalPages);
+
+    return range;
+  };
+
   if (loading)
     return (
       <div className="blod-fetch">
@@ -66,71 +93,79 @@ function GridBlog() {
     );
 
   return (
-    <div className="section aximo-section-padding2 aximo-project-page">
-      <div className="container">
-        <div className="row">
-          {posts.map((blog, index) => (
-            <FadeInStagger className="col-lg-6" key={blog.id} index={index}>
-              <PortfolioCardTwo blog={blog} />
-            </FadeInStagger>
-          ))}
-        </div>
-
-        {/* Pagination */}
-        {totalPages > 1 && (
-          <div className="aximo-navigation">
-            <nav className="navigation pagination" aria-label="Posts">
-              <div className="nav-links">
-                {/* Previous Page */}
-                {currentPage > 1 && (
-                  <a
-                    href="#"
-                    className="prev page-numbers"
-                    onClick={(e) => handlePageClick(e, currentPage - 1)}
-                  >
-                    <img src={arrowLeft} alt="arrow-img" />
-                  </a>
-                )}
-
-                {/* Page Numbers */}
-                {Array.from({ length: totalPages }, (_, i) => {
-                  const pageNum = i + 1;
-                  return pageNum === currentPage ? (
-                    <span
-                      key={pageNum}
-                      aria-current="page"
-                      className="page-numbers current"
-                    >
-                      {pageNum}
-                    </span>
-                  ) : (
-                    <a
-                      key={pageNum}
-                      href="#"
-                      className="page-numbers"
-                      onClick={(e) => handlePageClick(e, pageNum)}
-                    >
-                      {pageNum}
-                    </a>
-                  );
-                })}
-
-                {/* Next Page */}
-                {currentPage < totalPages && (
-                  <a
-                    href="#"
-                    className="next page-numbers"
-                    onClick={(e) => handlePageClick(e, currentPage + 1)}
-                  >
-                    <img src={arrowRight} alt="arrow-img" />
-                  </a>
-                )}
-              </div>
-            </nav>
+    <>
+      <div className="section aximo-section-padding2 aximo-project-page">
+        <div className="container">
+          <div className="row">
+            {posts.map((blog, index) => (
+              <FadeInStagger className="col-lg-6" key={blog.id} index={index}>
+                <PortfolioCardTwo blog={blog} />
+              </FadeInStagger>
+            ))}
           </div>
-        )}
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div className="aximo-navigation">
+              <nav className="navigation pagination" aria-label="Posts">
+                <div className="nav-links">
+                  {/* Previous Page */}
+                  {currentPage > 1 && (
+                    <a
+                      href="#"
+                      className="prev page-numbers"
+                      onClick={(e) => handlePageClick(e, currentPage - 1)}
+                    >
+                      <img src={arrowLeft} alt="arrow-img" />
+                    </a>
+                  )}
+
+                  {/* Dynamic Page Numbers */}
+                  {generatePageNumbers().map((page, index) =>
+                    page === "..." ? (
+                      <span
+                        key={`ellipsis-${index}`}
+                        className="page-numbers dots"
+                      >
+                        ...
+                      </span>
+                    ) : page === currentPage ? (
+                      <span
+                        key={page}
+                        aria-current="page"
+                        className="page-numbers current"
+                      >
+                        {page}
+                      </span>
+                    ) : (
+                      <a
+                        key={page}
+                        href="#"
+                        className="page-numbers"
+                        onClick={(e) => handlePageClick(e, page)}
+                      >
+                        {page}
+                      </a>
+                    )
+                  )}
+
+                  {/* Next Page */}
+                  {currentPage < totalPages && (
+                    <a
+                      href="#"
+                      className="next page-numbers"
+                      onClick={(e) => handlePageClick(e, currentPage + 1)}
+                    >
+                      <img src={arrowRight} alt="arrow-img" />
+                    </a>
+                  )}
+                </div>
+              </nav>
+            </div>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
