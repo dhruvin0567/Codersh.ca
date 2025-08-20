@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom";
 import Blog1Img from "/src/assets/images/images2/lcp-issue-768x404.webp";
 import Blog2Img from "/src/assets/images/images2/1-768x403.webp";
 import Blog3Img from "/src/assets/images/images2/step-by-step-guide-768x404.webp";
@@ -28,14 +28,12 @@ import Blog26Img from "/src/assets/images/images2/Unleashing-the-Power-of-Shopif
 import Blog27Img from "/src/assets/images/images2/Optimizing-Shopify-Store-Performance-A-Technical-Guide-768x404.webp";
 import Blog28Img from "/src/assets/images/images2/codersh-1-768x512.webp";
 import ArrowImg from "../../../assets/images/images2/arrow-right.svg";
-// import FadeInStagger from "../../animation/FadeInStagger";  // Assuming you have a fade-in stagger animation
-
-
 
 const blogListData = [
   {
     id: crypto.randomUUID(),
-    title: "Unleashing the Power of Shopify: A Phenomenal $9.3 Billion BFCM Triumph!",
+    title:
+      "Unleashing the Power of Shopify: A Phenomenal $9.3 Billion BFCM Triumph!",
     img: Blog26Img,
     link: "/blog/Unleashing the Power of Shopify: A Phenomenal $9.3 Billion BFCM Triumph!",
   },
@@ -77,7 +75,8 @@ const blogListData = [
   },
   {
     id: crypto.randomUUID(),
-    title: "How Does Codersh Enhance Shopify Potential Through Core Web Vitals?",
+    title:
+      "How Does Codersh Enhance Shopify Potential Through Core Web Vitals?",
     img: Blog5Img,
     link: "/blog/how-does-codersh-enhance-shopify-potential-through-core-web-vitals",
   },
@@ -107,7 +106,8 @@ const blogListData = [
   },
   {
     id: crypto.randomUUID(),
-    title: "Why Cutting-Edge Speed Optimization Is Vital for Your Shopify Store in 2023",
+    title:
+      "Why Cutting-Edge Speed Optimization Is Vital for Your Shopify Store in 2023",
     img: Blog10Img,
     link: "/blog/why-cutting-edge-speed-optimization-is-vital-for-your-shopify-store-in-2023",
   },
@@ -125,7 +125,8 @@ const blogListData = [
   },
   {
     id: crypto.randomUUID(),
-    title: "Unlocking Business Success: The Importance of Conversion Rate Optimization",
+    title:
+      "Unlocking Business Success: The Importance of Conversion Rate Optimization",
     img: Blog13Img,
     link: "/blog/unlocking-business-success-the-importance-of-conversion-rate-optimization",
   },
@@ -137,19 +138,22 @@ const blogListData = [
   },
   {
     id: crypto.randomUUID(),
-    title: "Maximizing Your Shopify Store Performance: The Impact of JS Execution Order",
+    title:
+      "Maximizing Your Shopify Store Performance: The Impact of JS Execution Order",
     img: Blog15Img,
     link: "/blog/maximizing-your-shopify-store-performance-the-impact-of-js-execution-order",
   },
   {
     id: crypto.randomUUID(),
-    title: "The Top 5 Shopify Trends to Watch in 2023 for Small Business Owners",
+    title:
+      "The Top 5 Shopify Trends to Watch in 2023 for Small Business Owners",
     img: Blog16Img,
     link: "/blog/the-top-5-shopify-trends-to-watch-in-2023-for-small-business-owners",
   },
   {
     id: crypto.randomUUID(),
-    title: "Why Choose Shopify for Your E-commerce Website: The Benefits of the Shopify Platform",
+    title:
+      "Why Choose Shopify for Your E-commerce Website: The Benefits of the Shopify Platform",
     img: Blog17Img,
     link: "/blog/why-choose-shopify-for-your-e-commerce-website-the-benefits-of-the-shopify-platform",
   },
@@ -179,7 +183,8 @@ const blogListData = [
   },
   {
     id: crypto.randomUUID(),
-    title: "Clutch Names Codersh as a Leading Top Web Development Company in 2022",
+    title:
+      "Clutch Names Codersh as a Leading Top Web Development Company in 2022",
     img: Blog22Img,
     link: "/blog/clutch-names-codersh-as-a-leading-top-web-development-company-in-2022",
   },
@@ -200,7 +205,7 @@ const blogListData = [
     title: "Announcements",
     img: Blog25Img,
     link: "/blog/announcements",
-  }
+  },
 ];
 
 import { motion } from "framer-motion";
@@ -208,7 +213,6 @@ import { motion } from "framer-motion";
 function Blog1data() {
   return (
     <div>
-
       <div className="blogs">
         <div className="container">
           <div className="row">
@@ -216,14 +220,13 @@ function Blog1data() {
               <motion.div
                 key={blog.id}
                 className="col-lg-4 col-sm-6"
-                initial={{ opacity: 0 }} // Initial state: invisible
-                animate={{ opacity: 1 }} // Animate to full opacity
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{
-                  delay: index * 0.2, // Stagger delay based on index
-                  duration: 0.6, // Duration of fade-in
+                  delay: index * 0.2,
+                  duration: 0.6,
                 }}
               >
-
                 <div className="blog-card">
                   {/* Blog Image */}
                   <img className="blog-image" src={blog.img} alt={blog.title} />
@@ -245,17 +248,13 @@ function Blog1data() {
                     </Link>
                   </div>
                 </div>
-
-
               </motion.div>
             ))}
           </div>
-
         </div>
       </div>
-
     </div>
-  )
+  );
 }
 
-export default Blog1data
+export default Blog1data;

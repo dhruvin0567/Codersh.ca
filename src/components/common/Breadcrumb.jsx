@@ -4,16 +4,13 @@ import BreadcrumbBG from "../../assets/images/images2/tinified/angularjs_1.webp"
 function BreadCrumb({ title }) {
   const location = useLocation();
 
-  // Extract the last segment of the URL path (e.g., "madame-f")
   const pathSegments = location.pathname.split("/").filter(Boolean);
   const lastSegment = pathSegments[pathSegments.length - 1];
 
-  // Convert slug to readable format: "madame-f" → "Madame F"
   const formattedSlug = lastSegment
     .replace(/-/g, " ")
     .replace(/\b\w/g, (char) => char.toUpperCase());
 
-  // Determine if we should override the title with URL segment
   const finalTitle = title === "Case Study Details" ? formattedSlug : title;
 
   return (

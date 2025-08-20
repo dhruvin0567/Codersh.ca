@@ -14,32 +14,8 @@ export const PasswordProvider = ({ children }) => {
     }
   }, []);
 
-  // const verifyPassword = async (inputPassword) => {
-  //   try {
-  //     const response = await fetch("/api/verify-password", {
-  //       method: "POST",
-  //       headers: { "Content-Type": "application/json" },
-  //       body: JSON.stringify({ password: inputPassword }),
-  //     });
-
-  //     const data = await response.json();
-
-  //     if (data.success) {
-  //       sessionStorage.setItem("hasAccess", "true");
-  //       setHasAccess(true);
-  //       return true;
-  //     } else {
-  //       return false;
-  //     }
-  //   } catch (error) {
-  //     console.error("Password verification failed", error);
-  //     return false;
-  //   }
-  // };
-
-  // Mocking a correct password for testing
   const verifyPassword = async (inputPassword) => {
-    const correctPassword = "Codersh.Ca"; // Replace with actual password
+    const correctPassword = "Codersh.Ca";
 
     if (inputPassword === correctPassword) {
       sessionStorage.setItem("hasAccess", "true");

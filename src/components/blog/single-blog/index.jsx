@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"; // Import useNavigate hook from React Router
+import { useNavigate } from "react-router-dom";
 
 import { useForm } from "react-hook-form";
 import Field from "../../common/Field";
@@ -12,7 +12,7 @@ function SingleBlog() {
     reset,
   } = useForm();
 
-  const navigate = useNavigate(); // Initialize navigate function
+  const navigate = useNavigate();
 
   const submitForm = async (formData) => {
     console.log("Submitted Form Data =", formData);
@@ -33,11 +33,9 @@ function SingleBlog() {
 
       if (response.ok) {
         console.log("Form submitted successfully:", result);
-        // alert("Thank you! Your form has been submitted.");
-        reset(); // Reset the form fields after successful submission
+        reset();
 
-        // Navigate to the Thank You page
-        navigate("/thank-you"); // Use React Router to navigate to the Thank You page
+        navigate("/thank-you");
       } else {
         console.error("Form submission failed:", result);
         alert("Form submission failed. Please try again.");
@@ -53,9 +51,9 @@ function SingleBlog() {
     WebkitAppearance: "none",
     backgroundImage: "none",
     backgroundColor: "transparent",
-    color: "#000", // Set text color to black
+    color: "#000",
     transition:
-      "background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s", // Transition for color as well
+      "background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s",
   };
 
   return (
@@ -96,7 +94,7 @@ function SingleBlog() {
                           required: "Email is required.",
                           pattern: {
                             value:
-                              /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/, // Validate email format
+                              /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
                             message: "Please enter a valid email address.",
                           },
                         })}
@@ -116,11 +114,11 @@ function SingleBlog() {
                         {...register("number", {
                           required: "Phone number is required.",
                           pattern: {
-                            value: /^[0-9+()-\s]+$/, // Allow numbers, +, (), -, and spaces
+                            value: /^[0-9+()-\s]+$/,
                             message: "Please enter a valid phone number.",
                           },
                           maxLength: {
-                            value: 15, // Maximum length of 15 characters
+                            value: 15,
                             message:
                               "Phone number cannot exceed 15 characters.",
                           },

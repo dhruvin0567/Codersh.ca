@@ -1,7 +1,6 @@
 import BreadCrumb from "../../components/common/Breadcrumb";
 import Teams from "../../components/home-one/teams";
 import SEO from "../../components/common/SEO";
-// Team member images
 import Team1Img from "../../assets/images/team/team1.webp";
 import Team2Img from "../../assets/images/team/team2.webp";
 import Team3Img from "../../assets/images/team/team3.webp";
@@ -9,8 +8,6 @@ import Team4Img from "../../assets/images/team/team4.webp";
 import Team5Img from "../../assets/images/team/team5.webp";
 import Team6Img from "../../assets/images/team/team6.webp";
 import Team8Img from "../../assets/images/team/team8.webp";
-// import Team9Img from "../../assets/images/team/team9.webp";
-// import Team7Img from "../../assets/images/team/team7.webp";
 
 const teamsData = [
   {

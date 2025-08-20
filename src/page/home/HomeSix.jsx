@@ -8,18 +8,18 @@ import Testimonials from "../../components/home-six/testimonials";
 import Video from "../../components/home-six/video";
 
 function HomeSix() {
-	return (
-		<>
-			<Hero />
-			<Video />
-			<Features />
-			<About />
-			<Services />
-			<Projects />
-			<Testimonials />
-			<Blogs />
-		</>
-	);
+  return (
+    <>
+      <Hero />
+      <Video />
+      <Features />
+      <About />
+      <Services />
+      <Projects />
+      <Testimonials />
+      <Blogs />
+    </>
+  );
 }
 
 export default HomeSix;

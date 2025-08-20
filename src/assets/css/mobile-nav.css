@@ -1,6 +1,7 @@
 .mobile-nav-wrap {
   display: none;
 }
+
 .mobile-navbar {
   position: fixed;
   top: 0;
@@ -10,6 +11,7 @@
   z-index: 9999;
   border: 1px solid #ddd;
 }
+
 .mobile-nav-wrap .mobile-menu-trigger {
   display: flex;
   justify-content: center;
@@ -22,6 +24,7 @@
   right: 0;
   transform: translateY(-50%);
 }
+
 .mobile-nav-wrap .mobile-menu-trigger span {
   display: block;
   height: 2px;
@@ -43,9 +46,11 @@
 .mobile-nav-wrap .mobile-menu-trigger span:before {
   top: -8px;
 }
+
 .mobile-nav-wrap .mobile-menu-trigger span:after {
   top: 8px;
 }
+
 .mobile-nav--overlay {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
@@ -64,6 +69,7 @@
   align-items: center;
   position: relative;
 }
+
 .mobile-menu-head--close {
   height: 100%;
   width: 50px;
@@ -75,21 +81,25 @@
   font-size: 28px;
   font-weight: 600;
 }
+
 .mobile-menu-head--title {
   margin: auto;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 700;
 }
+
 .mobile-navbar > ul {
   overflow-y: auto;
   height: 100vh;
 }
+
 .mobile-navbar ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 .mobile-navbar > ul > li:last-child a {
   border-bottom: none;
 }
@@ -103,6 +113,7 @@
   padding: 0;
   position: relative;
 }
+
 .mobile-navbar ul li a,
 .mobile-navbar ul li button {
   font-family: sans-serif;
@@ -115,10 +126,10 @@
   text-decoration: none;
   padding: 0 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  /* new css */
   position: relative;
   z-index: 1;
 }
+
 .mobile-navbar ul li button i {
   position: absolute;
   top: 20px;
@@ -129,10 +140,12 @@
 .sub-menu.level-1 button {
   padding: 0 20px 0 40px;
 }
+
 .sub-menu.level-2 a,
 .sub-menu.level-2 button {
   padding: 0 20px 0 60px;
 }
+
 .sub-menu.level-3 a,
 .sub-menu.level-3 button {
   padding: 0 20px 0 80px;
@@ -144,16 +157,15 @@
   }
 }
 
-/* new latest css  */
 .mobile-navbar ul li:last-child a {
-  z-index: 1000; /* Ensure it is above dropdowns */
+  z-index: 1000;
 }
 
 .sub-menu {
-  z-index: 9999; /* Ensures it is not covering bottom items */
+  z-index: 9999;
 }
 
 .mobile-navbar > ul {
-  max-height: calc(100vh - 50px); /* Make sure the navbar doesn't overflow */
-  overflow-y: auto; /* Allow scrolling if necessary */
+  max-height: calc(100vh - 50px);
+  overflow-y: auto;
 }

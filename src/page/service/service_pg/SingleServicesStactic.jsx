@@ -1,6 +1,5 @@
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-
 import ServiceCard from "../../../components/home-four/services/ServiceCard";
 import BreadCrumb from "../../../components/common/Breadcrumb";
 import FadeInStagger from "../../../components/animation/FadeInStagger";
@@ -66,12 +65,19 @@ function SingleServicesStactic() {
                   </p>
                 </span>
               </a>
-
             </div>
             <div className="col-lg-9 d-flex align-items-center">
               <p className="top-rated-text ms-lg-4 ">
                 {serviceData.topRated.text}
-                <Link to={serviceData.topRated.workLink} className="text-light ms-2" style={{ textDecoration: "underline", textUnderlineOffset: "4px", textDecorationThickness: "1px" }}>
+                <Link
+                  to={serviceData.topRated.workLink}
+                  className="text-light ms-2"
+                  style={{
+                    textDecoration: "underline",
+                    textUnderlineOffset: "4px",
+                    textDecorationThickness: "1px",
+                  }}
+                >
                   View Our Work
                 </Link>
               </p>
@@ -224,4 +230,3 @@ function SingleServicesStactic() {
 }
 
 export default SingleServicesStactic;
-

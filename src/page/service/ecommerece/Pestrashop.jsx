@@ -215,10 +215,6 @@
 
 // export default React.memo(VideoSlider);
 
-
-
 export default function Pestrashop() {
-    return (
-        <div>Pestrashop</div>
-    )
+  return <div>Pestrashop</div>;
 }

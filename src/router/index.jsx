@@ -87,353 +87,352 @@ import CaseStudiesStatic from "../page/projects/CaseStudiesStatic.jsx";
 import SingleCaseStudyStatic from "../page/projects/SingleCaseStudyStatic.jsx";
 // import SingleServicesStactic from "../page/service/service_pg/SingleServicesStactic.jsx";
 
-
 export const router = createBrowserRouter([
-	{
-		path: "/",
-		element: <Layout />,
-		children: [
-			{
-				path: "/",
-				element: <LayoutOne />,
-				children: [
-					{
-						path: "/",
-						element: <HomeOne />,
-					},
-					{
-						path: "/about-us",
-						element: <AboutUs />,
-					},
-					{
-						path: "/contact-us",
-						element: <ContactUs />,
-					},
-					{
-						path: "/faq",
-						element: <Faq />,
-					},
-					{
-						path: "/testimonial",
-						element: <TestimonialPage />,
-					},
-					// {
-					// 	path: "/pricing",
-					// 	element: <Pricing />,
-					// },
-					{
-						path: "/brand",
-						element: (
-							<ProtectedRoute>
-								{/* <Brand /> */}
-								<Brand />
-							</ProtectedRoute>
-						),
-					},
-					{
-						path: "/brand/:brandId",
-						element: (
-							<ProtectedRoute>
-								{/* <SingleBrand /> */}
-								<SingleBrandCustom />
-							</ProtectedRoute>
-						),
-					},
-					{
-						path: "/case-studies",
-						element: (
-							<ProtectedRoute>
-								{/* <CaseStudies /> */}
-								<CaseStudiesStatic />
-							</ProtectedRoute>
-						),
-					},
-					{
-						path: "/case-studies/:slug",
-						element: (
-							<ProtectedRoute>
-								{/* <SingleCaseStudyPage /> */}
-								<SingleCaseStudyStatic />
-							</ProtectedRoute>
-						),
-					},
-					{
-						path: "/portfolio",
-						element: (
-							<ProtectedRoute>
-								<Portfolio />
-							</ProtectedRoute>
-						),
-					},
-					// {
-					// 	path: "/portfolio-two",
-					// 	element: <PortfolioTwoColumn />,
-					// },
-					// {
-					// 	path: "/landingpage",
-					// 	element: <LandingPage />,
-					// },
-					{
-						path: "/ourblog",
-						element: <BlogGridPage />,
-					},
-					{
-						path: "/blog/:slug",
-						element: <SingleBlogPage />,
-					},
-					{
-						path: "/Businessdirectory",
-						element: <Businessdirectory />,
-					},
-					{
-						path: "/creditrepair",
-						element: <Creditrepair />,
-					},
-					{
-						path: "/itdigitalagency",
-						element: <Itdigitalagency />,
-					},
-					{
-						path: "/winestore",
-						element: <Winestore />,
-					},
-					{
-						path: "/team",
-						element: <Team />,
-					},
-					// {
-					// 	path: "/services/:slug",
-					// 	element: <SingleServicesStactic />,
-					// },
-					{
-						path: "/customStore",
-						element: <CustomStore />,
-					},
-					{
-						path: "/shopify-migrations",
-						element: <ShopifyMigrations />,
-					},
-					{
-						path: "/headless-shopify",
-						element: <Headless />,
-					},
-					{
-						path: "/shopify-plus",
-						element: <ShopifyPlus />,
-					},
-					{
-						path: "/support-&-maintanance",
-						element: <Support_Maintanace />,
-					},
-					{
-						path: "/conversion-rate",
-						element: <ConversionRate />,
-					},
-					{
-						path: "/selling-internationally-on-shopify",
-						element: <Internationalization />,
-					},
-					{
-						path: "/subscriptions-on-shopify",
-						element: <Subscriptions />,
-					},
-					{
-						path: "/email-marketing-agency",
-						element: <EmailSmsMarketing />,
-					},
-					{
-						path: "/shopify-app-development",
-						element: <ShopifyAppDev />,
-					},
-					{
-						path: "/seo-agency",
-						element: <EcommerceSeo />,
-					},
-					{
-						path: "/shopify-b2b-wholesale",
-						element: <B2BWholsales />,
-					},
-					{
-						path: "/thank-you",
-						element: <ThankyouPage />,
-					},
-					{
-						path: "*",
-						element: <ErrorPage />,
-					},
-					// {
-					// 	path: "/logo-slider",
-					// 	element: <Logoslider />,
-					// },
-					// {
-					// 	path: "/singleblog2",
-					// 	element: <SingleBlog2 />,
-					// },
-					// {
-					// 	path: "/service",
-					// 	element: <Service />,
-					// },
-					// {
-					// 	path: "/single-service",
-					// 	element: <SingleService />,
-					// },
-					// {
-					// 	path: "/blog",
-					// 	element: <BlogPage />,
-					// },
-					// {
-					// 	path: "/blog1",
-					// 	element: <Blog1 />,
-					// },
-					// {
-					// 	path: "/single-team",
-					// 	element: <SingleTeam />,
-					// },
-					// {
-					// 	path: "/portfolio-one",
-					// 	element: <PortfolioOneColumn />,
-					// },
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <LayoutOne />,
+        children: [
+          {
+            path: "/",
+            element: <HomeOne />,
+          },
+          {
+            path: "/about-us",
+            element: <AboutUs />,
+          },
+          {
+            path: "/contact-us",
+            element: <ContactUs />,
+          },
+          {
+            path: "/faq",
+            element: <Faq />,
+          },
+          {
+            path: "/testimonial",
+            element: <TestimonialPage />,
+          },
+          // {
+          // 	path: "/pricing",
+          // 	element: <Pricing />,
+          // },
+          {
+            path: "/brand",
+            element: (
+              <ProtectedRoute>
+                {/* <Brand /> */}
+                <Brand />
+              </ProtectedRoute>
+            ),
+          },
+          {
+            path: "/brand/:brandId",
+            element: (
+              <ProtectedRoute>
+                {/* <SingleBrand /> */}
+                <SingleBrandCustom />
+              </ProtectedRoute>
+            ),
+          },
+          {
+            path: "/case-studies",
+            element: (
+              <ProtectedRoute>
+                {/* <CaseStudies /> */}
+                <CaseStudiesStatic />
+              </ProtectedRoute>
+            ),
+          },
+          {
+            path: "/case-studies/:slug",
+            element: (
+              <ProtectedRoute>
+                {/* <SingleCaseStudyPage /> */}
+                <SingleCaseStudyStatic />
+              </ProtectedRoute>
+            ),
+          },
+          {
+            path: "/portfolio",
+            element: (
+              <ProtectedRoute>
+                <Portfolio />
+              </ProtectedRoute>
+            ),
+          },
+          // {
+          // 	path: "/portfolio-two",
+          // 	element: <PortfolioTwoColumn />,
+          // },
+          // {
+          // 	path: "/landingpage",
+          // 	element: <LandingPage />,
+          // },
+          {
+            path: "/ourblog",
+            element: <BlogGridPage />,
+          },
+          {
+            path: "/blog/:slug",
+            element: <SingleBlogPage />,
+          },
+          {
+            path: "/Businessdirectory",
+            element: <Businessdirectory />,
+          },
+          {
+            path: "/creditrepair",
+            element: <Creditrepair />,
+          },
+          {
+            path: "/itdigitalagency",
+            element: <Itdigitalagency />,
+          },
+          {
+            path: "/winestore",
+            element: <Winestore />,
+          },
+          {
+            path: "/team",
+            element: <Team />,
+          },
+          // {
+          // 	path: "/services/:slug",
+          // 	element: <SingleServicesStactic />,
+          // },
+          {
+            path: "/customStore",
+            element: <CustomStore />,
+          },
+          {
+            path: "/shopify-migrations",
+            element: <ShopifyMigrations />,
+          },
+          {
+            path: "/headless-shopify",
+            element: <Headless />,
+          },
+          {
+            path: "/shopify-plus",
+            element: <ShopifyPlus />,
+          },
+          {
+            path: "/support-&-maintanance",
+            element: <Support_Maintanace />,
+          },
+          {
+            path: "/conversion-rate",
+            element: <ConversionRate />,
+          },
+          {
+            path: "/selling-internationally-on-shopify",
+            element: <Internationalization />,
+          },
+          {
+            path: "/subscriptions-on-shopify",
+            element: <Subscriptions />,
+          },
+          {
+            path: "/email-marketing-agency",
+            element: <EmailSmsMarketing />,
+          },
+          {
+            path: "/shopify-app-development",
+            element: <ShopifyAppDev />,
+          },
+          {
+            path: "/seo-agency",
+            element: <EcommerceSeo />,
+          },
+          {
+            path: "/shopify-b2b-wholesale",
+            element: <B2BWholsales />,
+          },
+          {
+            path: "/thank-you",
+            element: <ThankyouPage />,
+          },
+          {
+            path: "*",
+            element: <ErrorPage />,
+          },
+          // {
+          // 	path: "/logo-slider",
+          // 	element: <Logoslider />,
+          // },
+          // {
+          // 	path: "/singleblog2",
+          // 	element: <SingleBlog2 />,
+          // },
+          // {
+          // 	path: "/service",
+          // 	element: <Service />,
+          // },
+          // {
+          // 	path: "/single-service",
+          // 	element: <SingleService />,
+          // },
+          // {
+          // 	path: "/blog",
+          // 	element: <BlogPage />,
+          // },
+          // {
+          // 	path: "/blog1",
+          // 	element: <Blog1 />,
+          // },
+          // {
+          // 	path: "/single-team",
+          // 	element: <SingleTeam />,
+          // },
+          // {
+          // 	path: "/portfolio-one",
+          // 	element: <PortfolioOneColumn />,
+          // },
 
-					// {
-					// 	path: "/single-portfolio",
-					// 	element: <SinglePortfolio />,
-					// },
-					// {
-					// 	path: "/portfolio2",
-					// 	element: <Portfolio2 />,
-					// },
-					// {
-					// 	path: "/categories",
-					// 	element: <Categories />,
-					// },
-					// {
-					// 	path: "/countries",
-					// 	element: <Countries />,
-					// },
-					// {
-					// 	path: "/industries",
-					// 	element: <Industries />,
-					// },
-					// {
-					// 	path: "/ourwork",
-					// 	element: <OurWork />,
-					// },
-					// {
-					// 	path: "/ourwork2",
-					// 	element: <OurWork2 />,
-					// },
-					// {
-					// 	path: "/pestrashop",
-					// 	element: <Pestrashop />,
-					// },
-					// {
-					// 	path: "/shift4shop",
-					// 	element: <Shift4shop />,
-					// },
-					// {
-					// 	path: "/bigcommerce",
-					// 	element: <BigCommerce />,
-					// },
-					// {
-					// 	path: "/woocommercedevelopment",
-					// 	element: <WooCommerceDevelopment />,
-					// },
-					// {
-					// 	path: "/androidappdev",
-					// 	element: <AndroidAppDev />,
-					// },
-					// {
-					// 	path: "/iosappdev",
-					// 	element: <IosAppDev />,
-					// },
-				],
-			},
-			// {
-			// 	path: "/",
-			// 	element: <LayoutTwo />,
-			// 	children: [
-			// 		{
-			// 			path: "/home-two",
-			// 			element: <HomeTwo />,
-			// 		},
-			// 	],
-			// },
-			// {
-			// 	path: "/",
-			// 	element: <LayoutThree />,
-			// 	children: [
-			// 		{
-			// 			path: "/home-three",
-			// 			element: <HomeThree />,
-			// 		},
-			// 	],
-			// },
-			// {
-			// 	path: "/",
-			// 	element: <LayoutFour />,
-			// 	children: [
-			// 		{
-			// 			path: "/home-four",
-			// 			element: <HomeFour />,
-			// 		},
-			// 	],
-			// },
-			// {
-			// 	path: "/",
-			// 	element: <LayoutFive />,
-			// 	children: [
-			// 		{
-			// 			path: "/home-five",
-			// 			element: <HomeFive />,
-			// 		},
-			// 	],
-			// },
-			// {
-			// 	path: "/",
-			// 	element: <LayoutSix />,
-			// 	children: [
-			// 		{
-			// 			path: "/home-six",
-			// 			element: <HomeSix />,
-			// 		},
-			// 	],
-			// },
-			// {
-			// 	path: "/",
-			// 	element: <LayoutSeven />,
-			// 	children: [
-			// 		{
-			// 			path: "/home-seven",
-			// 			element: <HomeSeven />,
-			// 		},
-			// 	],
-			// },
-			// {
-			// 	path: "/",
-			// 	element: <LayoutEight />,
-			// 	children: [
-			// 		{
-			// 			path: "/thank-you",
-			// 			element: <ThankyouPage />,
-			// 		},
-			// 		{
-			// 			path: "/coming-soon",
-			// 			element: <CommingSoon />,
-			// 		},
-			// 		{
-			// 			path: "/reset-password",
-			// 			element: <Reset />,
-			// 		},
-			// {
-			// 	path: "/sign-up",
-			// 	element: <SignUp />,
-			// },
-			// {
-			// 	path: "/sign-in",
-			// 	element: <SignIn />,
-			// },
-			// 	],
-			// },
-		],
-	},
+          // {
+          // 	path: "/single-portfolio",
+          // 	element: <SinglePortfolio />,
+          // },
+          // {
+          // 	path: "/portfolio2",
+          // 	element: <Portfolio2 />,
+          // },
+          // {
+          // 	path: "/categories",
+          // 	element: <Categories />,
+          // },
+          // {
+          // 	path: "/countries",
+          // 	element: <Countries />,
+          // },
+          // {
+          // 	path: "/industries",
+          // 	element: <Industries />,
+          // },
+          // {
+          // 	path: "/ourwork",
+          // 	element: <OurWork />,
+          // },
+          // {
+          // 	path: "/ourwork2",
+          // 	element: <OurWork2 />,
+          // },
+          // {
+          // 	path: "/pestrashop",
+          // 	element: <Pestrashop />,
+          // },
+          // {
+          // 	path: "/shift4shop",
+          // 	element: <Shift4shop />,
+          // },
+          // {
+          // 	path: "/bigcommerce",
+          // 	element: <BigCommerce />,
+          // },
+          // {
+          // 	path: "/woocommercedevelopment",
+          // 	element: <WooCommerceDevelopment />,
+          // },
+          // {
+          // 	path: "/androidappdev",
+          // 	element: <AndroidAppDev />,
+          // },
+          // {
+          // 	path: "/iosappdev",
+          // 	element: <IosAppDev />,
+          // },
+        ],
+      },
+      // {
+      // 	path: "/",
+      // 	element: <LayoutTwo />,
+      // 	children: [
+      // 		{
+      // 			path: "/home-two",
+      // 			element: <HomeTwo />,
+      // 		},
+      // 	],
+      // },
+      // {
+      // 	path: "/",
+      // 	element: <LayoutThree />,
+      // 	children: [
+      // 		{
+      // 			path: "/home-three",
+      // 			element: <HomeThree />,
+      // 		},
+      // 	],
+      // },
+      // {
+      // 	path: "/",
+      // 	element: <LayoutFour />,
+      // 	children: [
+      // 		{
+      // 			path: "/home-four",
+      // 			element: <HomeFour />,
+      // 		},
+      // 	],
+      // },
+      // {
+      // 	path: "/",
+      // 	element: <LayoutFive />,
+      // 	children: [
+      // 		{
+      // 			path: "/home-five",
+      // 			element: <HomeFive />,
+      // 		},
+      // 	],
+      // },
+      // {
+      // 	path: "/",
+      // 	element: <LayoutSix />,
+      // 	children: [
+      // 		{
+      // 			path: "/home-six",
+      // 			element: <HomeSix />,
+      // 		},
+      // 	],
+      // },
+      // {
+      // 	path: "/",
+      // 	element: <LayoutSeven />,
+      // 	children: [
+      // 		{
+      // 			path: "/home-seven",
+      // 			element: <HomeSeven />,
+      // 		},
+      // 	],
+      // },
+      // {
+      // 	path: "/",
+      // 	element: <LayoutEight />,
+      // 	children: [
+      // 		{
+      // 			path: "/thank-you",
+      // 			element: <ThankyouPage />,
+      // 		},
+      // 		{
+      // 			path: "/coming-soon",
+      // 			element: <CommingSoon />,
+      // 		},
+      // 		{
+      // 			path: "/reset-password",
+      // 			element: <Reset />,
+      // 		},
+      // {
+      // 	path: "/sign-up",
+      // 	element: <SignUp />,
+      // },
+      // {
+      // 	path: "/sign-in",
+      // 	element: <SignIn />,
+      // },
+      // 	],
+      // },
+    ],
+  },
 ]);

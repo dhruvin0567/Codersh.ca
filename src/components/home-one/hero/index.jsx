@@ -1,4 +1,3 @@
-// import FadeInRight from "../../animation/FadeInRight";
 import FadeInRight from "../../animation/FadeInRight";
 import HeroContent from "./HeroContent";
 import HeroThumbs from "./HeroThumbs";

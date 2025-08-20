@@ -2,7 +2,6 @@ import Categories from "./Categories";
 import RecentPosts from "./RecentPosts";
 import Search from "./Search";
 import Tags from "./Tags";
-
 import Blog1Img from "../../assets/images/blog/blog3.webp";
 import Blog2Img from "../../assets/images/blog/blog4.webp";
 import Blog3Img from "../../assets/images/blog/blog5.webp";

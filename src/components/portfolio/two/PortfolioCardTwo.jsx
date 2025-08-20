@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 function PortfolioCardTwo({ blog: { img, title, link } }) {
   return (
     <div className="aximo-project-thumb casestudy-blog-card-container">
@@ -8,7 +9,6 @@ function PortfolioCardTwo({ blog: { img, title, link } }) {
           <Link to={link}>
             <h3>Learn More</h3>
           </Link>
-          {/* <p>{description}</p> */}
         </div>
         <Link
           className="aximo-project-icon home-proj-icon"

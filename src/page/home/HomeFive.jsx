@@ -11,23 +11,23 @@ import Testimonials from "../../components/home-five/testimonials";
 import Video from "../../components/home-five/video";
 
 function HomeFive() {
-	return (
-		<div className="aximo-all-section bg-light6">
-			<Hero />
-			<Video />
-			<Features />
-			<WaveShape />
-			<About />
-			<Counter />
-			<Services />
-			<Projects />
-			<WaveShape />
-			<Faq />
-			<WaveShape />
-			<Testimonials />
-			<Cta />
-		</div>
-	);
+  return (
+    <div className="aximo-all-section bg-light6">
+      <Hero />
+      <Video />
+      <Features />
+      <WaveShape />
+      <About />
+      <Counter />
+      <Services />
+      <Projects />
+      <WaveShape />
+      <Faq />
+      <WaveShape />
+      <Testimonials />
+      <Cta />
+    </div>
+  );
 }
 
 export default HomeFive;

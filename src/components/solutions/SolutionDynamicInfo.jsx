@@ -1,4 +1,3 @@
-// import React from 'react'
 import { Link } from "react-router-dom";
 import Star2Img from "../../assets/images/v1/icon/star2.webp";
 
@@ -8,9 +7,8 @@ function SolutionDynamicInfo({
   description,
   ctaText,
   ctaLink,
-  //   iconImage,
   features,
-  dark = true, // optional prop to control background theme
+  dark = true,
 }) {
   const sectionClass = `section aximo-project-page text-center ${
     dark ? "dark-bg" : ""
@@ -22,19 +20,6 @@ function SolutionDynamicInfo({
       {/* Main Content Section */}
       <div className={sectionClass}>
         <div className="container aximo-section-padding5">
-          {/* <h2 className={`mb-4 ${textClass}`}>
-                        <span className="aximo-title-animation">
-                            {title}
-                            {iconImage && (
-                                <span className="aximo-title-icon mx-2">
-                                    <img src={iconImage} alt="Decorative Icon" />
-                                </span>
-                            )}
-                        </span>
-                        <br />
-                        {subtitle}
-                    </h2> */}
-
           <h2 className="mb-5 text-center text-white">
             <span className="aximo-title-animation">
               {title}
@@ -65,7 +50,6 @@ function SolutionDynamicInfo({
       {features && features.length > 0 && (
         <div className="section aximo-project-page py-5 services">
           <div className="container my-5">
-            {/* <h2 className="text-center mb-4">Features of Our Service</h2> */}
             <h2 className="mb-5 text-center">
               <span className="aximo-title-animation">
                 Features of Our Service

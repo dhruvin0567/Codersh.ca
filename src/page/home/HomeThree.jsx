@@ -10,21 +10,20 @@ import Services from "../../components/home-three/services";
 import Teams from "../../components/home-three/teams";
 
 function HomeThree() {
-	return (
-		<div className="aximo-all-section bg-light3">
-			<Hero />
-			<Counter />
-			<About />
-			<AboutTwo />
-			<Services />
-			<SeoSteps />
-			<AutoSlider />
-			<Teams />
-			<Faq />
-
-			<Contact />
-		</div>
-	);
+  return (
+    <div className="aximo-all-section bg-light3">
+      <Hero />
+      <Counter />
+      <About />
+      <AboutTwo />
+      <Services />
+      <SeoSteps />
+      <AutoSlider />
+      <Teams />
+      <Faq />
+      <Contact />
+    </div>
+  );
 }
 
 export default HomeThree;

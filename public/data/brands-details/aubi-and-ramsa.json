@@ -27,23 +27,23 @@
     "description": "To address these challenges, your company can implement several solutions. For age verification, use a secure, automated tool to confirm customers are 21+ without disrupting the checkout process. For shipping logistics, partner with couriers specializing in perishable items and ensure temperature-sensitive packaging. To improve user experience, streamline the checkout process and offer multiple payment options to reduce friction. Regularly updating regulatory compliance through legal consultation and integrating region-specific shipping restrictions is key. For better scalability, leverage cloud-based solutions that grow with demand. Lastly, differentiate your brand through targeted marketing campaigns and clear product education to stand out in the competitive luxury market. These strategies will enhance customer satisfaction, increase conversions, and support sustainable growth."
   },
   "relatedBrands": [
-   {
-    "id": 3,
-    "title": "liberation-cocktails",
-    "img": "/images/brands/brands-cards/11.webp",
-    "link": "/brand/liberation-cocktails"
-  },
-  {
-    "id": 2,
-    "title": "elevation-107",
-    "img": "/images/brands/brands-cards/3.webp",
-    "link": "/brand/elevation-107"
-  },
-  {
-    "id": 1,
-    "title": "kick-ash-basket",
-    "img": "/images/brands/brands-cards/4.webp",
-    "link": "/brand/kick-ash-basket"
-  }
+    {
+      "id": 3,
+      "title": "liberation-cocktails",
+      "img": "/images/brands/brands-cards/11.webp",
+      "link": "/brand/liberation-cocktails"
+    },
+    {
+      "id": 2,
+      "title": "elevation-107",
+      "img": "/images/brands/brands-cards/3.webp",
+      "link": "/brand/elevation-107"
+    },
+    {
+      "id": 1,
+      "title": "kick-ash-basket",
+      "img": "/images/brands/brands-cards/4.webp",
+      "link": "/brand/kick-ash-basket"
+    }
   ]
 }

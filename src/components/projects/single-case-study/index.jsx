@@ -16,7 +16,7 @@ function SingleCaseStudy() {
     reset,
   } = useForm();
 
-  const navigate = useNavigate(); // Initialize navigate function
+  const navigate = useNavigate();
 
   const verifyEmail = async (email) => {
     try {
@@ -36,37 +36,6 @@ function SingleCaseStudy() {
     }
   };
 
-  // const submitForm = async (formData) => {
-  // 	console.log("Submitted Form Data =", formData);
-
-  // 	try {
-  // 		const response = await fetch("https://projects.codersh.com/aximo/wp-json/wp/v2/form-submit", {
-  // 			method: "POST",
-  // 			headers: {
-  // 				"Content-Type": "application/json",
-  // 			},
-  // 			body: JSON.stringify(formData),
-  // 		});
-
-  // 		const result = await response.json();
-
-  // 		if (response.ok) {
-  // 			console.log("Form submitted successfully:", result);
-
-  // 			reset(); // Reset the form fields after successful submission
-
-  // 			navigate("/thank-you"); // Navigate to the Thank You page
-
-  // 		} else {
-  // 			console.error("Form submission failed:", result);
-  // 			alert("Form submission failed. Please try again.");
-  // 		}
-  // 	} catch (error) {
-  // 		console.error("Error submitting form:", error);
-  // 		alert("An error occurred. Please try again.");
-  // 	}
-  // };
-
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const submitForm = async (formData) => {
@@ -74,7 +43,6 @@ function SingleCaseStudy() {
     setIsSubmitting(true);
 
     try {
-      // Check email validity
       const emailCheck = await verifyEmail(formData.email);
 
       if (!emailCheck || emailCheck.deliverability !== "DELIVERABLE") {
@@ -86,25 +54,23 @@ function SingleCaseStudy() {
         return;
       }
 
-      // Send user confirmation
       await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID, //  EmailJS service ID
-        import.meta.env.VITE_EMAILJS_TEMPLATE_USER, // user-facing template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_USER,
         formData,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY //  public API key
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
-      // Send admin notification
       await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID, //  EmailJS service ID
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ADMIN, // user-facing template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ADMIN,
         {
           name: formData.name,
           email: formData.email,
           number: formData.number,
           message: formData.message,
         },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY //  public API key,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       toast.success("Message sent successfully!");
@@ -134,7 +100,6 @@ function SingleCaseStudy() {
       <div className="container">
         <div className="row">
           <div className="col-xl-8">
-            {/* <CaseStudyDetails /> */}
             <SingleCSdetailsStatic slug={slug} />
           </div>
           <div className="col-xl-4">
@@ -189,7 +154,7 @@ function SingleCaseStudy() {
                         {...register("number", {
                           required: "Phone number is required.",
                           pattern: {
-                            value: /^[0-9+()-\s]+$/, // Allow numbers, +, (), -, and spaces
+                            value: /^[0-9+()-\s]+$/,
                             message: "Please enter a valid phone number.",
                           },
                           minLength: {
@@ -198,7 +163,7 @@ function SingleCaseStudy() {
                               "Phone number must be at least 8 characters.",
                           },
                           maxLength: {
-                            value: 15, // Maximum length of 15 characters
+                            value: 15,
                             message:
                               "Phone number cannot exceed 15 characters.",
                           },

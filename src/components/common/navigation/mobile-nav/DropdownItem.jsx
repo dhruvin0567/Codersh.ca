@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -26,7 +25,6 @@ const DropdownItem = ({ items, depthLevel, showMenu, setShowMenu }) => {
         return {
           rotate: -180,
           transition: {
-            // delay: 0,
             duration: 0.25,
           },
         };

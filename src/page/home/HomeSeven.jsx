@@ -9,19 +9,19 @@ import Testimonials from "../../components/home-seven/testimonials";
 import Video from "../../components/home-seven/video";
 
 function HomeSeven() {
-	return (
-		<div className="bg-light8">
-			<Hero />
-			<BrandLogo />
-			<AboutOne />
-			<AboutTwo />
-			<Video />
-			<Services />
-			<Projects />
-			<Teams />
-			<Testimonials />
-		</div>
-	);
+  return (
+    <div className="bg-light8">
+      <Hero />
+      <BrandLogo />
+      <AboutOne />
+      <AboutTwo />
+      <Video />
+      <Services />
+      <Projects />
+      <Teams />
+      <Testimonials />
+    </div>
+  );
 }
 
 export default HomeSeven;

@@ -1,20 +1,3 @@
-/**!
-
-    Template Name: 'Relik-Admin Dashboard'
-    Template URI:
-    Description:
-    Author: 
-    Author URI: 
-    Version: 1.0.0
-    -------------------------------------------------
-     1.0 base css
-     1.1 layout css
-     1.2 components css
-     1.3 pages css
-     1.4 themes css
-
-**/
-
 html {
   scroll-behavior: smooth;
 }
@@ -111,17 +94,11 @@ body {
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   font-weight: 400;
-  /* overflow-x: hidden; */
   background-color: var(--light-bg1);
   counter-reset: my-sec-counter;
   font-size: 18px;
   line-height: 30px;
-  /* overflow-x: hidden !important; */
 }
-
-/* #root {
-	overflow-x: hidden;
-} */
 
 body.styleguide {
   background-color: #dcdfe8;
@@ -176,7 +153,6 @@ textarea {
   position: absolute;
   width: 1px;
   white-space: nowrap;
-  /* 1 */
 }
 
 .visuallyhidden.focusable:active,
@@ -197,9 +173,7 @@ textarea {
 .clearfix:before,
 .clearfix:after {
   content: " ";
-  /* 1 */
   display: table;
-  /* 2 */
 }
 
 .clearfix:after {
@@ -317,7 +291,6 @@ button:hover,
   *:after {
     background: transparent !important;
     color: #000 !important;
-    /* Black prints faster */
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     text-shadow: none !important;
@@ -336,10 +309,6 @@ button:hover,
     content: " (" attr(title) ")";
   }
 
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
@@ -487,7 +456,6 @@ h5,
   .h5 {
     font-size: 20px;
     line-height: 30px;
-    /* 150% */
     letter-spacing: -0.4px;
   }
 }
@@ -2921,7 +2889,6 @@ header.aximo-header-section.aximo-header7.sticky-menu {
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
-  /* 171.429% */
   letter-spacing: -0.14px;
   text-transform: uppercase;
   position: relative;
@@ -3045,42 +3012,36 @@ textarea {
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
   color: #666;
   opacity: 1;
 }
 
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
   color: #666;
   opacity: 1;
 }
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
   color: #666;
   opacity: 1;
 }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
   color: #666;
   opacity: 1;
 }
 
 input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
-  /* Microsoft Edge */
   color: #666;
   opacity: 1;
 }
 
 input::placeholder,
 textarea::placeholder {
-  /* Most modern browsers support this now. */
   color: #666;
   opacity: 1;
 }
@@ -3117,7 +3078,6 @@ textarea::placeholder {
 .aximo-form-field input::-webkit-input-placeholder,
 .aximo-form-field textarea::-webkit-input-placeholder,
 .aximo-form-field textarea::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
   color: #ccc;
   opacity: 1;
 }
@@ -3126,7 +3086,6 @@ textarea::placeholder {
 .aximo-form-field input:-moz-placeholder,
 .aximo-form-field textarea:-moz-placeholder,
 .aximo-form-field textarea:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
   color: #ccc;
   opacity: 1;
 }
@@ -3135,7 +3094,6 @@ textarea::placeholder {
 .aximo-form-field input::-moz-placeholder,
 .aximo-form-field textarea::-moz-placeholder,
 .aximo-form-field textarea::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
   color: #ccc;
   opacity: 1;
 }
@@ -3144,7 +3102,6 @@ textarea::placeholder {
 .aximo-form-field input:-ms-input-placeholder,
 .aximo-form-field textarea:-ms-input-placeholder,
 .aximo-form-field textarea:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
   color: #ccc;
   opacity: 1;
 }
@@ -3153,7 +3110,6 @@ textarea::placeholder {
 .aximo-form-field input::-ms-input-placeholder,
 .aximo-form-field textarea::-ms-input-placeholder,
 .aximo-form-field textarea::-ms-input-placeholder {
-  /* Microsoft Edge */
   color: #ccc;
   opacity: 1;
 }
@@ -3162,7 +3118,6 @@ textarea::placeholder {
 .aximo-form-field input::placeholder,
 .aximo-form-field textarea::placeholder,
 .aximo-form-field textarea::placeholder {
-  /* Most modern browsers support this now. */
   color: #ccc;
   opacity: 1;
 }
@@ -3259,7 +3214,6 @@ textarea::placeholder {
 .aximo-form-field2 input::-webkit-input-placeholder,
 .aximo-form-field2 textarea::-webkit-input-placeholder,
 .aximo-form-field2 textarea::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
   color: var(--heading-color);
   opacity: 1;
 }
@@ -3268,7 +3222,6 @@ textarea::placeholder {
 .aximo-form-field2 input:-moz-placeholder,
 .aximo-form-field2 textarea:-moz-placeholder,
 .aximo-form-field2 textarea:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
   color: var(--heading-color);
   opacity: 1;
 }
@@ -3277,7 +3230,6 @@ textarea::placeholder {
 .aximo-form-field2 input::-moz-placeholder,
 .aximo-form-field2 textarea::-moz-placeholder,
 .aximo-form-field2 textarea::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
   color: var(--heading-color);
   opacity: 1;
 }
@@ -3286,7 +3238,6 @@ textarea::placeholder {
 .aximo-form-field2 input:-ms-input-placeholder,
 .aximo-form-field2 textarea:-ms-input-placeholder,
 .aximo-form-field2 textarea:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
   color: var(--heading-color);
   opacity: 1;
 }
@@ -3295,7 +3246,6 @@ textarea::placeholder {
 .aximo-form-field2 input::-ms-input-placeholder,
 .aximo-form-field2 textarea::-ms-input-placeholder,
 .aximo-form-field2 textarea::-ms-input-placeholder {
-  /* Microsoft Edge */
   color: var(--heading-color);
   opacity: 1;
 }
@@ -3304,7 +3254,6 @@ textarea::placeholder {
 .aximo-form-field2 input::placeholder,
 .aximo-form-field2 textarea::placeholder,
 .aximo-form-field2 textarea::placeholder {
-  /* Most modern browsers support this now. */
   color: var(--heading-color);
   opacity: 1;
 }
@@ -3352,37 +3301,31 @@ button#aximo-submit-btn2:hover .aximo-label-up {
 }
 
 .aximo-subscription input::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
   color: var(--heading-color2);
   opacity: 1;
 }
 
 .aximo-subscription input:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
   color: var(--heading-color2);
   opacity: 1;
 }
 
 .aximo-subscription input::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
   color: var(--heading-color2);
   opacity: 1;
 }
 
 .aximo-subscription input:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
   color: var(--heading-color2);
   opacity: 1;
 }
 
 .aximo-subscription input::-ms-input-placeholder {
-  /* Microsoft Edge */
   color: var(--heading-color2);
   opacity: 1;
 }
 
 .aximo-subscription input::placeholder {
-  /* Most modern browsers support this now. */
   color: var(--heading-color2);
   opacity: 1;
 }
@@ -3445,37 +3388,31 @@ button#aximo-submit-btn2:hover .aximo-label-up {
 }
 
 .aximo-subscription2 input::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
   color: var(--light-color3);
   opacity: 1;
 }
 
 .aximo-subscription2 input:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
   color: var(--light-color3);
   opacity: 1;
 }
 
 .aximo-subscription2 input::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
   color: var(--light-color3);
   opacity: 1;
 }
 
 .aximo-subscription2 input:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
   color: var(--light-color3);
   opacity: 1;
 }
 
 .aximo-subscription2 input::-ms-input-placeholder {
-  /* Microsoft Edge */
   color: var(--light-color3);
   opacity: 1;
 }
 
 .aximo-subscription2 input::placeholder {
-  /* Most modern browsers support this now. */
   color: var(--light-color3);
   opacity: 1;
 }
@@ -3543,7 +3480,6 @@ button#aximo-submit-btn2:hover .aximo-label-up {
 .comment-form input::-webkit-input-placeholder,
 .comment-form textarea::-webkit-input-placeholder,
 .comment-form textarea::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
   color: #999;
   opacity: 1;
 }
@@ -3552,7 +3488,6 @@ button#aximo-submit-btn2:hover .aximo-label-up {
 .comment-form input:-moz-placeholder,
 .comment-form textarea:-moz-placeholder,
 .comment-form textarea:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
   color: #999;
   opacity: 1;
 }
@@ -3561,7 +3496,6 @@ button#aximo-submit-btn2:hover .aximo-label-up {
 .comment-form input::-moz-placeholder,
 .comment-form textarea::-moz-placeholder,
 .comment-form textarea::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
   color: #999;
   opacity: 1;
 }
@@ -3570,7 +3504,6 @@ button#aximo-submit-btn2:hover .aximo-label-up {
 .comment-form input:-ms-input-placeholder,
 .comment-form textarea:-ms-input-placeholder,
 .comment-form textarea:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
   color: #999;
   opacity: 1;
 }
@@ -3579,7 +3512,6 @@ button#aximo-submit-btn2:hover .aximo-label-up {
 .comment-form input::-ms-input-placeholder,
 .comment-form textarea::-ms-input-placeholder,
 .comment-form textarea::-ms-input-placeholder {
-  /* Microsoft Edge */
   color: #999;
   opacity: 1;
 }
@@ -3588,7 +3520,6 @@ button#aximo-submit-btn2:hover .aximo-label-up {
 .comment-form input::placeholder,
 .comment-form textarea::placeholder,
 .comment-form textarea::placeholder {
-  /* Most modern browsers support this now. */
   color: #999;
   opacity: 1;
 }
@@ -3634,10 +3565,6 @@ button#aximo-submit-btn2:hover .aximo-label-up {
 .aximo-breadcrumb {
   text-align: center;
   padding: 195px 0 130px;
-  /* background-color: var(--dark-bg); */
-  /* background-image: url(../images/images2/angularjs_1.webp); */
-  /* background-image: url(/src/assets/images/images2/tinified/angularjs_1.webp); */
-  /* filter: brightness(150%); */
 }
 
 @media (max-width: 991px) {
@@ -4515,37 +4442,31 @@ h1.post__title {
 }
 
 .aximo-hero-subscription input::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
   color: var(--heading-color);
   opacity: 1;
 }
 
 .aximo-hero-subscription input:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
   color: var(--heading-color);
   opacity: 1;
 }
 
 .aximo-hero-subscription input::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
   color: var(--heading-color);
   opacity: 1;
 }
 
 .aximo-hero-subscription input:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
   color: var(--heading-color);
   opacity: 1;
 }
 
 .aximo-hero-subscription input::-ms-input-placeholder {
-  /* Microsoft Edge */
   color: var(--heading-color);
   opacity: 1;
 }
 
 .aximo-hero-subscription input::placeholder {
-  /* Most modern browsers support this now. */
   color: var(--heading-color);
   opacity: 1;
 }
@@ -5112,12 +5033,6 @@ span.aximo-hero-shape-title2 {
   margin-bottom: 20px;
   border-bottom: 1px solid #333;
 }
-
-/* .aximo-counter-data:last-child {
-	padding: 0;
-	margin: 0;
-	border: none;
-} */
 
 .aximo-counter-data h2 {
   color: var(--accent-color);
@@ -5701,8 +5616,6 @@ p.aximo-skillbar-lable {
 .aximo-iconbox-wrap2 {
   padding: 24px;
   margin-bottom: 30px;
-  /* border-radius: 5px; */
-  /* border: 2px solid var(--heading-color2); */
 }
 
 .aximo-iconbox-wrap2 img {
@@ -5710,7 +5623,6 @@ p.aximo-skillbar-lable {
   margin-bottom: 30px;
   border-radius: 20px;
   box-shadow: 2px 2px 2px rgb(194, 184, 184);
-  /* border: 2px solid rgba(0, 0, 0, 0.5); */
 }
 
 .aximo-iconbox-wrap2 img:hover {
@@ -6207,9 +6119,6 @@ a.aximo-service-icon:hover {
   box-shadow: none;
 }
 
-/* .aximo-accordion-wrap2 .accordion-item:has(.accordion-collapse.show) {
-	background-color: var(--accent-bg);
-} */
 .aximo-accordion-wrap2 .accordion-button::after {
   background-image: url(../images/v1/accordion-inactive.svg);
 }
@@ -6323,17 +6232,13 @@ a.aximo-service-icon:hover {
 }
 
 .aximo-accordion-wrap4 .accordion-button {
-  font-family: "Familjen Grotesk", sans-serif;
-  font-weight: 700;
-  color: var(--heading-color);
-  padding: 0;
-  /* overwrite bs */
-  font-size: 35px;
-  /* overwrite bs */
-  background: none;
-  /* overwrite bs */
-  box-shadow: none;
-  /*  overwrite bs */
+  font-family: "Familjen Grotesk", sans-serif !important;
+  font-weight: 700 !important;
+  color: var(--heading-color) !important;
+  padding: 0 !important;
+  font-size: 35px !important;
+  background: none !important;
+  box-shadow: none !important;
 }
 
 @media (max-width: 991px) {
@@ -6354,7 +6259,6 @@ a.aximo-service-icon:hover {
 
 .aximo-accordion-wrap4 .accordion-body {
   padding: 0;
-  /* remove bs padding */
   padding-right: 80px;
   padding-top: 20px;
   font-size: 21px;
@@ -6422,13 +6326,9 @@ a.aximo-service-icon:hover {
 .aximo-accordion-wrap5 .accordion-button {
   font-weight: 700;
   padding: 0;
-  /* overwrite bs */
   font-size: 24px;
-  /* overwrite bs */
   background: none;
-  /* overwrite bs */
   box-shadow: none;
-  /*  overwrite bs */
   font-family: "Libre Baskerville", serif;
   color: var(--heading-color4);
 }
@@ -6443,14 +6343,12 @@ a.aximo-service-icon:hover {
 /* overwrite bs */
 .aximo-accordion-wrap5 .accordion-body {
   padding: 0;
-  /* remove bs padding */
   padding-top: 15px;
   max-width: 750px;
 }
 
 .aximo-accordion-wrap5 .accordion-button::after {
   background-image: url(../images/v1/accordion-inactive.svg);
-  /* overwrite bs */
 }
 
 /* bootstrap accordion overwrite end */
@@ -7179,17 +7077,12 @@ img.aximo-video-circle {
 }
 
 .aximo-cta2-wrap h2 {
-  /* font-size: 50px;
-	margin-bottom: 24px; */
   color: var(--light-color4);
-  /* font-family: "Syne", sans-serif; */
 }
 
 .aximo-cta2-wrap p {
-  /* font-size: 21px; */
   color: var(--light-color4);
   max-width: 100%;
-  /* margin: 0 auto 50px; */
 }
 
 .aximo-cta-shape3 {
@@ -7215,33 +7108,12 @@ img.aximo-video-circle {
   display: inline-block;
 }
 
-/* removed socila icons for mobile screen size */
 @media (max-width: 576px) {
   .aximo-social-icon ul li {
     margin: 0px;
     display: none;
   }
 }
-
-/* @media (max-width: 480px) {
-  .aximo-social-icon ul li {
-    margin: 0 2px;
-    display: inline-block;
-  }
-
-  .aximo-team-wrap:hover .team-social {
-    opacity: 1;
-    visibility: visible;
-    bottom: 35px;
-  }
-}
-
-@media (max-width: 375px) {
-  .aximo-social-icon ul li {
-    margin: 0px;
-    display: inline-block;
-  }
-} */
 
 .aximo-social-icon ul li:first-child {
   margin-left: 0;
@@ -10151,7 +10023,6 @@ a.aximo-connect-login img {
 
 @media (max-width: 768px) {
   .aximo-default-content2 {
-    /* text-align: left; */
     max-width: 620px;
     margin: 0 auto;
     padding: 0px 10px;
@@ -10238,7 +10109,6 @@ a.aximo-connect-login img {
   border: 10px solid #fff;
   border-radius: 15px;
   overflow: hidden;
-  /* transform: rotate(-5deg); */
   margin-top: -190px;
   margin-right: 36px;
   transform-origin: left top;
@@ -10832,7 +10702,6 @@ a.aximo-connect-login img {
   object-position: center top;
   transition: all 0.4s;
   filter: grayscale(100%);
-  /* transition: filter 0.5s ease; */
 }
 
 .aximo-story-thumb:hover img {
@@ -11252,7 +11121,6 @@ a.post-read-more:hover img {
   font-weight: 700;
   color: var(--heading-color);
   line-height: 24px;
-  /* 133.333% */
   font-family: "Syne", sans-serif;
 }
 
@@ -11353,37 +11221,31 @@ a.post-read-more:hover img {
 }
 
 .wp-block-search__inside-wrapper input::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
   color: var(--heading-color);
   opacity: 1;
 }
 
 .wp-block-search__inside-wrapper input:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
   color: var(--heading-color);
   opacity: 1;
 }
 
 .wp-block-search__inside-wrapper input::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
   color: var(--heading-color);
   opacity: 1;
 }
 
 .wp-block-search__inside-wrapper input:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
   color: var(--heading-color);
   opacity: 1;
 }
 
 .wp-block-search__inside-wrapper input::-ms-input-placeholder {
-  /* Microsoft Edge */
   color: var(--heading-color);
   opacity: 1;
 }
 
 .wp-block-search__inside-wrapper input::placeholder {
-  /* Most modern browsers support this now. */
   color: var(--heading-color);
   opacity: 1;
 }
@@ -11411,12 +11273,9 @@ button#wp-block-search__button {
 .entry-content img {
   border-radius: 25px;
   object-fit: cover;
-  /* width: 100%; */
-  /* height: auto; */
   margin: 10px 0px !important;
   display: block;
   height: auto;
-  /* width: max-content; */
 }
 
 .entry-content code {
@@ -11656,8 +11515,6 @@ a.comment-reply {
 .aximo-contact-thumb {
   border-radius: 25px;
   overflow: hidden;
-  /* margin-left: 40px;
-	max-height: 747px; */
   max-width: 400px;
   width: 100%;
   height: fit-content;
@@ -11994,37 +11851,31 @@ a.comment-reply {
 }
 
 .aximo-coming-newsletter input::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
   color: #fffdf8;
   opacity: 1;
 }
 
 .aximo-coming-newsletter input:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
   color: #fffdf8;
   opacity: 1;
 }
 
 .aximo-coming-newsletter input::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
   color: #fffdf8;
   opacity: 1;
 }
 
 .aximo-coming-newsletter input:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
   color: #fffdf8;
   opacity: 1;
 }
 
 .aximo-coming-newsletter input::-ms-input-placeholder {
-  /* Microsoft Edge */
   color: #fffdf8;
   opacity: 1;
 }
 
 .aximo-coming-newsletter input::placeholder {
-  /* Most modern browsers support this now. */
   color: #fffdf8;
   opacity: 1;
 }
@@ -12034,7 +11885,6 @@ a.comment-reply {
   text-align: center;
   font-size: 14px;
   line-height: 20px;
-  /* 142.857% */
   letter-spacing: 0.5px;
 }
 
@@ -12123,19 +11973,12 @@ button#aximo-notified-btn {
 /* icontext */
 .icon-text {
   background-color: #bff747;
-  /* Green background */
   color: black;
-  /* White text color */
   font-size: 24px;
-  /* Larger font size */
   font-weight: bolder;
-  /* Bold text */
   padding: 5px;
-  /* Add some padding for better appearance */
   border-radius: 50%;
-  /* Rounded corners for the background */
   display: inline-block;
-  /* To make it behave like an icon */
 }
 
 .mega-menu {
@@ -12178,12 +12021,10 @@ button#aximo-notified-btn {
   font-size: 18px;
   margin-bottom: 10px;
   color: #92d600;
-  /* border-bottom: 2px solid #92d600; */
   text-decoration: underline;
   text-decoration-color: #92d600;
   text-decoration-thickness: 2px;
   text-underline-offset: 12px;
-  /* padding-bottom: 8px; */
 }
 
 .site-menu-main .mega-menu-item {
@@ -12265,18 +12106,6 @@ button#aximo-notified-btn {
   }
 }
 
-/* single brand img ajustments */
-/* @media (max-width: 767px) {
-	.Brand-breadcrumb {
-		padding: 170px 0 80px;
-	}
-}
-
-@media (max-width: 575px) {
-	.Brand-breadcrumb {
-		padding: 130px 0 80px;
-	}
-} */
 .case-study-hero-section {
   width: 100%;
   height: auto;
@@ -12320,7 +12149,6 @@ button#aximo-notified-btn {
   font-size: 21px;
   line-height: 30px;
   margin-bottom: 30px;
-  /* text-align: justify; */
 }
 
 .brand-info-container {
@@ -12330,7 +12158,6 @@ button#aximo-notified-btn {
 
 .brand-info-container a,
 .brand-info-container h5 {
-  /* background-color: #000; */
   color: #fdfde1 !important;
 }
 
@@ -12369,9 +12196,7 @@ button#aximo-notified-btn {
 
 /* home page table css */
 .table-responsive {
-  /* box-shadow: 0 0 7px #333; */
   border-radius: 20px;
-  /* background-color: rgba(0, 0, 0, 0.05); */
   border: 1px solid black;
 }
 
@@ -12542,11 +12367,6 @@ button#aximo-notified-btn {
   }
 }
 
-/* header ccontainer div css  */
-/* .header-container-div {
-	max-width: 1440px !important;
-} */
-
 @media (max-width: 767px) {
   .header-container-div {
     /* margin: auto 0px !important; */
@@ -12570,7 +12390,6 @@ button#aximo-notified-btn {
   width: 100% !important;
   color: rgb(50, 50, 50) !important;
   border-radius: 25px !important;
-  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); */
   font-weight: 500 !important;
 }
 
@@ -12606,8 +12425,7 @@ button#aximo-notified-btn {
 /* casestudy, blog page image responsive */
 .lazy-load-image-background.blur.lazy-load-image-loaded > img {
   opacity: 1 !important;
-  transition: opacity 0.3s !important;
-  /* width: 100% !important; */
+  transition: all 0.3s !important;
   object-fit: cover !important;
   height: auto !important;
 }
@@ -12619,7 +12437,6 @@ span.lazy-load-image-background.blur.lazy-load-image-loaded {
   width: auto !important;
 }
 
-/* 14-5-25 */
 @media (max-width: 576px) {
   .headless-heading-to-correct {
     font-size: 26px !important;
@@ -12630,7 +12447,6 @@ span.lazy-load-image-background.blur.lazy-load-image-loaded {
   border-radius: 20px !important;
 }
 
-/* servcies-weoffer-box (servcies page) */
 .servcies-weoffer-box {
   min-height: 351px;
 }
@@ -12648,18 +12464,17 @@ span.lazy-load-image-background.blur.lazy-load-image-loaded {
 }
 
 /* FAQ accordion css animation */
-
 .aximo-accordion-wrap .accordion-collapse {
   transition: all 0.35s ease;
   overflow: hidden;
 }
 
 .aximo-accordion-wrap .accordion-collapse.collapsing {
-  transition: height 0.35s ease;
+  transition: all 0.35s ease;
 }
 
 .aximo-accordion-wrap .accordion-body {
-  transition: opacity 0.25s ease 0.1s;
+  transition: all 0.25s ease 0.1s;
 }
 
 .aximo-accordion-wrap .accordion-button {
@@ -12667,7 +12482,7 @@ span.lazy-load-image-background.blur.lazy-load-image-loaded {
 }
 
 .aximo-accordion-wrap .accordion-button::after {
-  transition: transform 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 /* homepage-logo-slider */
@@ -12682,13 +12497,11 @@ span.lazy-load-image-background.blur.lazy-load-image-loaded {
 }
 
 .slick-initialized .slick-slide {
-  /* algined logo to center position */
   display: flex !important;
   justify-content: center;
   align-items: center;
 }
 
-/* ===== solution slider image loader ===== */
 .image-loader {
   position: absolute;
   inset: 0;

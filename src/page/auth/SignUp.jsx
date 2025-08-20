@@ -1,6 +1,7 @@
 import SignUpForm from "../../components/auth/SignUpForm";
+
 function SignUp() {
-	return <SignUpForm />;
+  return <SignUpForm />;
 }
 
 export default SignUp;

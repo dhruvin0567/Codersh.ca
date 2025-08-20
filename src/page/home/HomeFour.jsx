@@ -10,20 +10,20 @@ import Testimonials from "../../components/home-four/testimonials";
 import WhyChooseUs from "../../components/home-four/why-choose-us";
 
 function HomeFour() {
-	return (
-		<div className="aximo-all-section bg-light4">
-			<Hero />
-			<MissionVision />
-			<BrandLogo />
-			<Services />
-			<WhyChooseUs />
-			<NumberBox />
-			<Projects />
-			<Testimonials />
-			<Blogs />
-			<Instagrams />
-		</div>
-	);
+  return (
+    <div className="aximo-all-section bg-light4">
+      <Hero />
+      <MissionVision />
+      <BrandLogo />
+      <Services />
+      <WhyChooseUs />
+      <NumberBox />
+      <Projects />
+      <Testimonials />
+      <Blogs />
+      <Instagrams />
+    </div>
+  );
 }
 
 export default HomeFour;

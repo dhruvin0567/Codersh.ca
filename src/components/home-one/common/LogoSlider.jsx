@@ -4,13 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Star2Img from "../../../assets/images/v1/icon/star2.webp";
 
-/*
- * Reusable logo slider component.
- *
- * @param {Array} logos - Array of logo objects with { id?, image, alt? }
- * @param {String} title - Optional title above the slider
- * @param {Object} sliderOptions - Optional custom slider settings
- */
 const LogoSlider = ({ logos = [], title = "", sliderOptions = {} }) => {
   if (!logos || logos.length === 0) return null;
 
@@ -43,18 +36,6 @@ const LogoSlider = ({ logos = [], title = "", sliderOptions = {} }) => {
     >
       <div className="container-fluid">
         {title && (
-          // <h3 className=" text-center mb-5 ">
-          //     {title}
-          // </h3>
-          //   <h2 className="mb-5 text-center">
-          //     <span className="aximo-title-animation">
-          //       {title}
-          //       <span className="aximo-title-icon">
-          //         <img src={Star2Img} alt="Star Img" />
-          //       </span>
-          //     </span>
-          //   </h2>
-
           <h2 className="mb-5 text-center">
             <span className="aximo-title-animation">
               Trusted by

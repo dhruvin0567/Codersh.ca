@@ -1142,9 +1142,8 @@ a.log-in-btn:hover:after {
 .aximo-go-top {
   position: fixed;
   bottom: 1.3%;
-  /* right: 6%; */
-  left: 50%; /* Move to center horizontally */
-  transform: translateX(-50%); /* Perfect centering */
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 97;
   cursor: pointer;
   -webkit-font-smoothing: antialiased;

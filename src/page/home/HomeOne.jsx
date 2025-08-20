@@ -11,11 +11,28 @@ import ComparisonTable from "../../components/common/ComparisonTable";
 import SEO from "../../components/common/SEO";
 import LogoSlider from "../../components/home-one/common/LogoSlider";
 import homeLogo from "../../data/logo-slider/home-slider.json";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const GlobalStyle = createGlobalStyle`
   #root {
      overflow-x: hidden; 
 `;
+
+// const [blogdata, setblogData] = useState();
+
+// const fetchingData = async () => {
+//   try {
+//     const response = await axios.get("");
+//     setblogData(response.data);
+//   } catch (error) {
+//     console.log(error, "Error!");
+//   }
+// };
+
+// useEffect(() => {
+//   fetchingData();
+// }, []);
 
 const servicesData = [
   {

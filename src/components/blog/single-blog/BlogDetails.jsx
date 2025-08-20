@@ -3,11 +3,6 @@ import { useParams } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import FadeInUp from "../../animation/FadeInUp";
 import "../../../assets/css/singleblog.css";
-// import FadeInUp from "../../animation/FadeInUp";
-// import CommentForm from "./CommentForm";
-// import CommentList from "./CommentList";
-// import PostMeta from "./PostMeta";
-// import PostTags from "./PostTags";
 
 const WP_API_URL = "https://codersh.com/wp-json/wp/v2/posts?_embed&slug=";
 
@@ -66,16 +61,12 @@ function BlogDetails() {
         />
       </FadeInUp>
       <div className="single-post-content-wrap">
-        {/* {/ <PostMeta / > /} */}
         <div className="entry-content dynamic-blog-content">
           <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
           <div
             dangerouslySetInnerHTML={{ __html: post.content }}
             className="dynamic-blog-content mt-4"
           />
-          {/* <PostTags />
-					<CommentList />
-					<CommentForm /> */}
         </div>
       </div>
     </>

@@ -10,22 +10,22 @@ import Testimonials from "../../components/home-two/testimonials";
 import Video from "../../components/home-two/video";
 
 function HomeTwo() {
-	return (
-		<>
-			<div className="aximo-all-section bg-light2">
-				<Hero />
-				<BrandLogo />
-				<Features />
-				<About />
-				<Services />
-				<Video />
-				<Pricing />
-				<Testimonials />
-				<Faq />
-				<CallToAction />
-			</div>
-		</>
-	);
+  return (
+    <>
+      <div className="aximo-all-section bg-light2">
+        <Hero />
+        <BrandLogo />
+        <Features />
+        <About />
+        <Services />
+        <Video />
+        <Pricing />
+        <Testimonials />
+        <Faq />
+        <CallToAction />
+      </div>
+    </>
+  );
 }
 
 export default HomeTwo;

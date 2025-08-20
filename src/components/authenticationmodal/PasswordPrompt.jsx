@@ -12,14 +12,13 @@ const PasswordPrompt = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError(""); // clear any previous error
+    setError("");
 
     const success = await verifyPassword(password);
     if (!success) {
       setError("Incorrect password. Try again or check the password.");
     } else {
       setError("");
-      // Redirect or do something else if needed
     }
   };
   const handleClose = () => {
@@ -31,8 +30,8 @@ const PasswordPrompt = () => {
       className="position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50"
       style={{
         zIndex: 1055,
-        backdropFilter: "blur(10px)", // Apply the blur effect to the background
-        WebkitBackdropFilter: "blur(10px)", // For Safari support
+        backdropFilter: "blur(10px)",
+        WebkitBackdropFilter: "blur(10px)",
       }}
     >
       <div
@@ -60,11 +59,11 @@ const PasswordPrompt = () => {
             <div className="m-0 m-md-3 position-relative">
               <input
                 type={showPassword ? "text" : "password"}
-                // className={`form-control pe-5 ${error ? "is-invalid" : ""}`}
                 placeholder="Enter your password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
+
               {/* Eye icon */}
               <span
                 role="button"
@@ -72,7 +71,7 @@ const PasswordPrompt = () => {
                 style={{
                   cursor: "pointer",
                   fontSize: "1.5rem",
-                  right: "1.25rem", // spacing from edge
+                  right: "1.25rem",
                   top: "0",
                   bottom: "-0.7rem",
                   zIndex: 10,
@@ -83,6 +82,7 @@ const PasswordPrompt = () => {
                   className={`bi ${showPassword ? "bi-eye-slash" : "bi-eye"}`}
                 ></i>
               </span>
+
               {/* Error message with fixed space */}
               <div
                 className="invalid-feedback"
@@ -95,6 +95,7 @@ const PasswordPrompt = () => {
                 {error}
               </div>
             </div>
+
             <div className="mb-3 d-flex justify-content-center">
               <button
                 type="submit"

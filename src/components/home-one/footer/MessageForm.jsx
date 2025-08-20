@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate hook from React Router
+import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import emailjs from "@emailjs/browser";
@@ -34,48 +34,12 @@ function MessageForm() {
     }
   };
 
-  //   wordpress form handling
-  //   const submitForm = async (formData) => {
-  //     console.log("Submitted Form Data =", formData);
-
-  //     try {
-  //       const response = await fetch(
-  //         "https://projects.codersh.com/aximo/wp-json/wp/v2/form-submit",
-  //         {
-  //           method: "POST",
-  //           headers: {
-  //             "Content-Type": "application/json",
-  //           },
-  //           body: JSON.stringify(formData),
-  //         }
-  //       );
-
-  //       const result = await response.json();
-
-  //       if (response.ok) {
-  //         console.log("Form submitted successfully:", result);
-  //         // alert("Thank you! Your form has been submitted.");
-  //         reset(); // Reset the form fields after successful submission
-
-  //         // Navigate to the Thank You page
-  //         navigate("/thank-you"); // Use React Router to navigate to the Thank You page
-  //       } else {
-  //         console.error("Form submission failed:", result);
-  //         alert("Form submission failed. Please try again.");
-  //       }
-  //     } catch (error) {
-  //       console.error("Error submitting form:", error);
-  //       alert("An error occurred. Please try again.");
-  //     }
-  //   };
-
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const submitForm = async (formData) => {
     setIsSubmitting(true);
 
     try {
-      // Check email validity
       const emailCheck = await verifyEmail(formData.email);
 
       if (!emailCheck || emailCheck.deliverability !== "DELIVERABLE") {
@@ -86,12 +50,11 @@ function MessageForm() {
         return;
       }
 
-      // User confirmation email
       await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID, //  EmailJS service ID
-        import.meta.env.VITE_EMAILJS_TEMPLATE_USER, // user-facing template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_USER,
         formData,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY //  public API key
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       // Admin notification email
@@ -103,8 +66,8 @@ function MessageForm() {
       };
 
       await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID, //  EmailJS service ID
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ADMIN, // user-facing template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ADMIN,
         adminTemplateParams,
         "xXD66OwtNN0ehOvWz"
       );
@@ -129,7 +92,7 @@ function MessageForm() {
     color: "#ccc",
     transition:
       "background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s",
-    fontSize: "18px", // Added font size here
+    fontSize: "18px",
   };
 
   return (
@@ -182,7 +145,7 @@ function MessageForm() {
               {...register("number", {
                 required: "Mobile number is required.",
                 pattern: {
-                  value: /^[+0-9-]+$/, // Allow only +, numbers, and -
+                  value: /^[+0-9-]+$/,
                   message:
                     "Please enter a valid mobile number (only digits, +, and -).",
                 },
@@ -191,7 +154,7 @@ function MessageForm() {
                   message: "Phone number must be at least 8 characters.",
                 },
                 maxLength: {
-                  value: 15, // Maximum length of 15 characters for international format
+                  value: 15,
                   message: "Mobile number cannot exceed 15 characters.",
                 },
               })}

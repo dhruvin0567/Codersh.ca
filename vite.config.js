@@ -1,25 +1,18 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-// import ViteSitemap from 'vite-plugin-sitemap';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  plugins: [
-    react(),
-    // ViteSitemap({
-    //   hostname: 'https://react-vite-codersh.vercel.app/',
-    // }),
-  ],
-  base: '/',
-  assetsInclude: ['**/*.PNG'],
+  plugins: [react()],
+  base: "/",
+  assetsInclude: ["**/*.PNG"],
   server: {
     proxy: {
-      '/wp-json': {
-        target: 'https://codersh.com/',
+      "/wp-json": {
+        target: "https://codersh.com/",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/wp-json/, '/wp-json'),
+        rewrite: (path) => path.replace(/^\/wp-json/, "/wp-json"),
       },
     },
   },
-  build: {
-  },
+  build: {},
 });

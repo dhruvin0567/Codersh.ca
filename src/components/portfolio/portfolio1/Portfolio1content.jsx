@@ -1,15 +1,14 @@
 import { useState, useMemo, useCallback } from "react";
 import FadeInStagger from "../../animation/FadeInStagger";
 
-// Import images
 const cardImages = import.meta.glob("/src/assets/images/images2/*.webp*", {
   eager: true,
 });
+
 const getImage = (name) =>
   cardImages[`/src/assets/images/images2/${name}.webp`]?.default ||
   cardImages[`/src/assets/images/images2/${name}.png.webp`]?.default;
 
-// Cards data
 const cards = [
   {
     category: "Shopify",
@@ -217,20 +216,16 @@ const FILTER_OPTIONS = {
 };
 
 const Portfolio1content = () => {
-  // Unified filter state
   const [filters, setFilters] = useState({
-    // Dropdown filters
     category: "all",
     country: "all",
     industry: "all",
-    // Facet filters
     activeFacets: {
       countries: [],
       industries: [],
     },
   });
 
-  // Toggle facet filters
   const toggleFacetFilter = (type, value) => {
     setFilters((prev) => {
       const current = prev.activeFacets[type] || [];
@@ -248,21 +243,13 @@ const Portfolio1content = () => {
     });
   };
 
-  // Handle dropdown changes
   const handleFilterChange = useCallback((filterType, value) => {
     setFilters((prev) => ({
       ...prev,
       [filterType]: value,
-      // When a dropdown is changed, clear the corresponding facet filters
-      // activeFacets: {
-      //     ...prev.activeFacets,
-      //     ...(filterType === 'country' && { countries: [] }),
-      //     ...(filterType === 'industry' && { industries: [] })
-      // }
     }));
   }, []);
 
-  // Clear all filters
   const clearAllFilters = () => {
     setFilters({
       category: "all",
@@ -275,35 +262,30 @@ const Portfolio1content = () => {
     });
   };
 
-  // Filter cards with combined logic
   const filteredCards = useMemo(() => {
     return cards.filter((card) => {
-      // Category must always match (only one category exists)
       if (filters.category !== "all" && card.category !== filters.category) {
         return false;
       }
 
-      // Country matching - either dropdown OR facet filters
       const countryMatch =
         (filters.country === "all" &&
-          filters.activeFacets.countries.length === 0) || // No filters
-        (filters.country !== "all" && card.country === filters.country) || // Dropdown match
+          filters.activeFacets.countries.length === 0) ||
+        (filters.country !== "all" && card.country === filters.country) ||
         (filters.activeFacets.countries.length > 0 &&
-          filters.activeFacets.countries.includes(card.country)); // Facet match
+          filters.activeFacets.countries.includes(card.country));
 
-      // Industry matching - either dropdown OR facet filters
       const industryMatch =
         (filters.industry === "all" &&
-          filters.activeFacets.industries.length === 0) || // No filters
-        (filters.industry !== "all" && card.industry === filters.industry) || // Dropdown match
+          filters.activeFacets.industries.length === 0) ||
+        (filters.industry !== "all" && card.industry === filters.industry) ||
         (filters.activeFacets.industries.length > 0 &&
-          filters.activeFacets.industries.includes(card.industry)); // Facet match
+          filters.activeFacets.industries.includes(card.industry));
 
       return countryMatch && industryMatch;
     });
   }, [filters]);
 
-  // Check if any filters are active
   const hasActiveFilters =
     filters.category !== "all" ||
     filters.country !== "all" ||
@@ -316,32 +298,6 @@ const Portfolio1content = () => {
       <div className="categories-form-wrapper py-5">
         {/* Dropdown Filters */}
         <div className="categories-form container the-main-outerbox">
-          {/* <div className="filter-container d-flex flex-wrap gap-3 dropdownfilter-portfolio">
-                        <select className="form-select" value={filters.category}
-                            onChange={(e) => handleFilterChange('category', e.target.value)}>
-                            <option value="all">All Categories</option>
-                            {FILTER_OPTIONS.categories.map(option => (
-                                <option key={option} value={option}>{option}</option>
-                            ))}
-                        </select>
-
-                        <select className="form-select" value={filters.country}
-                            onChange={(e) => handleFilterChange('country', e.target.value)}>
-                            <option value="all">All Countries</option>
-                            {FILTER_OPTIONS.countries.map(option => (
-                                <option key={option} value={option}>{option}</option>
-                            ))}
-                        </select>
-
-                        <select className="form-select" value={filters.industry}
-                            onChange={(e) => handleFilterChange('industry', e.target.value)}>
-                            <option value="all">All Industries</option>
-                            {FILTER_OPTIONS.industries.map(option => (
-                                <option key={option} value={option}>{option}</option>
-                            ))}
-                        </select>
-                    </div> */}
-
           {/* Modern Responsive Faceted Filters */}
           <div className="mx-4 mx-md-5">
             <div className="faceted-filters-container">
@@ -362,11 +318,6 @@ const Portfolio1content = () => {
                                 : ""
                             }`}
                             onClick={() => toggleFacetFilter(filterType, value)}
-                            // disabled={
-                            //     // Disable if corresponding dropdown is active
-                            //     (filterType === 'countries' && filters.country !== "all") ||
-                            //     (filterType === 'industries' && filters.industry !== "all")
-                            // }
                           >
                             {value}
                           </button>
@@ -405,10 +356,6 @@ const Portfolio1content = () => {
                               onClick={() =>
                                 toggleFacetFilter(filterType, value)
                               }
-                              // disabled={
-                              //     (filterType === 'countries' && filters.country !== "all") ||
-                              //     (filterType === 'industries' && filters.industry !== "all")
-                              // }
                             >
                               {value}
                             </button>
@@ -504,12 +451,6 @@ const Portfolio1content = () => {
           {filteredCards.length === 0 ? (
             <div className="text-center py-5">
               <h4>No projects match your filters</h4>
-              {/* <button
-                                className="btn btn-primary mt-3"
-                                onClick={clearAllFilters}
-                            >
-                                Clear all filters
-                            </button> */}
             </div>
           ) : (
             <div className="row">

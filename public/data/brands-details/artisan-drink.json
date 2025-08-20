@@ -28,22 +28,22 @@
   },
   "relatedBrands": [
     {
-    "id": 3,
-    "title": "liberation-cocktails",
-    "img": "/images/brands/brands-cards/11.webp",
-    "link": "/brand/liberation-cocktails"
-  },
-  {
-    "id": 2,
-    "title": "elevation-107",
-    "img": "/images/brands/brands-cards/3.webp",
-    "link": "/brand/elevation-107"
-  },
-  {
-    "id": 1,
-    "title": "kick-ash-basket",
-    "img": "/images/brands/brands-cards/4.webp",
-    "link": "/brand/kick-ash-basket"
-  }
+      "id": 3,
+      "title": "liberation-cocktails",
+      "img": "/images/brands/brands-cards/11.webp",
+      "link": "/brand/liberation-cocktails"
+    },
+    {
+      "id": 2,
+      "title": "elevation-107",
+      "img": "/images/brands/brands-cards/3.webp",
+      "link": "/brand/elevation-107"
+    },
+    {
+      "id": 1,
+      "title": "kick-ash-basket",
+      "img": "/images/brands/brands-cards/4.webp",
+      "link": "/brand/kick-ash-basket"
+    }
   ]
 }

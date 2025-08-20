@@ -111,9 +111,6 @@ function B2BWholsales() {
                           <span className="fw-bold">
                             Password-Protected Storefront
                           </span>
-                          {/* <p className="ms-5 mb-3">
-                                                        Create a password-protected wholesale storefront that integrates smoothly with your main online store. This allows you to serve wholesale customers without disrupting your primary storefront.
-                                                    </p> */}
                         </li>
                         <li>
                           <img
@@ -124,9 +121,6 @@ function B2BWholsales() {
                           <span className="fw-bold">
                             Shopify’s B2B Ecommerce Channel
                           </span>
-                          {/* <p className="ms-5 mb-3">
-                                                        Unlock your store’s full potential with Shopify’s B2B features, including custom pricing, product bundles, volume-based discounts, customer profiles, and exclusive access for wholesale buyers—all within a single store.
-                                                    </p> */}
                         </li>
                         <li>
                           <img
@@ -137,9 +131,6 @@ function B2BWholsales() {
                           <span className="fw-bold">
                             Shopify Plus for Advanced B2B Solutions
                           </span>
-                          {/* <p className="ms-5 mb-3">
-                                                        For businesses with larger budgets, Shopify Plus offers advanced B2B solutions like dedicated wholesale channels, custom rates, and automation through APIs and apps. Starting at $2,000 per month, Shopify Plus scales with your business, offering extensive customization, automation, and robust wholesale management tools—ideal for growth-focused companies.
-                                                    </p> */}
                         </li>
                         <li>
                           <img
@@ -150,9 +141,6 @@ function B2BWholsales() {
                           <span className="fw-bold">
                             B2B Solutions Without Shopify Plus
                           </span>
-                          {/* <p className="ms-5 mb-3">
-                                                        If Shopify Plus is out of your budget, third-party apps like SparkLayer, Wholesale Club, and Wholesale Lock Manager offer cost-effective alternatives. These apps integrate easily with Shopify, providing features like custom pricing, automated wholesale processes, and self-service options for wholesale customers—helping you scale without the high upfront cost.
-                                                    </p> */}
                         </li>
                       </ul>
                     </div>

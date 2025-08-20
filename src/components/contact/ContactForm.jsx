@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate hook from React Router
+import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import Star2Img from "../../assets/images/v1/star2.webp";
@@ -27,7 +27,6 @@ function ContactForm() {
     }
   };
 
-  // Pause video on outside click
   useEffect(() => {
     const handleBodyClick = (e) => {
       if (videoRef.current && !videoRef.current.contains(e.target)) {
@@ -49,7 +48,7 @@ function ContactForm() {
     reset,
   } = useForm();
 
-  const navigate = useNavigate(); // Initialize navigate function
+  const navigate = useNavigate();
 
   const verifyEmail = async (email) => {
     try {
@@ -69,47 +68,11 @@ function ContactForm() {
     }
   };
 
-  // Submit form --wordpress
-  // const submitForm = async (formData) => {
-  // 	console.log("Form Data: ", formData);
-
-  // 	try {
-  // 		const response = await fetch("https://projects.codersh.com/aximo/wp-json/wp/v2/form-submit", {
-  // 			method: "POST",
-  // 			headers: {
-  // 				"Content-Type": "application/json",
-  // 			},
-  // 			body: JSON.stringify(formData),
-  // 		});
-
-  // 		const result = await response.json();
-
-  // 		if (response.ok) {
-  // 			console.log("Form submitted successfully:", result);
-  // 			// alert("Thank you! Your form has been submitted.");
-  // 			reset(); // Reset the form fields after successful submission
-
-  // 			// Navigate to the Thank You page
-  // 			navigate("/thank-you");  // Use React Router to navigate to the Thank You page
-
-  // 		} else {
-  // 			console.error("Form submission failed:", result);
-  // 			alert("Form submission failed. Please try again.");
-  // 		}
-  // 	} catch (error) {
-  // 		console.error("Error submitting form:", error);
-  // 		alert("An error occurred. Please try again.");
-  // 	}
-  // };
-
-  // Submit form with EmailJS
-
   const submitForm = async (formData) => {
     console.log("Form Data: ", formData);
     setIsSubmitting(true);
 
     try {
-      // Check email validity
       const emailCheck = await verifyEmail(formData.email);
 
       if (!emailCheck || emailCheck.deliverability !== "DELIVERABLE") {
@@ -121,17 +84,16 @@ function ContactForm() {
       }
 
       const result = await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID, //  EmailJS service ID
-        import.meta.env.VITE_EMAILJS_TEMPLATE_USER, // user-facing template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_USER,
         formData,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY //  public API key
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       console.log("Email sent successfully:", result.text);
       toast.success("Email sent successfully!");
       await new Promise((res) => setTimeout(res, 500));
 
-      // Send notification to admin
       const adminTemplateParams = {
         name: formData.name,
         email: formData.email,
@@ -140,16 +102,16 @@ function ContactForm() {
       };
 
       const adminResponse = await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID, //  EmailJS service ID
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ADMIN, // user-facing template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ADMIN,
         adminTemplateParams,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY //  public API key,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
       console.log("Admin Params:", adminTemplateParams);
       console.log("Admin notification sent:", adminResponse.text);
 
-      reset(); // Reset form fields
-      navigate("/thank-you"); // Navigate to Thank You page
+      reset();
+      navigate("/thank-you");
     } catch (error) {
       console.error("EmailJS error:", error);
       toast.error("Something went wrong. Please try again later.");
@@ -164,9 +126,9 @@ function ContactForm() {
     WebkitAppearance: "none",
     backgroundImage: "none",
     backgroundColor: "transparent",
-    color: "#000", // Set text color to white
+    color: "#000",
     transition:
-      "background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s", // Transition for color as well
+      "background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s",
   };
 
   return (
@@ -199,7 +161,6 @@ function ContactForm() {
                 style={{ position: "relative" }}
               >
                 <video
-                  // poster={VideoPoster}
                   ref={videoRef}
                   loop
                   playsInline
@@ -215,7 +176,7 @@ function ContactForm() {
                 {showControls && (
                   <button
                     onClick={(e) => {
-                      e.stopPropagation(); // prevent click from bubbling to body
+                      e.stopPropagation();
                       handlePlayPause();
                     }}
                     style={{
@@ -261,7 +222,6 @@ function ContactForm() {
                       {...register("email", {
                         required: "Email is required.",
                         pattern: {
-                          // value: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/, 	previous validation
                           value:
                             /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
                           message: "Please enter a valid email address.",
@@ -294,7 +254,6 @@ function ContactForm() {
                           message: "Phone number cannot exceed 15 characters.",
                         },
                       })}
-                      //   placeholder="+91 012346789"
                       type="tel"
                       name="number"
                       id="number"

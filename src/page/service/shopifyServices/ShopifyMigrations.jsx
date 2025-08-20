@@ -2,7 +2,6 @@ import BreadCrumb from "../../../components/common/Breadcrumb";
 import ThumbImg2 from "../../../assets/images/images2/Shopify_connect.webp";
 import ThumbImg1 from "../../../assets/images/images2/6.webp";
 import Star2Img from "../../../assets/images/v1/icon/star2.webp";
-// import Shape4Img from "../../../assets/images/v5/shape4.webp";
 import FadeInLeft from "../../../components/animation/FadeInLeft";
 import FadeInRight from "../../../components/animation/FadeInRight";
 import FadeInUp from "../../../components/animation/FadeInUp";
@@ -147,24 +146,22 @@ const featuresData = [
 ];
 
 function ShopifyMigrations() {
-  // const iconboxWrapStyle = {
-  //     minHeight: '280px',
-  // };
   const iconboxWrapStyle2 = {
     minHeight: "fit-content",
   };
+
   const iconboxWrapStyle3 = {
     minHeight: "fit-content",
   };
+
   const iconboxWrapStyleMobile = {
     minHeight: "fit-content",
   };
-  // Detect if the screen width is less than 992px (tablet and mobile)
+
   const isMobileOrTablet = window.innerWidth < 992;
 
-  // Split servicesData into two arrays
-  const firstRowData = servicesData.slice(0, 4); // First 3 items
-  const secondRowData = servicesData.slice(4); // Remaining items
+  const firstRowData = servicesData.slice(0, 4);
+  const secondRowData = servicesData.slice(4);
 
   return (
     <div>
@@ -355,9 +352,6 @@ function ShopifyMigrations() {
             </FadeInUp>
           </div>
         </div>
-        {/* <div className="aximo-cta-shape3">
-          <img src={Shape4Img} alt="shape" />
-        </div> */}
       </div>
 
       <div className="section">

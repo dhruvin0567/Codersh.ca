@@ -20,20 +20,15 @@
   margin: auto 20px;
   display: block;
   height: auto;
-  /* Auto height to maintain aspect ratio */
   max-height: 620px;
-  /* Set max height to prevent it from becoming too large */
-  transition: position 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 912px) {
   #stickyImage {
     max-width: 100%;
-    /* Ensure it doesn't overflow on smaller screens */
     height: auto;
-    /* Allow height to adjust based on width */
     max-height: 500px;
-    /* Set max height for small screens */
   }
 }
 
@@ -107,45 +102,35 @@ img.arrow-img {
   position: relative;
   display: inline-block;
   width: 100%;
-  /* Ensure full width */
 }
 
 img.first-img {
   width: 100%;
-  /* Responsive width */
   margin: 20px;
-  /* padding: 65px 20px 0px 20px; */
   padding: 40px;
   object-fit: cover;
-  /* Maintain aspect ratio */
 }
 
 @media (max-width: 912px) {
   img.first-img {
     width: 100%;
-    /* Make sure the first image is responsive */
     padding: 20px;
-    /* margin-top: 0px; */
   }
 }
 
 img.second-img {
   width: 100%;
-  /* Ensure image is responsive */
   position: absolute;
   top: 0;
-  /* Position it inside the container */
   left: 0;
   margin: 20px;
   padding: 40px;
   object-fit: cover;
-  /* Maintain aspect ratio */
 }
 
 @media (max-width: 912px) {
   img.second-img {
     width: 100%;
-    /* Make sure the second image resizes */
     padding: 20px;
   }
 }
@@ -161,7 +146,7 @@ img.second-img {
   right: 57%;
   top: 70%;
   z-index: 1;
-  transition: transform 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 /* Scroll Effect */
@@ -228,7 +213,7 @@ span.custom-play-button {
   cursor: pointer;
   font-size: 50px;
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
   font-family: \25b6 !important;
 }
 
@@ -318,7 +303,6 @@ button.filter-btn:hover {
   gap: 15px;
   background-color: var(--light-bg1);
   padding: 1.75rem 1.75rem;
-  /* box-shadow: 0px 0px 14px 1px #e0e0e0; */
   border-radius: 10px;
   flex-wrap: wrap;
   justify-content: center;
@@ -327,9 +311,7 @@ button.filter-btn:hover {
 .filter-container .form-select {
   height: 47px;
   width: 30%;
-  /* font-family: 'circular', sans-serif; */
   padding: 10px;
-  /* color: #636262; */
   background-color: #fffff5;
   border-radius: 10px;
 }
@@ -363,7 +345,7 @@ button.filter-btn:hover {
   left: 0;
   width: 100%;
   height: auto;
-  transition: transform 5s linear;
+  transition: all 5s linear;
   animation-delay: 0.3s;
   object-fit: cover;
 }
@@ -371,7 +353,6 @@ button.filter-btn:hover {
 /* Scroll on hover */
 .portfolio-image-wrapper:hover .image-scrolling {
   transform: translateY(-50%);
-  /* Adjust this based on how tall your image is */
 }
 
 .breadcrumbs {
@@ -380,7 +361,6 @@ button.filter-btn:hover {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  /* background: #f5f5f5; */
   border-radius: 5px;
 }
 
@@ -483,7 +463,6 @@ h6.blog-title:hover {
   transform: translateX(-50%);
   bottom: -46px;
   transition: bottom 0.3s ease-in-out;
-  /* Add smooth animation */
 }
 
 .work-card:hover .about-work {
@@ -579,14 +558,13 @@ button.filter-btn1.tab-btn {
 }
 
 .brand-card {
-  /* border: 5px solid var(--dark-bg); */
   border-radius: 20px;
   overflow: hidden;
 }
 
 .brand-card img {
   border-radius: 14px;
-  transition: 0.5s ease-in-out all;
+  transition: all 0.5s ease-in-out;
 }
 
 .brand-card:hover img {
@@ -921,7 +899,7 @@ span.swiper-custom-next {
   }
 }
 
-/* Aximo New Index Start */
+/* codersh.ca New Index Start */
 .aximo-new-index .brand-logo {
   max-width: 200px;
 }
@@ -1213,7 +1191,7 @@ td:has(.company-logo) {
   }
 }
 
-/* Aximo New Index End */
+/* codersh.ca New Index End */
 
 /*  landing-form-input css */
 .landing-form {
